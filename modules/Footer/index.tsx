@@ -7,7 +7,7 @@ import { buildFooterMenuItems } from "./helpers/buildFooterMenuItems";
 
 const Footer: React.FC = () => {
   const { strings } = useLocale();
-  const menuItems = buildFooterMenuItems(strings);
+  const menuItems = buildFooterMenuItems(strings.blocks.footer.menus);
 
   return (
     <footer>

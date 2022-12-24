@@ -5,7 +5,7 @@ import { buildHeaderMenuItems } from "./helpers/buildHeaderMenuItems";
 
 const Header: React.FC = () => {
   const { strings } = useLocale();
-  const menuLinks = buildHeaderMenuItems(strings);
+  const menuLinks = buildHeaderMenuItems(strings.blocks.header.menu);
 
   return (
     <header>

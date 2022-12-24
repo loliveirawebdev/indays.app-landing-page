@@ -6,7 +6,7 @@ import { renderCards } from "./helpers/renderCards";
 
 const Headline: React.FC = () => {
   const { strings } = useLocale();
-  const cards = buildHeadlineCards(strings);
+  const cards = buildHeadlineCards(strings.blocks.headline.cards);
 
   return (
     <article>

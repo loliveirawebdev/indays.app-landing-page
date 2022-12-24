@@ -1,15 +1,15 @@
-export const buildHeaderMenuItems = (strings: any): Header.MenuItem[] => {
+export const buildHeaderMenuItems = (menu: any): Header.MenuItem[] => {
   return [
     {
-      label: strings.blocks.header.menu.howWeWork,
+      label: menu.howWeWork,
       action: "#",
     },
     {
-      label: strings.blocks.header.menu.solutions,
+      label: menu.solutions,
       action: "#",
     },
     {
-      label: strings.blocks.header.menu.contact,
+      label: menu.contact,
       action: "#",
     },
   ];

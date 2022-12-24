@@ -1,15 +1,15 @@
-export const buildFooterMenuItems = (strings: any): Footer.MenuItem[] => {
+export const buildFooterMenuItems = (menus: any): Footer.MenuItem[] => {
   return [
     {
-      label: strings.blocks.footer.menus.about,
+      label: menus.about,
       link: "#",
     },
     {
-      label: strings.blocks.footer.menus.mission,
+      label: menus.mission,
       link: "#",
     },
     {
-      label: strings.blocks.footer.menus.dream,
+      label: menus.dream,
       link: "#",
     },
   ];

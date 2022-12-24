@@ -1,22 +1,22 @@
-export const buildHeadlineCards = (strings: any): Headline.Card[] => {
+export const buildHeadlineCards = (cards: any): Headline.Card[] => {
   return [
     {
-      label: strings.blocks.headline.cards.first,
+      label: cards.first,
       iconKey: "rocket",
       className: "black",
     },
     {
-      label: strings.blocks.headline.cards.second,
+      label: cards.second,
       iconKey: "handshake",
       className: "yellow",
     },
     {
-      label: strings.blocks.headline.cards.third,
+      label: cards.third,
       iconKey: "heart",
       className: "green",
     },
     {
-      label: strings.blocks.headline.cards.fourth,
+      label: cards.fourth,
       iconKey: "runner",
       className: "gray",
     },
