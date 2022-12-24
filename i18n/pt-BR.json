@@ -4,5 +4,158 @@
     "description": "Call to Action including Primary Keyword & Secondary Keyword (150 char)",
     "keywords": "123, 123, 123"
   },
-  "hello": "Olá!"
+  "blocks": {
+    "header": {
+      "menu": {
+        "howWeWork": "How We Work",
+        "solutions": "Solutions",
+        "contact": "Contact us"
+      }
+    },
+    "headlines": {
+      "title": "We help Startups and Enterprises achieve their goals faster",
+      "subtitle": "Our accelerated mobile development methodology enables us to delivery custom excellent apps in days.",
+      "paragraphs": [
+        "We are ready to validate your ideas and develop your mobile application from scratch or speed up your running project using all our knowledge about app development for smart phones (hybrid or native) and smart tvs.",
+        "Although our multidisciplinary team has the ability to develop any type of application for any segment, our great passion and specialty is co-creating e-commerce, marketplaces and similar apps.",
+        "Our team, leaded by people with years of mobile application development experience, provides the best software development experience through a strong and solid culture of excellence and true agility."
+      ],
+      "cards": {
+        "first": "we transform your ideas into success by developing hand made solutions that makes all difference to your business, faster",
+        "second": "we more than a mobile software house... our business is to co-create your own business in a collaborative way",
+        "third": "your customers are ours as well, so we hard work to provide the best experience to them",
+        "fourth": "our true agile culture helps reach goals in much less time in a healthy way"
+      }
+    },
+    "appeal": {
+      "title": "Time is money...",
+      "subtitle": "Don’t loose more of both.",
+      "description": "Our philosophy and methodology can help your business with a minimal time-to-market delivering small, medium and big custom mobile applications in a record time.",
+      "action": "Contact us"
+    },
+    "howWeWork": {
+      "title": "How we work?",
+      "paragraphs": [
+        "We follow some customer-centered development strategies based in Agile Culture which aims to delivery excellent solutions generating value to their business.",
+        "To speed up the development process, we have premade code blocks and design components that were built to be consistent, useful, generic and customizable.",
+        "Take a look in this brief summary of how our agile development process works:"
+      ],
+      "squad": "All solutions developed by us are made by squads: high performance multidisciplinary teams focused on continuous delivery of true value, working in a collaborative environment with our partners (this is how we face our customers) using some of Scrum and Shape Up framework fundamentals cherishing for quality and adaptability.",
+      "footer": "Want to know more? Download our presentation with all information about how we work.",
+      "processTimeline": {
+        "first": {
+          "title": "1. Understand",
+          "description": "The process starts by ensuring that all of your strategic goals will be met discussing all details about the needed solution in a in-house or remote Lean Inception workshop"
+        },
+        "second": {
+          "title": "2. Design",
+          "description": "After gathering all required information, we start to design the solution using a prototyping tool (like Figma) to validate our partner’s ideas and goals, furthermore, all design created in this step is useful for the squad in the next steps."
+        },
+        "third": {
+          "title": "3. Develop",
+          "description": "When any design fragment of the solution is validated by the partner, we start to code it keeping in mind that our goal is to delivery true value with excellence. To achieve this, we follow our coding standards that ensures the solution is growing up healthy."
+        },
+        "fourth": {
+          "title": "4. Improve",
+          "description": "The “design → develop” steps are being repeated while the application is growing up until it is done."
+        }
+      }
+    },
+    "solutions": {
+      "title": "Solutions",
+      "items": [
+        {
+          "title": "Custom mobile application",
+          "description": "We develop beautiful mobile applications for Android and iOS using their native stack or through a cross-platform technology like React Native or Flutter."
+        },
+        {
+          "title": "Super apps",
+          "description": "We have the knowledge and experience to develop this singular kind of mobile application that is a new trending after the successful campaign made by WeChat."
+        },
+        {
+          "title": "Smart TV applications",
+          "description": "We develop professional applications for any TV operational system like LG WebOS or Tizen TV."
+        },
+        {
+          "title": "Custom e-commerce application",
+          "description": "Our truly passion and specialty is to develop custom e-commerce platforms from the scratch or using Magento Commerce."
+        },
+        {
+          "title": "Mobile back-end applications",
+          "description": "We develop fast, reliable and secure back-end solutions using modern tech stacks like Bun.js, Deno.js or Go, or using more consolidated tech stacks like Java, Python or PHP."
+        },
+        {
+          "title": "Product design",
+          "description": "We know how to create beautiful, useful and engaging mobile applications."
+        }
+      ],
+      "tools": {
+        "title": "Our tools",
+        "highlight": {
+          "title": "Fastest development stack:",
+          "items": [
+            {
+              "imageKey": "react",
+              "label": "React"
+            },
+            {
+              "imageKey": "node",
+              "label": "Node"
+            }
+          ]
+        },
+        "others": {
+          "title": "Other tools:",
+          "items": [
+            {
+              "imageKey": "java",
+              "label": "Java"
+            },
+            {
+              "imageKey": "python",
+              "label": "Python"
+            },
+            {
+              "imageKey": "deno",
+              "label": "Deno"
+            },
+            {
+              "imageKey": "php",
+              "label": "PHP"
+            },
+            {
+              "imageKey": "flutter",
+              "label": "Flutter"
+            },
+            {
+              "imageKey": "kotlin",
+              "label": "Kotlin"
+            },
+            {
+              "imageKey": "swift",
+              "label": "Swift"
+            }
+          ]
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact us",
+      "description": "Email our tech lead directly at lucas.oliveira@simbioseventures.com or give him a text or Whatsapp message at +55 19 99749 4445",
+      "actionDescription": "Can't wait to get started?",
+      "action": "Click here and tell us a brief about your project!"
+    },
+    "footer": {
+      "title": "About Simbiose Ventures and indays.app",
+      "paragraphs": [
+        "Simbiose is a unique outsourcing company that trains developers with high technical and ethical standards. They have been in the technology market since 2012 and have already served more than 80 national and international companies.",
+        "indays.app is formed by a group of developers from Simbiose Ventures with a special focus to develop mobile solutions."
+      ],
+      "menus": {
+        "about": "Know more about who we are",
+        "mission": "Take a look in our mission, assumptions and values",
+        "dream": "Meet our dream"
+      }
+    }
+  }
 }
