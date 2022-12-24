@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import { useLocale } from "../hooks/locale";
-import "../styles/globals.css";
+import "../styles/_globals.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   const { strings } = useLocale();

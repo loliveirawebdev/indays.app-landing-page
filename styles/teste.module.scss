@@ -1,0 +1,7 @@
+@import "mixins";
+@import "tokens";
+
+.teste {
+  background: red;
+  color: $var2;
+}
