@@ -2,8 +2,8 @@ import React from "react";
 import { useLocale } from "../../hooks/locale";
 import { FooterLinks } from "./components/FooterLinks";
 import { SocialIcons } from "./components/SocialIcons";
+import { renderParagraphs } from "../../helpers/renderParagraphs";
 import { buildFooterMenuItems } from "./helpers/buildFooterMenuItems";
-import { renderParagraphs } from "./helpers/renderParagraphs";
 
 const Footer: React.FC = () => {
   const { strings } = useLocale();
