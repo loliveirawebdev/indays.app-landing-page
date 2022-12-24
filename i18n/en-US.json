@@ -40,7 +40,10 @@
         "To speed up the development process, we have premade code blocks and design components that were built to be consistent, useful, generic and customizable.",
         "Take a look in this brief summary of how our agile development process works:"
       ],
-      "squad": "All solutions developed by us are made by squads: high performance multidisciplinary teams focused on continuous delivery of true value, working in a collaborative environment with our partners (this is how we face our customers) using some of Scrum and Shape Up framework fundamentals cherishing for quality and adaptability.",
+      "squad": {
+        "description": "All solutions developed by us are made by squads: high performance multidisciplinary teams focused on continuous delivery of true value, working in a collaborative environment with our partners (this is how we face our customers) using some of Scrum and Shape Up framework fundamentals cherishing for quality and adaptability.",
+        "caption": "Average squad size"
+      },
       "footer": {
         "text": "Want to know more?",
         "action": "Download our presentation with all information about how we work."
