@@ -1,3 +1,8 @@
 {
+  "page": {
+    "title": "Primary Keyword - Secondary Keyword | Brand Name",
+    "description": "Call to Action including Primary Keyword & Secondary Keyword (150 char)",
+    "keywords": "123, 123, 123"
+  },
   "hello": "Olá!"
 }
