@@ -1,13 +1,5 @@
 import { useUncontextualizedLocale } from "../hooks/locale";
-
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentContext,
-  DocumentProps,
-} from "next/document";
+import Document, { Html, Head, Main, NextScript, DocumentContext, DocumentProps } from "next/document";
 
 export default function CustomDocument(props: DocumentProps) {
   const { strings } = useUncontextualizedLocale(props.locale!);
