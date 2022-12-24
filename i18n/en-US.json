@@ -45,24 +45,24 @@
         "text": "Want to know more?",
         "action": "Download our presentation with all information about how we work."
       },
-      "processTimeline": {
-        "first": {
+      "processTimeline": [
+        {
           "title": "1. Understand",
           "description": "The process starts by ensuring that all of your strategic goals will be met discussing all details about the needed solution in a in-house or remote Lean Inception workshop"
         },
-        "second": {
+        {
           "title": "2. Design",
           "description": "After gathering all required information, we start to design the solution using a prototyping tool (like Figma) to validate our partner’s ideas and goals, furthermore, all design created in this step is useful for the squad in the next steps."
         },
-        "third": {
+        {
           "title": "3. Develop",
           "description": "When any design fragment of the solution is validated by the partner, we start to code it keeping in mind that our goal is to delivery true value with excellence. To achieve this, we follow our coding standards that ensures the solution is growing up healthy."
         },
-        "fourth": {
+        {
           "title": "4. Improve",
           "description": "The “design → develop” steps are being repeated while the application is growing up until it is done."
         }
-      }
+      ]
     },
     "solutions": {
       "title": "Solutions",
