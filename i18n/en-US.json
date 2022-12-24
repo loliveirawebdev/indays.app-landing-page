@@ -41,7 +41,10 @@
         "Take a look in this brief summary of how our agile development process works:"
       ],
       "squad": "All solutions developed by us are made by squads: high performance multidisciplinary teams focused on continuous delivery of true value, working in a collaborative environment with our partners (this is how we face our customers) using some of Scrum and Shape Up framework fundamentals cherishing for quality and adaptability.",
-      "footer": "Want to know more? Download our presentation with all information about how we work.",
+      "footer": {
+        "text": "Want to know more?",
+        "action": "Download our presentation with all information about how we work."
+      },
       "processTimeline": {
         "first": {
           "title": "1. Understand",
