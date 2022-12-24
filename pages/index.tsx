@@ -1,7 +1,26 @@
-import { useLocale } from "../hooks/locale";
-import styles from "../styles/teste.module.scss";
+import React from "react";
+import Appeal from "../modules/Appeal";
+import Footer from "../modules/Footer";
+import Header from "../modules/Header";
+import Contact from "../modules/Contact";
+import Headline from "../modules/Headline";
+import HowWeWork from "../modules/HowWeWork";
+import Solutions from "../modules/Solutions";
 
 export default function Home() {
-  const { strings } = useLocale();
-  return <h1 className={styles.teste}>{strings.hello}</h1>;
+  return (
+    <React.Fragment>
+      <Header />
+
+      <main>
+        <Headline />
+        <Appeal />
+        <HowWeWork />
+        <Solutions />
+      </main>
+
+      <Contact />
+      <Footer />
+    </React.Fragment>
+  );
 }
