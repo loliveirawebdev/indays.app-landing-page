@@ -7,5 +7,6 @@
   "editor.renderWhitespace": "none",
   "editor.lineNumbers": "on",
   "editor.rulers": [80, 120],
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "prettier.printWidth": 120
 }
