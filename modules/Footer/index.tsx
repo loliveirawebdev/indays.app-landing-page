@@ -12,13 +12,15 @@ const Footer: React.FC = () => {
 
   return (
     <footer itemScope itemProp="footer" className={styles.footer}>
-      <article itemScope itemProp="about">
-        <h6 itemProp="title">{strings.blocks.footer.title}</h6>
-        {renderParagraphs(strings.blocks.footer.paragraphs)}
-      </article>
+      <div className="footer--content-container">
+        <article itemScope itemProp="about" className="footer--about-container">
+          <h6 itemProp="title">{strings.blocks.footer.title}</h6>
+          {renderParagraphs(strings.blocks.footer.paragraphs)}
+        </article>
 
-      <FooterLinks items={menuItems} />
-      <SocialIcons />
+        <FooterLinks items={menuItems} />
+        <SocialIcons />
+      </div>
     </footer>
   );
 };
