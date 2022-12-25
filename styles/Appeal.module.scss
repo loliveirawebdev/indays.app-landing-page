@@ -1,3 +1,32 @@
+@import "tokens";
+@import "mixins";
+
 .appeal {
-  background: green;
+  @include flex-centered-content;
+  margin: $spacing-sm 0;
+  color: $gray;
+
+  @include desktop {
+    margin: $spacing-md 0;
+  }
+
+  :global {
+    .appeal--content-container {
+      width: 100%;
+      max-width: $max-width;
+    }
+
+    h5 {
+      font-weight: normal;
+    }
+
+    .appeal--footer {
+      margin-top: $spacing-md;
+
+      button {
+        margin-top: $spacing-sm;
+        @include regular-text;
+      }
+    }
+  }
 }
