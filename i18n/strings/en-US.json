@@ -147,9 +147,7 @@
     },
     "contact": {
       "title": "Contact us",
-      "description": "Email our tech lead directly at [email]lucas.oliveira@simbioseventures.com[/email] or give him a text or Whatsapp message at [phone]+55 19 99749 4445[/phone]",
-      "actionDescription": "Can't wait to get started?",
-      "action": "Click here and tell us a brief about your project!"
+      "description": "Email our tech lead directly at <b>lucas.oliveira@simbioseventures.com</b> or tell us a brief about your project in the form bellow."
     },
     "footer": {
       "title": "About Simbiose Ventures and in<span>days</span>.app",
