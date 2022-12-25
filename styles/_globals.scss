@@ -1,3 +1,6 @@
+@import "tokens";
+@import "mixins";
+
 * {
   box-sizing: border-box;
   word-break: break-word;
@@ -7,4 +10,22 @@
 
 html {
   font-size: 62.5%;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: $font-xl;
+
+  @include desktop {
+    font-size: $font-xxl;
+  }
+}
+
+p,
+.regular-text {
+  font-size: $font-sm;
+
+  @include desktop {
+    font-size: $font-md;
+  }
 }

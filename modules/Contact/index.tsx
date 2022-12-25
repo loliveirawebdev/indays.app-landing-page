@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
   return (
     <section itemScope itemProp="contact" className={styles.contact}>
       <div className="contact--content-container">
-        <p itemProp="title" className="contact--title">
+        <p itemProp="title" className="section-title">
           {strings.blocks.contact.title}
         </p>
 

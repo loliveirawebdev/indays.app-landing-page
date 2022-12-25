@@ -15,22 +15,8 @@
       max-width: $max-width;
     }
 
-    .contact--title {
-      font-weight: bold;
-      font-size: $font-xl;
-
-      @include desktop {
-        font-size: $font-xxl;
-      }
-    }
-
     .contact--description {
-      font-size: $font-sm;
       display: inline;
-
-      @include desktop {
-        font-size: $font-md;
-      }
 
       button {
         display: contents;
