@@ -1,3 +1,133 @@
+@import "tokens";
+@import "mixins";
+
 .header {
-  background: yellow;
+  @include flex-centered-content;
+  margin-top: $spacing-sm;
+
+  @include desktop {
+    margin-top: $spacing-md;
+  }
+
+  :global {
+    .header--content-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      max-width: $max-width;
+
+      img {
+        width: 114px;
+        height: 31px;
+        margin-top: 2px;
+      }
+    }
+
+    .header--menu-separator {
+      @include not-desktop {
+        display: none;
+      }
+
+      @include desktop {
+        height: 2px;
+        width: 80px;
+        display: block;
+        background: $black;
+        margin-left: 3rem;
+      }
+    }
+
+    .header--hamburger-menu {
+      @include not-desktop {
+        border: 0;
+        cursor: pointer;
+        background: none;
+        margin-left: auto;
+
+        img {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+
+      @include desktop {
+        display: none;
+      }
+    }
+
+    .header--menu {
+      @include not-desktop {
+        &.header--menu__collapsed {
+          display: none;
+        }
+
+        .header--menu--backdrop {
+          top: 0;
+          left: 0;
+          z-index: 10;
+          width: 100%;
+          height: 100%;
+          opacity: 0.5;
+          position: fixed;
+          background: $black;
+        }
+
+        menu {
+          top: 0;
+          left: 0;
+          z-index: 11;
+          width: 100%;
+          position: fixed;
+          background: $white;
+          padding: $spacing-sm;
+          list-style-type: none;
+          border-radius: 0 0 2rem 2rem;
+
+          li {
+            text-align: right;
+            margin-bottom: 2rem;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      @include desktop {
+        menu {
+          display: flex;
+          margin-left: 3rem;
+          flex-direction: row;
+          align-items: center;
+          list-style-type: none;
+          justify-content: center;
+
+          li {
+            margin-right: 2rem;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .header--menu-item {
+      @include simple-link;
+
+      font-size: $font-sm;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @include desktop {
+        font-size: $font-xs;
+      }
+    }
+  }
 }
