@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocale } from "../../hooks/locale";
 import { SquadBlock } from "./components/SquadBlock";
+import styles from "../../styles/HowWeWork.module.scss";
 import { renderParagraphs } from "../../helpers/renderParagraphs";
 import { renderTimelineSteps } from "./helpers/renderTimelineSteps";
 
@@ -8,7 +9,7 @@ const HowWeWork: React.FC = () => {
   const { strings } = useLocale();
 
   return (
-    <article itemScope itemProp="howWeWork">
+    <article itemScope itemProp="howWeWork" className={styles.howWeWork}>
       <h3 itemProp="title">{strings.blocks.howWeWork.title}</h3>
       {renderParagraphs(strings.blocks.howWeWork.paragraphs)}
 
