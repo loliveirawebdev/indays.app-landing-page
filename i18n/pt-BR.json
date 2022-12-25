@@ -13,35 +13,35 @@
       }
     },
     "headline": {
-      "title": "We help Startups and Enterprises achieve their goals faster",
-      "subtitle": "Our accelerated mobile development methodology enables us to delivery custom excellent apps in days.",
+      "title": "We help Startups and Enterprises achieve their goals <strong>faster</strong>",
+      "subtitle": "Our accelerated mobile development methodology enables us to delivery <strong>custom excellent apps <u>in days</u></strong>.",
       "paragraphs": [
-        "We are ready to validate your ideas and develop your mobile application from scratch or speed up your running project using all our knowledge about app development for smart phones (hybrid or native) and smart tvs.",
+        "We are ready to validate your ideas and develop your mobile application from scratch or speed up your running project using all our knowledge about <strong>app development for smart phones (hybrid or native) and smart tvs</strong>.",
         "Although our multidisciplinary team has the ability to develop any type of application for any segment, our great passion and specialty is co-creating e-commerce, marketplaces and similar apps.",
-        "Our team, leaded by people with years of mobile application development experience, provides the best software development experience through a strong and solid culture of excellence and true agility."
+        "Our team, leaded by people with years of mobile application development experience, provides <em><u>the best software development experience</u></em> through a strong and solid culture of <b>excellence</b> and <strong>true agility</strong>."
       ],
       "cards": {
-        "first": "we transform your ideas into success by developing hand made solutions that makes all difference to your business, faster",
-        "second": "we more than a mobile software house... our business is to co-create your own business in a collaborative way",
-        "third": "your customers are ours as well, so we hard work to provide the best experience to them",
-        "fourth": "our true agile culture helps reach goals in much less time in a healthy way"
+        "first": "<span><strong>we transform your ideas into success</strong></span> by developing hand made solutions that makes all difference to your business, faster",
+        "second": "<span>we more than a mobile software house... <strong>our business is to co-create</strong></span> your own business in a collaborative way",
+        "third": "<span>your customers are ours as well</span>, so we hard work to provide the best experience to them",
+        "fourth": "<span>our <strong>true agile culture</strong></span> helps reach goals in much less time in a healthy way"
       }
     },
     "appeal": {
       "title": "Time is money...",
-      "subtitle": "Don’t loose more of both.",
+      "subtitle": "<u>Don’t loose more of both.</u>",
       "description": "Our philosophy and methodology can help your business with a minimal time-to-market delivering small, medium and big custom mobile applications in a record time.",
       "action": "Contact us"
     },
     "howWeWork": {
       "title": "How we work?",
       "paragraphs": [
-        "We follow some customer-centered development strategies based in Agile Culture which aims to delivery excellent solutions generating value to their business.",
+        "<strong>We follow some customer-centered development strategies based in Agile Culture</strong> which aims to delivery excellent solutions generating value to their business.",
         "To speed up the development process, we have premade code blocks and design components that were built to be consistent, useful, generic and customizable.",
-        "Take a look in this brief summary of how our agile development process works:"
+        "Take a look in this brief summary of how our <strong>agile development process</strong> works:"
       ],
       "squad": {
-        "description": "All solutions developed by us are made by squads: high performance multidisciplinary teams focused on continuous delivery of true value, working in a collaborative environment with our partners (this is how we face our customers) using some of Scrum and Shape Up framework fundamentals cherishing for quality and adaptability.",
+        "description": "All solutions developed by us are made by <b>squads</b>: high performance <strong>multidisciplinary teams focused on continuous delivery of <em>true value</em></strong>, working in a collaborative environment with our partners (this is how we face our customers) using some of Scrum and Shape Up framework fundamentals cherishing for quality and adaptability.",
         "caption": "Average squad size"
       },
       "footer": {
@@ -147,7 +147,7 @@
     },
     "contact": {
       "title": "Contact us",
-      "description": "Email our tech lead directly at lucas.oliveira@simbioseventures.com or give him a text or Whatsapp message at +55 19 99749 4445",
+      "description": "Email our tech lead directly at [email]lucas.oliveira@simbioseventures.com[/email] or give him a text or Whatsapp message at [phone]+55 19 99749 4445[/phone]",
       "actionDescription": "Can't wait to get started?",
       "action": "Click here and tell us a brief about your project!"
     },
