@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
   return (
     <header itemScope itemProp="header" className={styles.header}>
-      <img src="#" alt="indays.app" itemProp="logo" />
+      <img src="/assets/logo.svg" alt="indays.app's Logo" itemProp="logo" />
       <HeaderLinks items={menuLinks} />
     </header>
   );
