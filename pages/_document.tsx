@@ -19,7 +19,6 @@ export default function CustomDocument(props: DocumentProps) {
         <meta name="robots" content="index,follow" />
         <meta name="language" content={props.locale} />
         <meta name="publisher" content="Simbiose Ventures" />
-        <link rel="canonical" href="https://indays.app" />
         <meta name="author" content="Simbiose, ola@simbioseventures.com" />
         <meta name="revised" content="Sunday, January 1st, 2023, 01:00 pm" />
 
@@ -29,6 +28,9 @@ export default function CustomDocument(props: DocumentProps) {
         <meta property="og:title" content={strings.page.title} />
         <meta property="og:url" content="https://indays.app" />
         <meta property="og:description" content={strings.page.description} />
+
+        <link rel="canonical" href="https://indays.app" />
+        <link rel="alternate" href="https://indays.app/en" hrefLang="en" />
       </Head>
 
       <body>
