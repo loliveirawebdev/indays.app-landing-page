@@ -6,48 +6,48 @@ export const SquadBlock: React.FC = () => {
 
   return (
     <React.Fragment>
-      <p>{strings.blocks.howWeWork.squad.description}</p>
+      <p itemProp="description">{strings.blocks.howWeWork.squad.description}</p>
 
-      <figure>
-        <ol>
-          <li>
+      <figure itemScope itemProp="figure">
+        <ol itemProp="squadFormation" itemType="https://schema.org/ItemList">
+          <li itemProp="itemListElement">
             <span>
-              <img src="#" />
-              <span>1</span>
+              <img src="#" itemProp="icon" />
+              <span itemProp="count">1</span>
             </span>
 
-            <span>PM</span>
+            <span itemProp="name">PM</span>
           </li>
 
-          <li>
+          <li itemProp="itemListElement">
             <span>
-              <img src="#" />
-              <span>1</span>
+              <img src="#" itemProp="icon" />
+              <span itemProp="count">1</span>
             </span>
 
-            <span>UI/UX</span>
+            <span itemProp="name">UI/UX Designer</span>
           </li>
 
-          <li>
+          <li itemProp="itemListElement">
             <span>
-              <img src="#" />
-              <span>1</span>
+              <img src="#" itemProp="icon" />
+              <span itemProp="count">2</span>
             </span>
 
-            <span>Mobile</span>
+            <span itemProp="name">Mobile</span>
           </li>
 
-          <li>
+          <li itemProp="itemListElement">
             <span>
-              <img src="#" />
-              <span>1</span>
+              <img src="#" itemProp="icon" />
+              <span itemProp="count">1</span>
             </span>
 
-            <span>Backend</span>
+            <span itemProp="name">Backend</span>
           </li>
         </ol>
 
-        <figcaption>{strings.blocks.howWeWork.squad.caption}</figcaption>
+        <figcaption itemProp="caption">{strings.blocks.howWeWork.squad.caption}</figcaption>
       </figure>
     </React.Fragment>
   );

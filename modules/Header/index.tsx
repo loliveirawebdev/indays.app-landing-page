@@ -8,8 +8,8 @@ const Header: React.FC = () => {
   const menuLinks = buildHeaderMenuItems(strings.blocks.header.menu);
 
   return (
-    <header>
-      <img src="#" alt="indays.app" />
+    <header itemScope itemProp="header">
+      <img src="#" alt="indays.app" itemProp="logo" />
       <HeaderLinks items={menuLinks} />
     </header>
   );

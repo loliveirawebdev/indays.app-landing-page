@@ -5,8 +5,8 @@ export const renderCards = (cards: Headline.Card[]): React.ReactNode => {
     const uniqueKey = uuid();
 
     return (
-      <article key={uniqueKey} className={card.className}>
-        <img src="#" alt={card.iconKey} />
+      <article itemScope itemProp="strength" key={uniqueKey} className={card.className}>
+        <img src="#" alt={card.iconKey} itemProp="icon" />
         {card.label}
       </article>
     );

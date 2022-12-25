@@ -5,9 +5,9 @@ export const renderTimelineSteps = (steps: Record<any, any>[]): React.ReactNode 
     const uniqueKey = uuid();
 
     return (
-      <li key={uniqueKey}>
-        <h5>{step.title}</h5>
-        <p>{step.description}</p>
+      <li itemProp="itemListElement" key={uniqueKey}>
+        <h5 itemProp="title">{step.title}</h5>
+        <p itemProp="description">{step.description}</p>
       </li>
     );
   });

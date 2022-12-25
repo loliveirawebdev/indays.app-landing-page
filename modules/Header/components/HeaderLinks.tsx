@@ -11,11 +11,17 @@ export const HeaderLinks: React.FC<Props> = ({ items }) => {
       const { label } = item;
 
       return (
-        <li key={uniqueKey}>
-          <button type="button">{label}</button>
+        <li key={uniqueKey} itemProp="item">
+          <button type="button" itemProp="name">
+            {label}
+          </button>
         </li>
       );
     });
 
-  return <menu>{renderMenuItems()}</menu>;
+  return (
+    <menu itemScope itemType="https://schema.org/SiteNavigationElement">
+      {renderMenuItems()}
+    </menu>
+  );
 };

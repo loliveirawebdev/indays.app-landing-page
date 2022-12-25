@@ -9,14 +9,19 @@ const Headline: React.FC = () => {
   const cards = buildHeadlineCards(strings.blocks.headline.cards);
 
   return (
-    <article>
-      <header>
-        <h1>{strings.blocks.headline.title}</h1>
-        <h2>{strings.blocks.headline.subtitle}</h2>
+    <article itemScope itemProp="copywrite">
+      <header itemScope itemProp="headline">
+        <h1 itemProp="merit">{strings.blocks.headline.title}</h1>
+        <h2 itemProp="merit">{strings.blocks.headline.subtitle}</h2>
       </header>
 
-      <aside>{renderCards(cards)}</aside>
-      <section>{renderParagraphs(strings.blocks.headline.paragraphs)}</section>
+      <aside itemScope itemProp="strengths">
+        {renderCards(cards)}
+      </aside>
+
+      <section itemScope itemProp="content">
+        {renderParagraphs(strings.blocks.headline.paragraphs)}
+      </section>
     </article>
   );
 };

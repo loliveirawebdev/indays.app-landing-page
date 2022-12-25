@@ -11,11 +11,17 @@ export const FooterLinks: React.FC<Props> = ({ items }) => {
       const { link, label } = item;
 
       return (
-        <li key={uniqueKey}>
-          <a href={link}>{label}</a>
+        <li itemProp="externalLink" key={uniqueKey}>
+          <a href={link} itemProp="link">
+            {label}
+          </a>
         </li>
       );
     });
 
-  return <nav>{renderMenuItems()}</nav>;
+  return (
+    <nav itemScope itemProp="externalLinks">
+      {renderMenuItems()}
+    </nav>
+  );
 };

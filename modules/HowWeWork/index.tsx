@@ -8,19 +8,24 @@ const HowWeWork: React.FC = () => {
   const { strings } = useLocale();
 
   return (
-    <article>
-      <h3>{strings.blocks.howWeWork.title}</h3>
+    <article itemScope itemProp="howWeWork">
+      <h3 itemProp="title">{strings.blocks.howWeWork.title}</h3>
       {renderParagraphs(strings.blocks.howWeWork.paragraphs)}
 
-      <section>
-        <ol>{renderTimelineSteps(strings.blocks.howWeWork.processTimeline)}</ol>
+      <section itemScope itemProp="timeline">
+        <ol itemProp="stepList" itemType="https://schema.org/ItemList">
+          {renderTimelineSteps(strings.blocks.howWeWork.processTimeline)}
+        </ol>
       </section>
 
       <SquadBlock />
 
-      <footer>
+      <footer itemScope itemProp="callToAction">
         <p>{strings.blocks.howWeWork.footer.text}</p>
-        <a href="#">{strings.blocks.howWeWork.footer.action}</a>
+
+        <a href="#" itemProp="link">
+          {strings.blocks.howWeWork.footer.action}
+        </a>
       </footer>
     </article>
   );

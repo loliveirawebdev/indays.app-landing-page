@@ -10,9 +10,9 @@ const Footer: React.FC = () => {
   const menuItems = buildFooterMenuItems(strings.blocks.footer.menus);
 
   return (
-    <footer>
-      <article>
-        <h6>{strings.blocks.footer.title}</h6>
+    <footer itemScope itemProp="footer">
+      <article itemScope itemProp="about">
+        <h6 itemProp="title">{strings.blocks.footer.title}</h6>
         {renderParagraphs(strings.blocks.footer.paragraphs)}
       </article>
 

@@ -5,7 +5,7 @@ export const renderServiceItems = (items: Record<any, any>[]): React.ReactNode =
     const uniqueKey = uuid();
 
     return (
-      <li key={uniqueKey} itemScope itemProp="itemListElement" itemType="https://schema.org/Service">
+      <li key={uniqueKey} itemProp="itemListElement" itemScope itemType="https://schema.org/Service">
         <hgroup>
           <h4 itemProp="name">{item.title}</h4>
           <p itemProp="description">{item.description}</p>
