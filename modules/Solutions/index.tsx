@@ -1,13 +1,14 @@
 import React from "react";
 import { useLocale } from "../../hooks/locale";
-import { renderServiceItems } from "./helpers/renderServiceItems";
+import styles from "../../styles/Solutions.module.scss";
 import { renderToolList } from "./helpers/renderToolList";
+import { renderServiceItems } from "./helpers/renderServiceItems";
 
 const Solutions: React.FC = () => {
   const { strings } = useLocale();
 
   return (
-    <article itemScope itemProp="solutions">
+    <article itemScope itemProp="solutions" className={styles.solutions}>
       <h3 itemProp="title">{strings.blocks.solutions.title}</h3>
 
       <ul itemScope itemType="https://schema.org/ItemList" itemProp="serviceList">
