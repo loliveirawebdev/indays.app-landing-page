@@ -4,6 +4,12 @@
   }
 }
 
+@mixin not-desktop() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 @mixin tablet() {
   @media (min-width: 414px) {
     @content;
