@@ -15,6 +15,8 @@
     "@types/react-dom": "18.0.10",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.0",
+    "html-react-parser": "^3.0.4",
+    "lodash": "^4.17.21",
     "next": "13.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -23,6 +25,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.191",
     "@types/uuid": "^9.0.0"
   }
 }
