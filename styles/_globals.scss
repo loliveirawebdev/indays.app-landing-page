@@ -23,9 +23,5 @@ html {
 
 p,
 .regular-text {
-  font-size: $font-sm;
-
-  @include desktop {
-    font-size: $font-md;
-  }
+  @include regular-text;
 }

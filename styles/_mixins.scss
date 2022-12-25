@@ -33,3 +33,11 @@
     text-decoration: none;
   }
 }
+
+@mixin regular-text {
+  font-size: $font-sm;
+
+  @include desktop {
+    font-size: $font-md;
+  }
+}
