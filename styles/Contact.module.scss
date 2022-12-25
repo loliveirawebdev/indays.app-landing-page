@@ -1,3 +1,42 @@
+@import "tokens";
+@import "mixins";
+
 .contact {
-  background: blue;
+  @include flex-centered-content;
+  margin: $spacing-sm 0;
+
+  @include desktop {
+    margin: $spacing-md 0;
+  }
+
+  :global {
+    .contact--content-container {
+      width: 100%;
+      max-width: $max-width;
+    }
+
+    .contact--title {
+      font-weight: bold;
+      font-size: $font-xl;
+
+      @include desktop {
+        font-size: $font-xxl;
+      }
+    }
+
+    .contact--description {
+      font-size: $font-sm;
+      display: inline;
+
+      @include desktop {
+        font-size: $font-md;
+      }
+
+      button {
+        display: contents;
+        font-size: inherit;
+        @include simple-link;
+      }
+    }
+  }
 }

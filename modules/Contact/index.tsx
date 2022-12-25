@@ -7,16 +7,15 @@ const Contact: React.FC = () => {
 
   return (
     <section itemScope itemProp="contact" className={styles.contact}>
-      <p itemProp="title">{strings.blocks.contact.title}</p>
-      <p itemProp="info">{strings.blocks.contact.description}</p>
+      <div className="contact--content-container">
+        <p itemProp="title" className="contact--title">
+          {strings.blocks.contact.title}
+        </p>
 
-      <footer>
-        <p itemProp="description">{strings.blocks.contact.actionDescription}</p>
-
-        <button type="button" itemProp="openForm">
-          {strings.blocks.contact.action}
-        </button>
-      </footer>
+        <p itemProp="info" className="contact--description">
+          {strings.blocks.contact.description}
+        </p>
+      </div>
     </section>
   );
 };
