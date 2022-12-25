@@ -22,6 +22,11 @@
 }
 
 @mixin simple-link {
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+  background: transparent;
   text-decoration: underline;
 
   &:hover {
