@@ -12,7 +12,7 @@ export const FooterLinks: React.FC<Props> = ({ items }) => {
 
       return (
         <li itemProp="externalLink" key={uniqueKey}>
-          <a href={link} itemProp="link">
+          <a rel="nofollow" href={link} target="_blank" itemProp="link">
             {label}
           </a>
         </li>
@@ -20,7 +20,7 @@ export const FooterLinks: React.FC<Props> = ({ items }) => {
     });
 
   return (
-    <nav itemScope itemProp="externalLinks">
+    <nav itemScope itemProp="externalLinks" className="footer--external-links">
       {renderMenuItems()}
     </nav>
   );

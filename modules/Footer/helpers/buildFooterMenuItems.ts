@@ -2,15 +2,15 @@ export const buildFooterMenuItems = (menus: any): Footer.MenuItem[] => {
   return [
     {
       label: menus.about,
-      link: "#",
+      link: "https://docs.simbioseventures.com/#/public/about",
     },
     {
       label: menus.mission,
-      link: "#",
+      link: "https://docs.simbioseventures.com/#/public/mission-premisses-values",
     },
     {
       label: menus.dream,
-      link: "#",
+      link: "https://docs.simbioseventures.com/#/public/dream",
     },
   ];
 };
