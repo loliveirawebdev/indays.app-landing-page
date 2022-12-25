@@ -15,3 +15,11 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin simple-link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
