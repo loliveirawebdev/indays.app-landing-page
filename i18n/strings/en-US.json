@@ -161,6 +161,12 @@
         "about": "Know more about who we are",
         "mission": "Take a look in our mission, assumptions and values",
         "dream": "Meet our dream"
+      },
+      "socialMediaLinks": {
+        "alts": {
+          "github": "Github's icon",
+          "linkedin": "Linkedin's icon"
+        }
       }
     }
   }
