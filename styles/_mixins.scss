@@ -13,7 +13,12 @@
 @mixin flex-centered-content {
   display: flex;
   align-items: center;
+  padding: $spacing-sm;
   justify-content: center;
+
+  @include desktop {
+    padding: $spacing-md;
+  }
 }
 
 @mixin simple-link {

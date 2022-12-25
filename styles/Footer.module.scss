@@ -7,14 +7,6 @@
   color: $white;
   background: $black;
 
-  // mobile-only attributes
-  padding: $spacing-sm;
-
-  // desktop override attributes
-  @include desktop {
-    padding: $spacing-md;
-  }
-
   :global {
     .footer--content-container {
       width: 100%;
