@@ -1,50 +1,40 @@
 import React from "react";
+import { v4 as uuid } from "uuid";
 import { useLocale } from "../../../hooks/locale";
+
+const SQUAD_CONFIG = [
+  { label: "PM", count: 1 },
+  { label: "UI/UX", count: 1 },
+  { label: "Mobile", count: 2 },
+  { label: "Backend", count: 1 },
+];
 
 export const SquadBlock: React.FC = () => {
   const { strings } = useLocale();
+
+  const renderSquadConfig = () => {
+    return SQUAD_CONFIG.map((squadMember) => {
+      const uniqueKey = uuid();
+
+      return (
+        <li key={uniqueKey} itemProp="itemListElement">
+          <span>
+            <img src="/assets/human-silhouette.svg" alt={strings.blocks.howWeWork.squad.iconAlt} itemProp="icon" />
+            <span itemProp="count">{squadMember.count}</span>
+          </span>
+          {squadMember.label}
+        </li>
+      );
+    });
+  };
 
   return (
     <React.Fragment>
       <p itemProp="description">{strings.blocks.howWeWork.squad.description}</p>
 
-      <figure itemScope itemProp="figure">
+      <figure itemScope itemProp="figure" className="howWeWork--squad-figure">
         <ol itemProp="squadFormation" itemType="https://schema.org/ItemList">
-          <li itemProp="itemListElement">
-            <span>
-              <img src="#" itemProp="icon" />
-              <span itemProp="count">1</span>
-            </span>
-
-            <span itemProp="name">PM</span>
-          </li>
-
-          <li itemProp="itemListElement">
-            <span>
-              <img src="#" itemProp="icon" />
-              <span itemProp="count">1</span>
-            </span>
-
-            <span itemProp="name">UI/UX Designer</span>
-          </li>
-
-          <li itemProp="itemListElement">
-            <span>
-              <img src="#" itemProp="icon" />
-              <span itemProp="count">2</span>
-            </span>
-
-            <span itemProp="name">Mobile</span>
-          </li>
-
-          <li itemProp="itemListElement">
-            <span>
-              <img src="#" itemProp="icon" />
-              <span itemProp="count">1</span>
-            </span>
-
-            <span itemProp="name">Backend</span>
-          </li>
+          {renderSquadConfig()}
         </ol>
 
         <figcaption itemProp="caption">{strings.blocks.howWeWork.squad.caption}</figcaption>
