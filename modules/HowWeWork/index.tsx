@@ -10,24 +10,29 @@ const HowWeWork: React.FC = () => {
 
   return (
     <article itemScope itemProp="howWeWork" className={styles.howWeWork}>
-      <h3 itemProp="title">{strings.blocks.howWeWork.title}</h3>
-      {renderParagraphs(strings.blocks.howWeWork.paragraphs)}
+      <div className="howWeWork--content-container">
+        <h3 itemProp="title" className="section-title">
+          {strings.blocks.howWeWork.title}
+        </h3>
 
-      <section itemScope itemProp="timeline">
-        <ol itemProp="stepList" itemType="https://schema.org/ItemList">
-          {renderTimelineSteps(strings.blocks.howWeWork.processTimeline)}
-        </ol>
-      </section>
+        {renderParagraphs(strings.blocks.howWeWork.paragraphs)}
 
-      <SquadBlock />
+        <section itemScope itemProp="timeline" className="howWeWork--timeline">
+          <ol itemProp="stepList" itemType="https://schema.org/ItemList">
+            {renderTimelineSteps(strings.blocks.howWeWork.processTimeline)}
+          </ol>
+        </section>
 
-      <footer itemScope itemProp="callToAction">
-        <p>{strings.blocks.howWeWork.footer.text}</p>
+        <SquadBlock />
 
-        <a href="#" itemProp="link">
-          {strings.blocks.howWeWork.footer.action}
-        </a>
-      </footer>
+        <footer itemScope itemProp="callToAction">
+          <p>{strings.blocks.howWeWork.footer.text}</p>
+
+          <a href="#" itemProp="link">
+            {strings.blocks.howWeWork.footer.action}
+          </a>
+        </footer>
+      </div>
     </article>
   );
 };
