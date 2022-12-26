@@ -26,17 +26,15 @@
     }
 
     .header--menu-separator {
-      @include not-desktop {
+      @media (max-width: 840px) {
         display: none;
       }
 
-      @include desktop {
-        height: 2px;
-        width: 80px;
-        display: block;
-        background: $black;
-        margin-left: 3rem;
-      }
+      height: 2px;
+      width: 80px;
+      display: block;
+      background: $black;
+      margin-left: 3rem;
     }
 
     .header--hamburger-menu {
