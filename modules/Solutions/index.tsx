@@ -1,14 +1,21 @@
 import React from "react";
 import { useLocale } from "../../hooks/locale";
+import { useSectionsRefs } from "../../hooks/refs";
 import styles from "../../styles/Solutions.module.scss";
 import { renderToolList } from "./helpers/renderToolList";
 import { renderServiceItems } from "./helpers/renderServiceItems";
 
 const Solutions: React.FC = () => {
   const { strings } = useLocale();
+  const { registerRef } = useSectionsRefs();
+  const ref = React.useRef<HTMLElement>(null);
+
+  React.useEffect(() => {
+    registerRef("solutions", ref);
+  }, [ref]);
 
   return (
-    <article itemScope itemProp="solutions" className={styles.solutions}>
+    <article ref={ref} itemScope itemProp="solutions" className={styles.solutions}>
       <div className="solutions--content-container">
         <h3 itemProp="title" className="section-title">
           {strings.blocks.solutions.title}

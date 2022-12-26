@@ -1,12 +1,19 @@
 import React from "react";
 import { useLocale } from "../../hooks/locale";
+import { useSectionsRefs } from "../../hooks/refs";
 import styles from "../../styles/Contact.module.scss";
 
 const Contact: React.FC = () => {
   const { strings } = useLocale();
+  const { registerRef } = useSectionsRefs();
+  const ref = React.useRef<HTMLElement>(null);
+
+  React.useEffect(() => {
+    registerRef("contact", ref);
+  }, [ref]);
 
   return (
-    <section itemScope itemProp="contact" className={styles.contact}>
+    <section ref={ref} itemScope itemProp="contact" className={styles.contact}>
       <div className="contact--content-container">
         <p itemProp="title" className="section-title">
           {strings.blocks.contact.title}
