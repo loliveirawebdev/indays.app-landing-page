@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocale } from "../../hooks/locale";
+import { usePageScroll } from "../../hooks/pageScroll";
 import styles from "../../styles/Header.module.scss";
 import { HeaderLinks } from "./components/HeaderLinks";
 import { buildHeaderMenuItems } from "./helpers/buildHeaderMenuItems";
@@ -8,9 +9,18 @@ const Header: React.FC = () => {
   const { strings } = useLocale();
   const menuLinks = buildHeaderMenuItems(strings.blocks.header.menu);
 
+  const { blockScroll, unblockScroll } = usePageScroll();
   const [isMobileCollapsed, setIsMobileCollapsed] = React.useState(true);
-  const collapseMobile = () => setIsMobileCollapsed(true);
-  const openMobileMenu = () => setIsMobileCollapsed(false);
+
+  const collapseMobile = () => {
+    unblockScroll();
+    setIsMobileCollapsed(true);
+  };
+
+  const openMobileMenu = () => {
+    blockScroll();
+    setIsMobileCollapsed(false);
+  };
 
   return (
     <header itemScope itemProp="header" className={styles.header}>
