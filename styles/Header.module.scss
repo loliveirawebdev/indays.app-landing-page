@@ -4,6 +4,7 @@
 .header {
   @include flex-centered-content;
   margin-top: $spacing-sm;
+  padding-bottom: 0 !important;
 
   @include desktop {
     margin-top: $spacing-md;
