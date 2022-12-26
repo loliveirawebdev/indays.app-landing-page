@@ -1,11 +1,11 @@
 @mixin desktop() {
-  @media (min-width: 768px) {
+  @media (min-width: 790px) {
     @content;
   }
 }
 
 @mixin not-desktop() {
-  @media (max-width: 767px) {
+  @media (max-width: 789px) {
     @content;
   }
 }
