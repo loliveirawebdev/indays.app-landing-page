@@ -12,12 +12,32 @@ html {
   font-size: 62.5%;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-title {
   font-weight: bold;
   font-size: $font-xl;
 
   @include desktop {
     font-size: $font-xxl;
+  }
+}
+
+.section-divider {
+  border: 0;
+  height: 2px;
+  width: 10rem;
+  opacity: 0.8;
+  background: $black;
+  align-self: center;
+  justify-self: center;
+  margin: $spacing-md 0;
+
+  @include desktop {
+    margin: $spacing-lg 0;
   }
 }
 

@@ -12,11 +12,14 @@ export default function Home() {
     <React.Fragment>
       <Header />
 
-      <main>
+      <main className="main-container">
         <Headline />
         <Appeal />
+        <hr className="section-divider" />
         <HowWeWork />
+        <hr className="section-divider" />
         <Solutions />
+        <hr className="section-divider" />
       </main>
 
       <Contact />
