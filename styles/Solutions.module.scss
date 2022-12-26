@@ -1,3 +1,122 @@
+@import "tokens";
+@import "mixins";
+
 .solutions {
-  background: orange;
+  @include flex-centered-content;
+
+  :global {
+    .solutions--content-container {
+      width: 100%;
+      max-width: $max-width;
+    }
+
+    .solutions--services {
+      list-style-position: inside;
+      font-size: $font-sm;
+
+      @include desktop {
+        font-size: $font-md;
+      }
+
+      li {
+        margin-top: $spacing-sm;
+        display: list-item;
+        max-width: 600px;
+
+        @include desktop {
+          margin-top: $spacing-md;
+        }
+
+        &::marker {
+          background: red;
+        }
+
+        hgroup {
+          display: inline;
+
+          h4 {
+            display: inline;
+            margin-left: -1rem;
+          }
+
+          p {
+            font-size: $font-xs;
+
+            @include desktop {
+              font-size: $font-sm;
+            }
+          }
+        }
+      }
+    }
+
+    .solutions--tools {
+      margin-top: $spacing-md;
+
+      .solutions--tools--title {
+        font-weight: bold;
+        margin-bottom: $spacing-xs;
+      }
+
+      .solutions--tools--highlight {
+        margin-bottom: $spacing-md;
+      }
+
+      .solutions--tools--highlight--title,
+      .solutions--tools--others--title {
+        font-size: $font-xxs;
+        margin-bottom: $spacing-xs;
+      }
+
+      .solutions--tools--highlight--list,
+      .solutions--tools--others--list {
+        display: grid;
+        grid-row-gap: 2rem;
+        list-style-type: none;
+        grid-column-gap: 2rem;
+        grid-template-rows: auto;
+        margin-bottom: $spacing-xs;
+        grid-template-columns: repeat(3, 7rem);
+
+        li {
+          text-align: center;
+          font-size: $font-xxs;
+
+          section {
+            width: 7rem;
+            height: 7rem;
+            display: flex;
+            align-items: center;
+            border-radius: 1.2rem;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+
+            img {
+              width: 3.5rem;
+              height: 3.5rem;
+              object-fit: fill;
+            }
+          }
+        }
+      }
+
+      .solutions--tools--highlight--list {
+        li {
+          font-weight: bold;
+
+          section {
+            border: 1px solid $dark-green;
+          }
+        }
+      }
+
+      .solutions--tools--others--list {
+        li {
+          section {
+            border: 1px solid $light-gray;
+          }
+        }
+      }
+    }
+  }
 }

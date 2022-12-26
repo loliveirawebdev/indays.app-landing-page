@@ -9,31 +9,41 @@ const Solutions: React.FC = () => {
 
   return (
     <article itemScope itemProp="solutions" className={styles.solutions}>
-      <h3 itemProp="title">{strings.blocks.solutions.title}</h3>
+      <div className="solutions--content-container">
+        <h3 itemProp="title" className="section-title">
+          {strings.blocks.solutions.title}
+        </h3>
 
-      <ul itemScope itemType="https://schema.org/ItemList" itemProp="serviceList">
-        {renderServiceItems(strings.blocks.solutions.items)}
-      </ul>
+        <ul itemScope itemType="https://schema.org/ItemList" itemProp="serviceList" className="solutions--services">
+          {renderServiceItems(strings.blocks.solutions.items)}
+        </ul>
 
-      <section itemScope>
-        <p itemProp="title">{strings.blocks.solutions.tools.title}</p>
+        <section itemScope className="solutions--tools">
+          <p itemProp="title" className="solutions--tools--title">
+            {strings.blocks.solutions.tools.title}
+          </p>
 
-        <section itemScope>
-          <p itemProp="title">{strings.blocks.solutions.tools.highlight.title}</p>
+          <section itemScope className="solutions--tools--highlight">
+            <p itemProp="title" className="solutions--tools--highlight--title">
+              {strings.blocks.solutions.tools.highlight.title}
+            </p>
 
-          <ul itemScope itemType="https://schema.org/ItemList">
-            {renderToolList(strings.blocks.solutions.tools.highlight.items)}
-          </ul>
+            <ul itemScope itemType="https://schema.org/ItemList" className="solutions--tools--highlight--list">
+              {renderToolList(strings.blocks.solutions.tools.highlight.items)}
+            </ul>
+          </section>
+
+          <section itemScope itemProp="otherTools" className="solutions--tools--others">
+            <p itemProp="title" className="solutions--tools--others--title">
+              {strings.blocks.solutions.tools.others.title}
+            </p>
+
+            <ul itemScope itemType="https://schema.org/ItemList" className="solutions--tools--others--list">
+              {renderToolList(strings.blocks.solutions.tools.others.items)}
+            </ul>
+          </section>
         </section>
-
-        <section itemScope itemProp="otherTools">
-          <p itemProp="title">{strings.blocks.solutions.tools.others.title}</p>
-
-          <ul itemScope itemType="https://schema.org/ItemList">
-            {renderToolList(strings.blocks.solutions.tools.others.items)}
-          </ul>
-        </section>
-      </section>
+      </div>
     </article>
   );
 };
