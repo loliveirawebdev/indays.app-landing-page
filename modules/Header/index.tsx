@@ -15,7 +15,14 @@ const Header: React.FC = () => {
   return (
     <header itemScope itemProp="header" className={styles.header}>
       <div className="header--content-container">
-        <img src="/assets/logo.svg" alt="indays.app's Logo" itemProp="logo" />
+        <figure className="header--logo" itemScope itemProp="logo">
+          <div className="header--logo--text" itemProp="text">
+            in<span>days</span>.app
+          </div>
+
+          <span className="header--logo--backdrop" itemProp="shadow" />
+        </figure>
+
         <span className="header--menu-separator" />
 
         <button type="button" onClick={openMobileMenu} className="header--hamburger-menu">
