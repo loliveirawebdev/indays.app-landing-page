@@ -14,7 +14,7 @@
       list-style-position: inside;
       font-size: $font-sm;
 
-      @include desktop {
+      @include tablet {
         font-size: $font-md;
       }
 
@@ -23,7 +23,7 @@
         display: list-item;
         max-width: 600px;
 
-        @include desktop {
+        @include tablet {
           margin-top: $spacing-md;
         }
 
@@ -42,7 +42,7 @@
           p {
             font-size: $font-xs;
 
-            @include desktop {
+            @include tablet {
               font-size: $font-sm;
             }
           }

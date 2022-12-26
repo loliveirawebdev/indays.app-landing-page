@@ -3,6 +3,7 @@
 
 .headline {
   @include flex-centered-content;
+  padding-bottom: 0 !important;
 
   :global {
     .headline--content-container {

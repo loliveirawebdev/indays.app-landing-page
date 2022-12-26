@@ -22,6 +22,10 @@
   padding: $spacing-sm;
   justify-content: center;
 
+  @include tablet {
+    padding: $spacing-md $spacing-sm;
+  }
+
   @include desktop {
     padding: $spacing-md;
   }
@@ -43,7 +47,7 @@
 @mixin regular-text {
   font-size: $font-sm;
 
-  @include desktop {
+  @include tablet {
     font-size: $font-md;
   }
 }

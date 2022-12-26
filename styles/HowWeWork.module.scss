@@ -40,7 +40,7 @@
             font-size: $font-xs;
           }
 
-          @include desktop {
+          @include tablet {
             h5 {
               font-size: $font-sm;
             }
@@ -68,7 +68,7 @@
               position: absolute;
               border-radius: 1.4rem;
 
-              @include desktop {
+              @include tablet {
                 top: 0.5rem;
               }
             }
@@ -81,7 +81,7 @@
               display: block;
               position: absolute;
 
-              @include desktop {
+              @include tablet {
                 top: 1rem;
               }
             }
