@@ -242,6 +242,13 @@
       @include desktop {
         font-size: $font-xxl;
       }
+
+      strong {
+        background: url("/assets/word-highlight.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
 
     h2 {
