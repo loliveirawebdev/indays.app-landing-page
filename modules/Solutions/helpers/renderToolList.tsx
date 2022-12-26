@@ -6,7 +6,10 @@ export const renderToolList = (tools: Record<any, any>[], highlighted?: boolean)
 
     return (
       <li key={uniqueKey} itemProp="itemListElement">
-        <img src="#" alt={tool.imageKey} />
+        <section itemProp="iconContainer">
+          <img src={`/assets/tools/${tool.imageKey}.svg`} alt={tool.imageKey} itemProp="icon" />
+        </section>
+
         {tool.label}
       </li>
     );
