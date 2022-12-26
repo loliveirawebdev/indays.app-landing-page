@@ -3,11 +3,6 @@
 
 .contact {
   @include flex-centered-content;
-  margin: $spacing-sm 0;
-
-  @include desktop {
-    margin: $spacing-md 0;
-  }
 
   :global {
     .contact--content-container {

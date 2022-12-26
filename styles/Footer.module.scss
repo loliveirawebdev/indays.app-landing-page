@@ -3,9 +3,13 @@
 
 .footer {
   @include flex-centered-content;
-
   color: $white;
   background: $black;
+  margin-top: $spacing-sm;
+
+  @include desktop {
+    margin-top: $spacing-md;
+  }
 
   :global {
     .footer--content-container {
