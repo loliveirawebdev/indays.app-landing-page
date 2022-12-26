@@ -71,11 +71,11 @@
       .solutions--tools--highlight--list,
       .solutions--tools--others--list {
         display: grid;
-        grid-row-gap: 2rem;
         list-style-type: none;
-        grid-column-gap: 2rem;
         grid-template-rows: auto;
+        grid-row-gap: $spacing-sm;
         margin-bottom: $spacing-xs;
+        grid-column-gap: $spacing-sm;
         grid-template-columns: repeat(3, 7rem);
 
         li {
