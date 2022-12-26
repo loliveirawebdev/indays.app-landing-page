@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { RecoilRoot } from "recoil";
 import type { AppProps } from "next/app";
 import { useLocale } from "../hooks/locale";
 import { Open_Sans } from "@next/font/google";
@@ -20,7 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <style global>{openSansStyle}</style>
       </Head>
 
-      <Component {...pageProps} />
+      <RecoilRoot>
+        <Component {...pageProps} />
+      </RecoilRoot>
     </React.Fragment>
   );
 }
