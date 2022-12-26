@@ -1,3 +1,256 @@
+@import "tokens";
+@import "mixins";
+
 .headline {
-  background: purple;
+  @include flex-centered-content;
+
+  :global {
+    .headline--content-container {
+      width: 100%;
+      flex-direction: column;
+      max-width: $max-width;
+
+      @include not-desktop {
+        display: flex;
+      }
+    }
+
+    .headline--content {
+      @include not-desktop {
+        order: 3;
+      }
+
+      p {
+        font-size: $font-sm;
+        margin-top: $spacing-sm;
+
+        @include tablet {
+          font-size: $font-md;
+        }
+      }
+    }
+  }
+
+  aside {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include not-desktop {
+      order: 2;
+    }
+
+    @media (min-width: 500px) {
+      flex-direction: row;
+    }
+
+    @include desktop {
+      float: right;
+      margin-left: $spacing-md;
+      margin-bottom: $spacing-md;
+    }
+
+    article {
+      padding-left: 1rem;
+      position: relative;
+      padding-bottom: 1rem;
+      width: calc(100% - 1rem);
+
+      img {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-bottom: $spacing-xs;
+      }
+
+      span {
+        font-size: $font-sm;
+        display: contents;
+        font-weight: bold;
+      }
+
+      strong {
+        display: contents;
+      }
+
+      @include desktop {
+        width: 18rem;
+      }
+
+      &::before {
+        top: 1rem;
+        left: 0rem;
+        z-index: 10;
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 2rem;
+        width: calc(100% - 1rem);
+        height: calc(100% - 1rem);
+      }
+
+      :global {
+        .card--container {
+          display: flex;
+          font-weight: bold;
+          font-size: $font-xs;
+          border-radius: 2rem;
+          padding: $spacing-sm;
+          flex-direction: column;
+          position: relative;
+          z-index: 15;
+        }
+      }
+    }
+
+    :global {
+      .strengths--left-col {
+        @media (max-width: 499px) {
+          margin-bottom: $spacing-sm;
+        }
+
+        @media (min-width: 500px) {
+          margin-right: $spacing-sm;
+        }
+
+        @include desktop {
+          margin-right: $spacing-md;
+        }
+      }
+
+      .strengths--right-col {
+        @include desktop {
+          top: -8rem;
+          position: relative;
+        }
+      }
+
+      .strengths--left-col,
+      .strengths--right-col {
+        @include not-desktop {
+          flex: 1;
+        }
+
+        @media (max-width: 499px) {
+          article {
+            margin-bottom: $spacing-sm;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        article:first-child {
+          @media (min-width: 500px) {
+            margin-bottom: $spacing-sm;
+          }
+
+          @include desktop {
+            margin-bottom: $spacing-md;
+          }
+        }
+      }
+
+      article.black {
+        &::before {
+          background: $white;
+          border: 1px solid $black;
+        }
+
+        :global {
+          .card--container {
+            background: $black;
+            color: $white;
+
+            span {
+              color: $green;
+            }
+          }
+        }
+      }
+
+      article.yellow {
+        &::before {
+          background: $black;
+          border: 1px solid $black;
+        }
+
+        :global {
+          .card--container {
+            background: $yellow;
+            color: $dark-yellow;
+
+            span {
+              color: $black;
+            }
+          }
+        }
+      }
+
+      article.green {
+        &::before {
+          background: $black;
+          border: 1px solid $black;
+        }
+
+        :global {
+          .card--container {
+            background: $green;
+            color: $dark-green;
+
+            span {
+              color: $black;
+            }
+          }
+        }
+      }
+
+      article.gray {
+        &::before {
+          background: $white;
+          border: 1px solid $black;
+        }
+
+        :global {
+          .card--container {
+            background: $light-gray;
+            color: $gray;
+
+            span {
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    @include not-desktop {
+      order: 1;
+    }
+
+    h1 {
+      font-size: $font-lg;
+      margin-bottom: $spacing-sm;
+
+      @media (min-width: 430px) and (max-width: 880px) {
+        font-size: $font-xl !important;
+      }
+
+      @include desktop {
+        font-size: $font-xxl;
+      }
+    }
+
+    h2 {
+      font-size: $font-sm;
+      font-weight: normal;
+      margin-bottom: $spacing-sm;
+
+      @include tablet {
+        font-size: $font-md;
+      }
+    }
+  }
 }

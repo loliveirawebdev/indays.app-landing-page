@@ -11,18 +11,21 @@ const Headline: React.FC = () => {
 
   return (
     <article itemScope itemProp="copywrite" className={styles.headline}>
-      <header itemScope itemProp="headline">
-        <h1 itemProp="merit">{strings.blocks.headline.title}</h1>
-        <h2 itemProp="merit">{strings.blocks.headline.subtitle}</h2>
-      </header>
+      <div className="headline--content-container">
+        <aside itemScope itemProp="strengths">
+          <div className="strengths--left-col">{renderCards(cards.slice(0, 2))}</div>
+          <div className="strengths--right-col">{renderCards(cards.slice(2))}</div>
+        </aside>
 
-      <aside itemScope itemProp="strengths">
-        {renderCards(cards)}
-      </aside>
+        <header itemScope itemProp="headline">
+          <h1 itemProp="merit">{strings.blocks.headline.title}</h1>
+          <h2 itemProp="merit">{strings.blocks.headline.subtitle}</h2>
+        </header>
 
-      <section itemScope itemProp="content">
-        {renderParagraphs(strings.blocks.headline.paragraphs)}
-      </section>
+        <section itemScope itemProp="content" className="headline--content">
+          {renderParagraphs(strings.blocks.headline.paragraphs)}
+        </section>
+      </div>
     </article>
   );
 };
