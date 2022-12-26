@@ -7,12 +7,12 @@ export const buildHeadlineCards = (cards: any): Headline.Card[] => {
     },
     {
       label: cards.second,
-      iconKey: "handshake",
+      iconKey: "heart",
       className: "yellow",
     },
     {
       label: cards.third,
-      iconKey: "heart",
+      iconKey: "handshake",
       className: "green",
     },
     {

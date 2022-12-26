@@ -6,8 +6,10 @@ export const renderCards = (cards: Headline.Card[]): React.ReactNode => {
 
     return (
       <article itemScope itemProp="strength" key={uniqueKey} className={card.className}>
-        <img src="#" alt={card.iconKey} itemProp="icon" />
-        {card.label}
+        <div className="card--container">
+          <img src={`/assets/cards/${card.iconKey}.svg`} alt={card.iconKey} itemProp="icon" />
+          {card.label}
+        </div>
       </article>
     );
   });
