@@ -22,6 +22,7 @@ export function useSectionsScroll() {
 
   return {
     scrollTo,
+    scrollToContactForm: () => scrollTo("contact-form"),
     scrollToHowWeWork: () => scrollTo("how-we-work"),
     scrollToSolutions: () => scrollTo("solutions"),
     scrollToContact: () => scrollTo("contact"),
