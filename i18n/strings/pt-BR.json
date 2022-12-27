@@ -151,7 +151,53 @@
     },
     "contact": {
       "title": "Contact us",
-      "description": "Email our tech lead directly at <b>lucas.oliveira@simbioseventures.com</b> or tell us a brief about your project in the form bellow."
+      "description": "Email our tech lead directly at <b>lucas.oliveira@simbioseventures.com</b> or tell us a brief about your project in the form bellow.",
+      "form": {
+        "questions": {
+          "applicationType": {
+            "legend": "Type of application that you need",
+            "options": [
+              "Mobile application",
+              "Super app",
+              "Smart TV application",
+              "Custom e-commerce platform",
+              "Mobile back-end application"
+            ],
+            "other": {
+              "checkbox": "Other",
+              "input": "Tell us what you need:"
+            }
+          },
+          "start": {
+            "legend": "When would you like to start?",
+            "options": ["As soon as possible", "In a few weeks", "Not sure"],
+            "other": {
+              "checkbox": "Other",
+              "input": "Tell us when would you like to start:"
+            }
+          },
+          "budget": {
+            "legend": "Do you have a budget for this project?"
+          },
+          "youAre": {
+            "legend": "You are:",
+            "options": ["Founder of a startup", "Part of the leadership of a company"],
+            "other": {
+              "checkbox": "Other",
+              "input": "Tell us who you are:"
+            }
+          },
+          "name": {
+            "legend": "What is your full name?"
+          },
+          "email": {
+            "legend": "What is your e-mail address?"
+          },
+          "more": {
+            "legend": "Something else to tell?"
+          }
+        }
+      }
     },
     "footer": {
       "title": "About Simbiose Ventures and in<span>days</span>.app",
