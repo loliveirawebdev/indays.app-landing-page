@@ -3,6 +3,7 @@ import { useLocale } from "../../hooks/locale";
 import { useSectionsRefs } from "../../hooks/refs";
 import styles from "../../styles/Contact.module.scss";
 import { useIsInViewport } from "../../hooks/viewport";
+import { useNeedHelp } from "../../hooks/needHelp";
 
 const Contact: React.FC = () => {
   const { strings } = useLocale();
@@ -10,9 +11,10 @@ const Contact: React.FC = () => {
 
   const ref = React.useRef<HTMLElement>(null);
   const { isIntersecting } = useIsInViewport(ref);
+  const { setContactVisibility } = useNeedHelp();
 
   React.useEffect(() => {
-    console.log("contact", isIntersecting);
+    setContactVisibility(isIntersecting);
   }, [isIntersecting]);
 
   React.useEffect(() => {

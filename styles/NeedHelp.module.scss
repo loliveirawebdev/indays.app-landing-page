@@ -2,11 +2,13 @@
 @import "mixins";
 
 .contactUsHelper {
+  border: 0;
   z-index: 80;
   color: $white;
   display: flex;
   height: 4.8rem;
   position: fixed;
+  cursor: pointer;
   padding: 0 2rem;
   font-weight: bold;
   background: $black;
@@ -14,11 +16,22 @@
   bottom: $spacing-xs;
   align-items: center;
   font-size: $font-xs;
+  animation: fadein 1s;
   transition: all 0.2s;
   border-radius: 4.8rem;
   justify-content: center;
 
   &:hover {
     opacity: 0.8;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

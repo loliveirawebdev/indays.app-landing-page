@@ -4,6 +4,7 @@ import { useSectionsRefs } from "../../hooks/refs";
 import { useIsInViewport } from "../../hooks/viewport";
 import styles from "../../styles/Solutions.module.scss";
 import { renderToolList } from "./helpers/renderToolList";
+import { useNeedHelp } from "../../hooks/needHelp";
 import { renderServiceItems } from "./helpers/renderServiceItems";
 
 const Solutions: React.FC = () => {
@@ -12,9 +13,10 @@ const Solutions: React.FC = () => {
 
   const ref = React.useRef<HTMLElement>(null);
   const { isIntersecting } = useIsInViewport(ref);
+  const { setSolutionsVisibility } = useNeedHelp();
 
   React.useEffect(() => {
-    console.log("solutions", isIntersecting);
+    setSolutionsVisibility(isIntersecting);
   }, [isIntersecting]);
 
   React.useEffect(() => {
