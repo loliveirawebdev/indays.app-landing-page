@@ -1,15 +1,25 @@
-import { useQuestions } from "../hooks/questions";
-import { renderInputForQuestion } from "../helpers/renderInput";
+import React from "react";
+import { v4 as uuid } from "uuid";
+import { useSectionsRefs } from "../../../hooks/refs";
+import { useFormSubmit, useQuestions } from "../hooks/questions";
 
 export const ContactForm: React.FC = () => {
-  const questions = useQuestions();
+  const { config, inputRenderer } = useQuestions();
+  const onSubmit = useFormSubmit();
+
+  const { registerRef } = useSectionsRefs();
+  const ref = React.useRef<HTMLFormElement>(null);
+
+  React.useEffect(() => {
+    registerRef("contact-form", ref);
+  }, [ref]);
 
   const renderForm = () => {
-    return questions.map((question) => {
-      const input = renderInputForQuestion(question);
+    return config.map((question) => {
+      const input = inputRenderer(question);
 
       return (
-        <fieldset itemScope itemProp="question">
+        <fieldset key={uuid()} itemScope itemProp="question">
           <legend itemProp="legend">{question.legend}</legend>
           {input}
         </fieldset>
@@ -18,8 +28,9 @@ export const ContactForm: React.FC = () => {
   };
 
   return (
-    <form itemScope itemProp="contactForm" className="contact-form">
+    <form ref={ref} onSubmit={onSubmit} itemScope itemProp="contactForm" className="contact-form">
       {renderForm()}
+      <button type="submit">oi</button>
     </form>
   );
 };
