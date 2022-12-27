@@ -5,7 +5,8 @@
     "keywords": "123, 123, 123"
   },
   "general": {
-    "needHelp": "Need help? Contact us"
+    "needHelp": "Need help? Contact us",
+    "other": "Other"
   },
   "blocks": {
     "header": {
@@ -162,30 +163,18 @@
               "Smart TV application",
               "Custom e-commerce platform",
               "Mobile back-end application"
-            ],
-            "other": {
-              "checkbox": "Other",
-              "input": "Tell us what you need:"
-            }
+            ]
           },
           "start": {
             "legend": "When would you like to start?",
-            "options": ["As soon as possible", "In a few weeks", "Not sure"],
-            "other": {
-              "checkbox": "Other",
-              "input": "Tell us when would you like to start:"
-            }
+            "options": ["As soon as possible", "In a few weeks", "Not sure"]
           },
           "budget": {
             "legend": "Do you have a budget for this project?"
           },
           "youAre": {
             "legend": "You are:",
-            "options": ["Founder of a startup", "Part of the leadership of a company"],
-            "other": {
-              "checkbox": "Other",
-              "input": "Tell us who you are:"
-            }
+            "options": ["Founder of a startup", "Part of the leadership of a company"]
           },
           "name": {
             "legend": "What is your full name?"

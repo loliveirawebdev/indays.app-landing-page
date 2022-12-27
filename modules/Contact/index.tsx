@@ -1,10 +1,11 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import { useLocale } from "../../hooks/locale";
 import { useSectionsRefs } from "../../hooks/refs";
 import styles from "../../styles/Contact.module.scss";
 import { useIsInViewport } from "../../hooks/viewport";
 import { useNeedHelp } from "../../hooks/needHelp";
-import { ContactForm } from "./containers/ContactForm";
+const ContactForm = dynamic(() => import("./containers/ContactForm").then((mod) => mod.ContactForm), { ssr: false });
 
 const Contact: React.FC = () => {
   const { strings } = useLocale();

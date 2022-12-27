@@ -1,13 +1,8 @@
 namespace Contact {
   interface FormQuestion {
+    key: any;
     legend: string;
     options?: string[];
-    otherStrings?: PremadeOtherStrings;
     type: "premade-options" | "user-input";
-  }
-
-  interface PremadeOtherStrings {
-    checkbox: string;
-    input: string;
   }
 }
