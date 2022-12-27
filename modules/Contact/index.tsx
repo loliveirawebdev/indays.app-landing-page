@@ -4,6 +4,7 @@ import { useSectionsRefs } from "../../hooks/refs";
 import styles from "../../styles/Contact.module.scss";
 import { useIsInViewport } from "../../hooks/viewport";
 import { useNeedHelp } from "../../hooks/needHelp";
+import { ContactForm } from "./containers/ContactForm";
 
 const Contact: React.FC = () => {
   const { strings } = useLocale();
@@ -31,6 +32,8 @@ const Contact: React.FC = () => {
         <p itemProp="info" className="contact--description">
           {strings.blocks.contact.description}
         </p>
+
+        <ContactForm />
       </div>
     </section>
   );

@@ -19,5 +19,81 @@
         @include simple-link;
       }
     }
+
+    .contact-form {
+      margin-top: $spacing-md;
+
+      fieldset {
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-lg;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        input[type="text"] {
+          border: 0;
+          width: 100%;
+          color: $gray;
+          outline: none;
+          padding: 0.5rem 0;
+          font-size: $font-md;
+          font-weight: normal;
+          border-bottom: 0.2rem solid $gray;
+
+          @include desktop {
+            font-size: $font-lg;
+          }
+        }
+
+        legend {
+          font-size: $font-md;
+          margin-bottom: $spacing-xs;
+
+          @include desktop {
+            font-size: $font-lg;
+          }
+        }
+
+        div.contact-form--checkbox {
+          display: flex;
+          font-size: $font-sm;
+          flex-direction: row;
+          align-items: flex-start;
+          margin-bottom: $spacing-xs;
+
+          @include desktop {
+            font-size: $font-md;
+          }
+
+          label {
+            cursor: pointer;
+          }
+
+          input {
+            cursor: pointer;
+            margin-top: 0.62rem;
+            margin-right: 0.5rem;
+
+            @include desktop {
+              margin-top: 1.15rem;
+              margin-right: 1rem;
+            }
+          }
+        }
+
+        div.contact-form--checkbox--other-input {
+          label {
+            font-size: $font-xs;
+
+            @include desktop {
+              font-size: $font-sm;
+            }
+          }
+        }
+      }
+    }
   }
 }
