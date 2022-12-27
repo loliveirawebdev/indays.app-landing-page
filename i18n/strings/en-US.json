@@ -189,6 +189,10 @@
         "error": {
           "title": "An error occurred...",
           "description": "Please, answer the following questions correctly:"
+        },
+        "success": {
+          "title": "Your form has been submitted.",
+          "description": "A representative from indays.app will contact you within 24 hours."
         }
       }
     },

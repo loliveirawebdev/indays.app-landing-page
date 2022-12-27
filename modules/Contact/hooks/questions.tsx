@@ -1,4 +1,6 @@
+import { useSetRecoilState } from "recoil";
 import { useLocale } from "../../../hooks/locale";
+import { IS_FORM_CONTACT_SENT } from "../../../atoms/contact";
 import { useSectionsScroll } from "../../../hooks/pageScroll";
 import { alertInvalidForm } from "../helpers/alertInvalidForm";
 import { renderInputForQuestion } from "../helpers/renderInput";
@@ -64,7 +66,8 @@ export function useQuestions() {
 
 export function useFormSubmit() {
   const { strings } = useLocale();
-  const { scrollToContactForm } = useSectionsScroll();
+  const { scrollToContactForm, scrollToContact } = useSectionsScroll();
+  const setIsFormSent = useSetRecoilState(IS_FORM_CONTACT_SENT);
 
   const onFormError = (formErrors: Contact.FormError[]) => {
     scrollToContactForm();
@@ -73,6 +76,8 @@ export function useFormSubmit() {
 
   const sendFormData = (formData: Contact.FormData) => {
     console.log("sent", formData);
+    setIsFormSent(true);
+    scrollToContact();
   };
 
   return (e: any) => {

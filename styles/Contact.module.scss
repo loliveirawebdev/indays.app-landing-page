@@ -95,5 +95,20 @@
         }
       }
     }
+
+    .contact-form-sent {
+      display: none;
+      padding-top: $spacing-md;
+    }
+
+    .contact-form-container__is-sent {
+      .contact-form-sent {
+        display: block !important;
+      }
+
+      .contact-form {
+        display: none;
+      }
+    }
   }
 }
