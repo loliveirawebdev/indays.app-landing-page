@@ -2,11 +2,18 @@ import React from "react";
 import { useLocale } from "../../hooks/locale";
 import { useSectionsRefs } from "../../hooks/refs";
 import styles from "../../styles/Contact.module.scss";
+import { useIsInViewport } from "../../hooks/viewport";
 
 const Contact: React.FC = () => {
   const { strings } = useLocale();
   const { registerRef } = useSectionsRefs();
+
   const ref = React.useRef<HTMLElement>(null);
+  const { isIntersecting } = useIsInViewport(ref);
+
+  React.useEffect(() => {
+    console.log("contact", isIntersecting);
+  }, [isIntersecting]);
 
   React.useEffect(() => {
     registerRef("contact", ref);

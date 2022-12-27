@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocale } from "../../hooks/locale";
 import { useSectionsRefs } from "../../hooks/refs";
+import { useIsInViewport } from "../../hooks/viewport";
 import styles from "../../styles/Solutions.module.scss";
 import { renderToolList } from "./helpers/renderToolList";
 import { renderServiceItems } from "./helpers/renderServiceItems";
@@ -8,7 +9,13 @@ import { renderServiceItems } from "./helpers/renderServiceItems";
 const Solutions: React.FC = () => {
   const { strings } = useLocale();
   const { registerRef } = useSectionsRefs();
+
   const ref = React.useRef<HTMLElement>(null);
+  const { isIntersecting } = useIsInViewport(ref);
+
+  React.useEffect(() => {
+    console.log("solutions", isIntersecting);
+  }, [isIntersecting]);
 
   React.useEffect(() => {
     registerRef("solutions", ref);
