@@ -1,5 +1,8 @@
 import { useLocale } from "../../../hooks/locale";
+import { useSectionsScroll } from "../../../hooks/pageScroll";
+import { alertInvalidForm } from "../helpers/alertInvalidForm";
 import { renderInputForQuestion } from "../helpers/renderInput";
+import { runFormValidation } from "../helpers/runFormValidation";
 
 export function useQuestions() {
   const { strings } = useLocale();
@@ -58,4 +61,35 @@ export function useQuestions() {
     inputRenderer: renderer,
   };
 }
+
+export function useFormSubmit() {
+  const { strings } = useLocale();
+  const { scrollToContactForm } = useSectionsScroll();
+
+  const onFormError = (formErrors: Contact.FormError[]) => {
+    scrollToContactForm();
+    alertInvalidForm({ formErrors, strings });
+  };
+
+  const sendFormData = (formData: Contact.FormData) => {
+    console.log("sent", formData);
+  };
+
+  return (e: any) => {
+    e.preventDefault();
+
+    const formData: Contact.FormData = {
+      name: e.target.elements.name.value,
+      email: e.target.elements.email.value,
+      youAre: e.target.elements.youAre.value,
+      applicationType: e.target.elements.applicationType.value,
+      start: e.target.elements.start.value,
+      budget: e.target.elements.budget.value,
+      more: e.target.elements.more.value,
+    };
+
+    const formErrors = runFormValidation(formData);
+    if (formErrors.length) return onFormError(formErrors);
+    return sendFormData(formData);
+  };
 }

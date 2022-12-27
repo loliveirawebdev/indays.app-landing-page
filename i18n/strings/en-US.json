@@ -185,6 +185,10 @@
           "more": {
             "legend": "Something else to tell?"
           }
+        },
+        "error": {
+          "title": "An error occurred...",
+          "description": "Please, answer the following questions correctly:"
         }
       }
     },

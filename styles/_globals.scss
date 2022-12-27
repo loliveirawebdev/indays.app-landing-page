@@ -49,3 +49,41 @@ p,
 .regular-text {
   @include regular-text;
 }
+
+// react-toastify overrides:
+.Toastify__toast-body {
+  align-items: flex-start !important;
+}
+
+div.contact-form--error-alert-content {
+  display: flex;
+  flex-direction: column;
+  font-size: $font-xs;
+
+  span {
+    font-size: $font-xs;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: $font-xs;
+    font-weight: normal;
+  }
+
+  ul {
+    margin-top: $spacing-sm;
+    list-style-position: inside;
+
+    li {
+      width: 240px;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 0.3rem;
+      text-overflow: ellipsis;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
