@@ -1,10 +1,12 @@
 import React from "react";
-import { Button } from "../../components/Button";
 import { useLocale } from "../../hooks/locale";
+import { Button } from "../../components/Button";
 import styles from "../../styles/Appeal.module.scss";
+import { useSectionsScroll } from "../../hooks/pageScroll";
 
 const Appeal: React.FC = () => {
   const { strings } = useLocale();
+  const { scrollToContact } = useSectionsScroll();
 
   return (
     <section itemScope className={styles.appeal}>
@@ -20,7 +22,7 @@ const Appeal: React.FC = () => {
         <footer className="appeal--footer">
           <p itemProp="description">{strings.blocks.appeal.description}</p>
 
-          <Button variant="secondary" itemProp="contactButton">
+          <Button onClick={scrollToContact} variant="secondary" itemProp="contactButton">
             {strings.blocks.appeal.action}
           </Button>
         </footer>
