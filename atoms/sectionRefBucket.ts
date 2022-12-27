@@ -3,11 +3,6 @@ import { atom, selector } from "recoil";
 const BASE_SECTION_REF_BUCKET = atom<App.SectionRef[]>({
   key: "baseSectionRefBucket",
   default: [],
-  effects: [
-    ({ onSet }) => {
-      onSet((v) => console.log(v));
-    },
-  ],
 });
 
 export const SECTION_REF_BUCKET = selector<App.SectionRef[]>({

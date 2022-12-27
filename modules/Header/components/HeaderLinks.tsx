@@ -1,4 +1,5 @@
 import { v4 as uuid } from "uuid";
+import { useSectionsRefs } from "../../../hooks/refs";
 
 interface Props {
   items: Header.MenuItem[];
@@ -7,6 +8,7 @@ interface Props {
 }
 
 export const HeaderLinks: React.FC<Props> = (props) => {
+  const { refs } = useSectionsRefs();
   const { items, isMobileCollapsed, collapseMobile } = props;
 
   const generateClassList = () => {
@@ -17,7 +19,9 @@ export const HeaderLinks: React.FC<Props> = (props) => {
   const goTo = (area: string) => {
     return () => {
       collapseMobile();
-      console.log(area);
+
+      const matchedRef = refs.find((ref) => ref.key === area);
+      matchedRef?.ref.current?.scrollIntoView({ behavior: "smooth" });
     };
   };
 
