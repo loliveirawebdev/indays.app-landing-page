@@ -158,7 +158,8 @@
       text-decoration: none;
 
       &:hover {
-        text-decoration: underline;
+        border-bottom: 3px solid black;
+        padding-bottom: 3px;
       }
 
       @include desktop {
