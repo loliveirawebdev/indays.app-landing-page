@@ -6,10 +6,12 @@ import Contact from "../modules/Contact";
 import Headline from "../modules/Headline";
 import HowWeWork from "../modules/HowWeWork";
 import Solutions from "../modules/Solutions";
+import { NeedHelp } from "../components/NeedHelp";
 
 export default function Home() {
   return (
     <React.Fragment>
+      <NeedHelp />
       <Header />
 
       <main className="main-container">

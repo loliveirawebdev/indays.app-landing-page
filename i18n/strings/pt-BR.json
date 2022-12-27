@@ -4,6 +4,9 @@
     "description": "Call to Action including Primary Keyword & Secondary Keyword (150 char)",
     "keywords": "123, 123, 123"
   },
+  "general": {
+    "needHelp": "Need help? Contact us"
+  },
   "blocks": {
     "header": {
       "menu": {

@@ -1,0 +1,24 @@
+@import "tokens";
+@import "mixins";
+
+.contactUsHelper {
+  z-index: 80;
+  color: $white;
+  display: flex;
+  height: 4.8rem;
+  position: fixed;
+  padding: 0 2rem;
+  font-weight: bold;
+  background: $black;
+  right: $spacing-xs;
+  bottom: $spacing-xs;
+  align-items: center;
+  font-size: $font-xs;
+  transition: all 0.2s;
+  border-radius: 4.8rem;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
