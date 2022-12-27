@@ -16,12 +16,12 @@ const renderCheckboxHTML = (value: string, scope: string) => {
 
 export const renderPremadeOptionsQuestion = (question: Contact.FormQuestion, otherLabel: string) => {
   if (!question.options) throw Error();
-  const questionScope = uuid();
+  const renderCheckboxProxy = (value: string) => renderCheckboxHTML(value, question.key);
 
   return (
     <>
-      {question.options.map((option) => renderCheckboxHTML(option, questionScope))}
-      {renderCheckboxHTML(otherLabel, questionScope)}
+      {question.options.map((option) => renderCheckboxProxy(option))}
+      {renderCheckboxProxy(otherLabel)}
     </>
   );
 };
