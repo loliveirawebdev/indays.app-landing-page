@@ -60,28 +60,31 @@ export const ContactForm: React.FC = () => {
 
   return (
     <div className={generateContainerClasses()}>
-      <div className="contact-form--header">
-        <Button variant="tertiary" type="button" onClick={onCloseForm}>
+      <div className="contact-form--header" itemScope itemProp="actions">
+        <Button variant="tertiary" type="button" onClick={onCloseForm} itemProp="backButton">
           {strings.blocks.contact.form.actions.back}
         </Button>
       </div>
 
-      <div className="contact-form--open-helper">
-        <div className="open-helper--backdrop">
-          <Button variant="secondary" type="button" onClick={onOpenForm}>
+      <div className="contact-form--open-helper" itemScope>
+        <div className="open-helper--backdrop" itemProp="backdrop">
+          <Button variant="secondary" type="button" onClick={onOpenForm} itemProp="button">
             {strings.blocks.contact.form.actions.open}
           </Button>
         </div>
       </div>
 
-      <div className="contact-form--sent">
-        <p>{strings.blocks.contact.form.success.title}</p>
-        <p>{strings.blocks.contact.form.success.description}</p>
+      <div className="contact-form--sent" itemScope>
+        <p itemProp="information">{strings.blocks.contact.form.success.title}</p>
+        <p itemProp="information">{strings.blocks.contact.form.success.description}</p>
       </div>
 
       <form ref={ref} onSubmit={onSubmit} itemScope itemProp="contactForm" className="contact-form">
         {renderForm()}
-        <Button type="submit">{strings.blocks.contact.form.actions.send}</Button>
+
+        <Button itemProp="submit" type="submit">
+          {strings.blocks.contact.form.actions.send}
+        </Button>
       </form>
     </div>
   );
