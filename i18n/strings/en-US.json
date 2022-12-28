@@ -6,7 +6,8 @@
   },
   "general": {
     "needHelp": "Need help? Contact us",
-    "other": "Other"
+    "other": "Other",
+    "hamburger-icon": "Expand main menu"
   },
   "blocks": {
     "header": {

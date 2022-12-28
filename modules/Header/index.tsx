@@ -36,7 +36,13 @@ const Header: React.FC = () => {
         <span className="header--menu-separator" />
 
         <button type="button" onClick={openMobileMenu} className="header--hamburger-menu">
-          <img src="/assets/hamburger-menu.svg" alt="Expand menu options" itemProp="showMenu" />
+          <img
+            width="2.4rem"
+            height="2.4rem"
+            itemProp="showMenu"
+            src="/assets/hamburger-menu.svg"
+            alt={strings.general["hamburger-icon"]}
+          />
         </button>
 
         <HeaderLinks collapseMobile={collapseMobile} isMobileCollapsed={isMobileCollapsed} items={menuLinks} />
