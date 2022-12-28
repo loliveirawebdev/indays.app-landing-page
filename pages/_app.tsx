@@ -9,7 +9,6 @@ import "react-toastify/dist/ReactToastify.min.css";
 
 import "../styles/_globals.scss";
 const openSans = Open_Sans({ subsets: ["latin"] });
-const openSansStyle = `html { font-family: ${openSans.style.fontFamily}; }`;
 
 export default function App({ Component, pageProps }: AppProps) {
   const { strings } = useLocale();
@@ -20,12 +19,13 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>{strings.page.title}</title>
         <meta name="title" content={strings.page.title} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style global>{openSansStyle}</style>
       </Head>
 
       <RecoilRoot>
-        <ToastContainer />
-        <Component {...pageProps} />
+        <div className={openSans.className}>
+          <ToastContainer />
+          <Component {...pageProps} />
+        </div>
       </RecoilRoot>
     </React.Fragment>
   );
