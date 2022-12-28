@@ -30,6 +30,7 @@ export default function CustomDocument(props: DocumentProps) {
         <meta property="og:description" content={strings.page.description} />
 
         <link rel="canonical" href="https://indays.app" />
+        <link rel="alternate" href="https://indays.app/" hrefLang="pt-BR" />
         <link rel="alternate" href="https://indays.app/en" hrefLang="en" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
