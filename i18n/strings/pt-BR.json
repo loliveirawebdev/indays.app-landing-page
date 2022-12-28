@@ -1,109 +1,109 @@
 {
   "page": {
-    "title": "Primary Keyword - Secondary Keyword | Brand Name",
-    "description": "Call to Action including Primary Keyword & Secondary Keyword (150 char)",
-    "keywords": "123, 123, 123"
+    "title": "Desenvolvimento de Aplicativos Customizados | indays.app",
+    "description": "Nós transformamos suas ideias em sucesso desenvolvendo soluções customizadas que fazem toda diferença para seu negócio, em dias.",
+    "keywords": "desenvolvimento de aplicativos customizados, desenvolvimento de aplicativos personalizados, desenvolvimento de aplicativos nativos customizados, desenvolvimento de aplicativos nativos personalizados, desenvolvimento de aplicativos hibridos customizados, desenvolvimento de aplicativos hibridos personalizados, desenvolvimento de aplicativos para magento, desenvolvimento de aplicativos de e-commerce"
   },
   "general": {
-    "needHelp": "Need help? Contact us",
-    "other": "Other"
+    "needHelp": "Precisa de ajuda?",
+    "other": "Outro"
   },
   "blocks": {
     "header": {
       "menu": {
-        "howWeWork": "How We Work",
-        "solutions": "Solutions",
-        "contact": "Contact us"
+        "howWeWork": "Como trabalhamos",
+        "solutions": "Soluções",
+        "contact": "Contato"
       }
     },
     "headline": {
-      "title": "We help Startups and Enterprises achieve their goals <strong><u>faster</u></strong>.",
-      "subtitle": "Our accelerated mobile development methodology enables us to delivery <strong>custom excellent apps <u>in days</u></strong>.",
+      "title": "Conduzimos negócios a seus objetivos muito mais <strong><u>rápido</u></strong>.",
+      "subtitle": "Nossa metodologia de desenvolvimento mobile acelerado possibilita a entrega de <strong>aplicativos customizados excelentes <u>em dias</u></strong>.",
       "paragraphs": [
-        "We are ready to validate your ideas and develop your mobile application from scratch or speed up your running project using all our knowledge about <strong>app development for smart phones (hybrid or native) and smart tvs</strong>.",
-        "Although our multidisciplinary team has the ability to develop any type of application for any segment, our great passion and specialty is co-creating e-commerce, marketplaces and similar apps.",
-        "Our team, leaded by people with years of mobile application development experience, provides <em><u>the best software development experience</u></em> through a strong and solid culture of <b>excellence</b> and <strong>true agility</strong>."
+        "Nós estamos prontos para validar suas ideias e desenvolver sua aplicação mobile desde o início ou acelerar seu projeto em andamento utilizando todo nosso conhecimento sobre <strong>desenvolvimento de aplicativos para smartphones (híbrido ou nativo) e smart TVs</strong>.",
+        "Apesar de nosso time multidisciplinar ter a habilidade de desenvolver qualquer tipo de aplicação para qualquer segmento, nossa grande paixão e especialidade é co-criar e-commerces, marketplaces e aplicativos similares.",
+        "Nosso time, liderado por pessoas com anos de experiência em desenvolvimento mobile, garante a <em><u>melhor experiência de desenvolvimento de software</u></em> através de uma cultura forte e sólida de <b>excelência</b> e <strong>agilidade verdadeira</strong>."
       ],
       "cards": {
-        "first": "<span><strong>we transform your ideas into success</strong></span> by developing hand made solutions that makes all difference to your business, faster",
-        "second": "<span>we more than a mobile software house... <strong>our business is to co-create</strong></span> your own business in a collaborative way",
-        "third": "<span>your customers are ours as well</span>, so we hard work to provide the best experience to them",
-        "fourth": "<span>our <strong>true agile culture</strong></span> helps reach goals in much less time in a healthy way"
+        "first": "<span><strong>suas ideias viram sucesso</strong></span> quando desenvolvemos soluções que fazem a diferença para seu negócio, em dias",
+        "second": "<span>somos mais que uma software house... <strong>nosso negócio é co-criar</strong></span> seu negócio próprio de forma colaborativa",
+        "third": "<span>seus clientes são nossos clientes também</span>, por isso trabalhamos duro para entregar a melhor experiência para eles",
+        "fourth": "<span>nossa <strong>verdadeira cultura ágil</strong></span> ajuda a atingir objetivos em muito menos tempo de forma saudável"
       }
     },
     "appeal": {
-      "title": "Time is money 💸",
-      "subtitle": "Don’t loose more of both 😔",
-      "description": "Our philosophy and methodology can help your business with a minimal time-to-market delivering small, medium and big custom mobile applications in a record time.",
-      "action": "Contact us"
+      "title": "Tempo é dinheiro 💸",
+      "subtitle": "Não perca mais de ambos 😔",
+      "description": "Nossa filosofia e metodologia pode ajudar seu negócio com um time-to-market mínimo entregando aplicações mobile de porte pequeno, médio ou grande em um tempo recorde.",
+      "action": "Entre em contato"
     },
     "howWeWork": {
-      "title": "How we work?",
+      "title": "Como nós trabalhamos?",
       "paragraphs": [
-        "<strong>We follow some customer-centered development strategies based in Agile Culture</strong> which aims to delivery excellent solutions generating value to their business.",
-        "To speed up the development process, we have premade code blocks and design components that were built to be consistent, useful, generic and customizable.",
-        "Take a look in this brief summary of how our <strong>agile development process</strong> works:"
+        "<strong>Nós seguimos estratégias de desenvolvimento customer-centered baseadas em uma Cultura Ágil</strong> que foca em entregar soluções excelentes e de grande valor para seu negócio.",
+        "Para aumentar a velocidade do processo de desenvolvimento, nós temos blocos de código e componentes de design pré-montados que foram construídos para serem consistentes, úteis, genéricos e customizáveis.",
+        "Veja, neste breve resumo, como nosso <strong>processo de desenvolvimento ágil</strong> funciona:"
       ],
       "squad": {
-        "description": "All solutions developed by us are made by <b>squads</b>: high performance <strong>multidisciplinary teams focused on continuous delivery of <em>true value</em></strong>, working in a collaborative environment with our partners (this is how we face our customers) using some of Scrum and Shape Up framework fundamentals cherishing for quality and adaptability.",
-        "caption": "Average squad size",
-        "iconAlt": "Human silhouette"
+        "description": "Todas as soluções desenvolvidas por nós são feitas através de squads: <strong>times multidisciplinares de alto desempenho focados na entrega contínua de <em>verdadeiro valor</em></strong>, trabalhando em um ambiente de colaboração com nossos parceiros (é assim que encaramos nossos clientes) usando alguns fundamentos dos frameworks Scrum e Shape Up prezando por qualidade e adaptabilidade.",
+        "caption": "Tamanho médio de uma squad",
+        "iconAlt": "Silhueta humana"
       },
       "footer": {
-        "text": "Want to know more?",
-        "action": "Download our presentation with all information about how we work."
+        "text": "Quer saber mais?",
+        "action": "Faça o download de nossa apresentação com todas as informações de como trabalhamos."
       },
       "processTimeline": [
         {
-          "title": "1. Understand",
-          "description": "The process starts by ensuring that all of your strategic goals will be met discussing all details about the needed solution in a in-house or remote Lean Inception workshop."
+          "title": "1. Compreender",
+          "description": "O processo inicia garantindo que todos os objetivos estratégicos de nosso parceiro serão alcançados discutindo todos os detalhes sobre a solução necessária em um workshop Lean Inception remoto ou presencial."
         },
         {
           "title": "2. Design",
-          "description": "After gathering all required information, we start to design the solution using a prototyping tool (like Figma) to validate our partner’s ideas and goals, furthermore, all design created in this step is useful for the squad in the next steps."
+          "description": "Após coletar todas as informações necessárias, nós começamos a desenhar a solução utilizando alguma ferramenta de prototipagem (como o Figma) para validar as ideias e objetivos de nosso parceiro, além disso, todo o design criado nesse passo do processo é útil para o time de desenvolvimento nos próximos passos."
         },
         {
-          "title": "3. Develop",
-          "description": "When any design fragment of the solution is validated by the partner, we start to code it keeping in mind that our goal is to delivery true value with excellence. To achieve this, we follow our coding standards that ensures the solution is growing up healthy."
+          "title": "3. Desenvolver",
+          "description": "Quando qualquer fragmento de design da solução está validada pelo parceiro, nós iniciamos a codificação mantendo em mente que o objetivo é entregar valor verdadeiro com excelência. Para atingir este objetivo, nós seguimos padrões de desenvolvimento que garantem que nossa solução está crescendo de maneira saudável."
         },
         {
-          "title": "4. Improve",
-          "description": "The “design → develop” steps are being repeated while the application is growing up until it is done."
+          "title": "4. Aprimorar",
+          "description": "Os passos “design → desenvolver” vão sendo repetidos enquanto a aplicação cresce até que seja finalizada."
         }
       ]
     },
     "solutions": {
-      "title": "Solutions",
+      "title": "Soluções",
       "items": [
         {
-          "title": "Custom mobile application",
-          "description": "We develop beautiful mobile applications for Android and iOS using their native stack or through a cross-platform technology like React Native or Flutter."
+          "title": "Aplicações customizadas para mobile",
+          "description": "Nós desenvolvemos aplicações mobiles lindas para Android e iOS utilizando sua stack nativa ou através de uma tecnologia cross-platform como React Native ou Flutter."
         },
         {
-          "title": "Super apps",
-          "description": "We have the knowledge and experience to develop this singular kind of mobile application that is a new trending after the successful campaign made by WeChat."
+          "title": "Super aplicativos",
+          "description": "Nós temos o conhecimento e a experiência para desenvolver este tipo único de aplicação mobile que está em alta após a campanha de sucesso feita pela WeChat."
         },
         {
-          "title": "Smart TV applications",
-          "description": "We develop professional applications for any TV operational system like LG WebOS or Tizen TV."
+          "title": "Aplicações para Smart TV",
+          "description": "Nós desenvolvemos aplicações profissionais para qualquer sistema operacional de Smart TV como LG WebOS ou Tizen TV."
         },
         {
-          "title": "Custom e-commerce application",
-          "description": "Our truly passion and specialty is to develop custom e-commerce platforms from the scratch or using Magento Commerce."
+          "title": "Aplicações customizadas de e-commerce",
+          "description": "Nossa verdadeira paixão e especialidade é desenvolver plataformas de e-commerce customizadas do zero ou utilizando Magento Commerce."
         },
         {
-          "title": "Mobile back-end applications",
-          "description": "We develop fast, reliable and secure back-end solutions using modern tech stacks like Bun.js, Deno.js or Go, or using more consolidated tech stacks like Java, Python or PHP."
+          "title": "Aplicações back-end para mobile",
+          "description": "Nós desenvolvemos soluções back-end que são rápidas, confiantes e seguras utilizando stack tecnológicas modernas como Deno.js, GoLang ou Bun.js, ou utilizando stacks mais consolidadas como Java, Python ou PHP."
         },
         {
-          "title": "Product design",
-          "description": "We know how to create beautiful, useful and engaging mobile applications."
+          "title": "Design de produto",
+          "description": "Nós sabemos como criar aplicações mobile lindas, úteis e de alto engajamento."
         }
       ],
       "tools": {
-        "title": "Our tools",
+        "title": "Nossas ferramentas",
         "highlight": {
-          "title": "Fastest development stack:",
+          "title": "Stack de desenvolvimento ultra-rápido:",
           "items": [
             {
               "imageKey": "react",
@@ -116,7 +116,7 @@
           ]
         },
         "others": {
-          "title": "Other tools:",
+          "title": "Outras ferramentas:",
           "items": [
             {
               "imageKey": "java",
@@ -151,71 +151,71 @@
       }
     },
     "contact": {
-      "title": "Contact us",
-      "description": "Email our tech lead directly at <b>lucas.oliveira@simbioseventures.com</b> or tell us a brief about your project in the form bellow.",
+      "title": "Contato",
+      "description": "Envie um e-mail diretamente para nosso tech lead em <b>lucas.oliveira@simbioseventures.com</b> ou nos conte um pouco de seu projeto no formulário abaixo.",
       "form": {
         "questions": {
           "applicationType": {
-            "legend": "Type of application that you need",
+            "legend": "Tipo de aplicação que você precisa",
             "options": [
-              "Mobile application",
+              "Aplicação mobile",
               "Super app",
-              "Smart TV application",
-              "Custom e-commerce platform",
-              "Mobile back-end application"
+              "Aplicação para Smart TV",
+              "Plataforma e-commerce customizaa",
+              "Aplicação back-end para mobile"
             ]
           },
           "start": {
-            "legend": "When would you like to start?",
-            "options": ["As soon as possible", "In a few weeks", "Not sure"]
+            "legend": "Quando você gostaria de começar?",
+            "options": ["O mais rápido possível", "Em algumas semanas", "Não tenho certeza"]
           },
           "budget": {
-            "legend": "Do you have a budget for this project?"
+            "legend": "Você tem um budget para este projeto?"
           },
           "youAre": {
-            "legend": "You are:",
-            "options": ["Founder of a startup", "Part of the leadership of a company"]
+            "legend": "Você é:",
+            "options": ["Fundador de uma Startup", "Parte da liderança de uma empresa"]
           },
           "name": {
-            "legend": "What is your full name?"
+            "legend": "Qual o seu nome completo?"
           },
           "email": {
-            "legend": "What is your e-mail address?"
+            "legend": "Qual o seu endereço de e-mail?"
           },
           "more": {
-            "legend": "Something else to tell?"
+            "legend": "Mais alguma informação para acrescentar?"
           }
         },
         "error": {
-          "title": "An error occurred...",
-          "description": "Please, answer the following questions correctly:"
+          "title": "Um erro aconteceu...",
+          "description": "Por favor, responda as seguintes perguntas corretamente:"
         },
         "success": {
-          "title": "Your form has been submitted.",
-          "description": "A representative from indays.app will contact you within 24 hours."
+          "title": "Seu formulário foi enviado.",
+          "description": "Um representante da indays.app entrará em contato com você em até 24 horas."
         },
         "actions": {
-          "send": "Send data",
-          "back": "← Go back",
-          "open": "Open form →"
+          "send": "Enviar informações",
+          "back": "← Voltar",
+          "open": "Abrir formulário →"
         }
       }
     },
     "footer": {
-      "title": "About Simbiose Ventures and in<span>days</span>.app",
+      "title": "Sobre Simbiose Ventures e in<span>days</span>.app",
       "paragraphs": [
-        "Simbiose is a unique outsourcing company that trains developers with high technical and ethical standards. They have been in the technology market since 2012 and have already served more than 80 national and international companies.",
-        "<b>indays.app</b> is formed by a group of developers from Simbiose Ventures with a special focus to develop mobile solutions."
+        "Uma empresa singular de outsourcing, que forma desenvolvedores com alto padrão técnico e ético. Estamos inseridos no mercado de tecnologia desde 2012 e já atendemos mais de 80 empresas nacionais e internacionais.",
+        "<b>indays.app</b> é formado por um grupo de desenvolvedores da Simbiose Ventures com um foco especial no desenvolvimento de soluções mobile."
       ],
       "menus": {
-        "about": "Know more about who we are",
-        "mission": "Our mission, assumptions and values",
-        "dream": "Our dream"
+        "about": "Saiba mais sobre quem somos",
+        "mission": "Nossa missão, premissas e valores",
+        "dream": "Nosso sonho"
       },
       "socialMediaLinks": {
         "alts": {
-          "github": "Github's icon",
-          "linkedin": "Linkedin's icon"
+          "github": "Ícone do Github",
+          "linkedin": "Ícone do Linkedin"
         }
       }
     }
