@@ -31,6 +31,7 @@ export default function CustomDocument(props: DocumentProps) {
 
         <link rel="canonical" href="https://indays.app" />
         <link rel="alternate" href="https://indays.app/en" hrefLang="en" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
 
       <body>
