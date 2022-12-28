@@ -18,8 +18,8 @@ const Headline: React.FC = () => {
         </aside>
 
         <header itemScope itemProp="headline">
-          <h1 itemProp="merit">{strings.blocks.headline.title}</h1>
-          <h2 itemProp="merit">{strings.blocks.headline.subtitle}</h2>
+          <h4 itemProp="merit">{strings.blocks.headline.title}</h4>
+          <h1 itemProp="merit">{strings.blocks.headline.subtitle}</h1>
         </header>
 
         <section itemScope itemProp="content" className="headline--content">
