@@ -1,0 +1,46 @@
+@import "tokens";
+@import "mixins";
+
+.logo {
+  display: flex;
+
+  :global {
+    figure {
+      width: auto;
+      position: relative;
+
+      div.logo--text {
+        z-index: 15;
+        width: 100%;
+        color: $white;
+        display: block;
+        font-weight: bold;
+        position: relative;
+        background: $black;
+        font-size: $font-xs;
+        font-family: inherit;
+        padding: 0.5rem 1rem;
+        letter-spacing: 0.1rem;
+
+        @include tablet {
+          font-size: $font-sm;
+        }
+
+        span {
+          color: $green;
+        }
+      }
+
+      span.logo--backdrop {
+        width: 100%;
+        top: 0.5rem;
+        z-index: 10;
+        height: 100%;
+        left: -0.5rem;
+        display: block;
+        position: absolute;
+        background: $light-gray;
+      }
+    }
+  }
+}

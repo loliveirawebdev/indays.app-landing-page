@@ -12,7 +12,7 @@ export const FooterLinks: React.FC<Props> = ({ items }) => {
 
       return (
         <li itemProp="externalLink" key={uniqueKey}>
-          <a rel="nofollow" href={link} target="_blank" itemProp="link">
+          <a rel="external" href={link} target="_blank" itemProp="link">
             {label}
           </a>
         </li>

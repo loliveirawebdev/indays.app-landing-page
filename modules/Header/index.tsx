@@ -5,6 +5,7 @@ import styles from "../../styles/Header.module.scss";
 import { usePageScroll } from "../../hooks/pageScroll";
 import { HeaderLinks } from "./components/HeaderLinks";
 import { buildHeaderMenuItems } from "./helpers/buildHeaderMenuItems";
+import { Logo } from "../../components/Logo";
 
 const Header: React.FC = () => {
   const { strings } = useLocale();
@@ -26,14 +27,7 @@ const Header: React.FC = () => {
   return (
     <header itemScope itemProp="header" className={styles.header}>
       <div className="header--content-container">
-        <figure className="header--logo" itemScope itemProp="logo">
-          <div className="header--logo--text" itemProp="text">
-            in<span>days</span>.app
-          </div>
-
-          <span className="header--logo--backdrop" itemProp="shadow" />
-        </figure>
-
+        <Logo />
         <span className="header--menu-separator" />
 
         <button type="button" onClick={openMobileMenu} className="header--hamburger-menu">
