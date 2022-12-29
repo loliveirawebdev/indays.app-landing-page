@@ -6,8 +6,8 @@ import style from "../styles/NeedHelp.module.scss";
 
 export const NeedHelp: React.FC = () => {
   const { strings } = useLocale();
-  const { scrollToContact } = useSectionsScroll();
   const { shouldBeVisible } = useNeedHelp();
+  const { scrollToContact } = useSectionsScroll();
 
   if (!shouldBeVisible) {
     return null;

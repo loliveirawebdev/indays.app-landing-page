@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@next/font": "^13.1.1",
@@ -27,6 +28,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^13.1.1",
     "@types/lodash": "^4.14.191",
     "@types/uuid": "^9.0.0"
   }
