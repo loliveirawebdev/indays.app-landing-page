@@ -108,5 +108,27 @@
         }
       }
     }
+
+    .footer--languages-links {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      margin-top: $spacing-sm;
+
+      @include desktop {
+        margin-top: $spacing-xs;
+      }
+
+      li {
+        margin-right: $spacing-sm;
+
+        a {
+          color: $white;
+          font-weight: bold;
+          @include simple-link;
+          font-size: $font-xxs;
+        }
+      }
+    }
   }
 }

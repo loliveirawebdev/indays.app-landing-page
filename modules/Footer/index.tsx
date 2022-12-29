@@ -5,6 +5,7 @@ import { FooterLinks } from "./components/FooterLinks";
 import { SocialIcons } from "./components/SocialIcons";
 import { renderParagraphs } from "../../helpers/renderParagraphs";
 import { buildFooterMenuItems } from "./helpers/buildFooterMenuItems";
+import { LanguagesLinks } from "./components/LanguagesLinks";
 
 const Footer: React.FC = () => {
   const { strings } = useLocale();
@@ -20,6 +21,7 @@ const Footer: React.FC = () => {
 
         <FooterLinks items={menuItems} />
         <SocialIcons />
+        <LanguagesLinks />
       </div>
     </footer>
   );
