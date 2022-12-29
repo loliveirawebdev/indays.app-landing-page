@@ -12,7 +12,7 @@ export const renderCards = (cards: Headline.Card[]): React.ReactNode => {
             height="2.4rem"
             itemProp="icon"
             alt={card.iconKey}
-            src={`/assets/cards/${card.iconKey}.svg`}
+            src={`/assets/cards/${card.iconKey}.webp`}
           />
           {card.label}
         </div>

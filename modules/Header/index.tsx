@@ -40,7 +40,7 @@ const Header: React.FC = () => {
             width="2.4rem"
             height="2.4rem"
             itemProp="showMenu"
-            src="/assets/hamburger-menu.svg"
+            src="/assets/hamburger-menu.webp"
             alt={strings.general["hamburger-icon"]}
           />
         </button>

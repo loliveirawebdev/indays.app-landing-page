@@ -12,7 +12,7 @@ export const SocialIcons: React.FC = () => {
             width="2.4rem"
             height="2.4rem"
             itemProp="icon"
-            src="/assets/github.svg"
+            src="/assets/github.webp"
             alt={strings.blocks.footer.socialMediaLinks.alts.github}
           />
         </a>
@@ -24,7 +24,7 @@ export const SocialIcons: React.FC = () => {
             width="2.4rem"
             height="2.4rem"
             itemProp="icon"
-            src="/assets/linkedin.svg"
+            src="/assets/linkedin.webp"
             alt={strings.blocks.footer.socialMediaLinks.alts.linkedin}
           />
         </a>

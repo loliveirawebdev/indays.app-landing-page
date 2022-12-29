@@ -19,7 +19,7 @@ export const SquadBlock: React.FC = () => {
       return (
         <li key={uniqueKey} itemProp="itemListElement">
           <span>
-            <img src="/assets/human-silhouette.svg" alt={strings.blocks.howWeWork.squad.iconAlt} itemProp="icon" />
+            <img src="/assets/human-silhouette.webp" alt={strings.blocks.howWeWork.squad.iconAlt} itemProp="icon" />
             <span itemProp="count">{squadMember.count}</span>
           </span>
           {squadMember.label}

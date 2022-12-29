@@ -12,7 +12,7 @@ export const renderToolList = (tools: Record<any, any>[]): React.ReactNode => {
             height="3.5rem"
             itemProp="icon"
             alt={tool.imageKey}
-            src={`/assets/tools/${tool.imageKey}.svg`}
+            src={`/assets/tools/${tool.imageKey}.webp`}
           />
         </section>
 
