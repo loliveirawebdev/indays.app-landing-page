@@ -8,6 +8,7 @@ export const renderToolList = (tools: Record<any, any>[]): React.ReactNode => {
       <li key={uniqueKey} itemProp="itemListElement">
         <section itemProp="iconContainer">
           <img
+            loading="lazy"
             width="3.5rem"
             height="3.5rem"
             itemProp="icon"

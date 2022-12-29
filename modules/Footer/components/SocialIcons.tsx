@@ -9,6 +9,7 @@ export const SocialIcons: React.FC = () => {
       <li itemProp="socialMediaLink">
         <a href="https://github.com/s1mbi0se" target="_blank" rel="noreferrer" itemProp="link">
           <img
+            loading="lazy"
             width="2.4rem"
             height="2.4rem"
             itemProp="icon"
@@ -21,6 +22,7 @@ export const SocialIcons: React.FC = () => {
       <li itemProp="socialMediaLink">
         <a href="https://www.linkedin.com/company/simbioseventures" target="_blank" rel="noreferrer" itemProp="link">
           <img
+            loading="lazy"
             width="2.4rem"
             height="2.4rem"
             itemProp="icon"
