@@ -154,6 +154,7 @@
     .header--menu-item {
       @include simple-link;
 
+      color: $black;
       font-size: $font-sm;
       text-decoration: none;
 
