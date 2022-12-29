@@ -1,12 +1,14 @@
 import React from "react";
-import Appeal from "../modules/Appeal";
-import Footer from "../modules/Footer";
+import dynamic from "next/dynamic";
 import Header from "../modules/Header";
-import Contact from "../modules/Contact";
+import Appeal from "../modules/Appeal";
 import Headline from "../modules/Headline";
-import HowWeWork from "../modules/HowWeWork";
-import Solutions from "../modules/Solutions";
-import { NeedHelp } from "../components/NeedHelp";
+
+const Footer = dynamic(() => import("../modules/Footer"));
+const Contact = dynamic(() => import("../modules/Contact"));
+const HowWeWork = dynamic(() => import("../modules/HowWeWork"));
+const Solutions = dynamic(() => import("../modules/Solutions"));
+const NeedHelp = dynamic(() => import("../components/NeedHelp").then((mod) => mod.NeedHelp));
 
 export default function Home() {
   return (
