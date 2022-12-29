@@ -1,7 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import { useLocale } from "../../hooks/locale";
-import { usePageScroll } from "../../hooks/pageScroll";
 import styles from "../../styles/Header.module.scss";
+import { usePageScroll } from "../../hooks/pageScroll";
 import { HeaderLinks } from "./components/HeaderLinks";
 import { buildHeaderMenuItems } from "./helpers/buildHeaderMenuItems";
 
@@ -36,9 +37,10 @@ const Header: React.FC = () => {
         <span className="header--menu-separator" />
 
         <button type="button" onClick={openMobileMenu} className="header--hamburger-menu">
-          <img
-            width="2.4rem"
-            height="2.4rem"
+          <Image
+            width={24}
+            height={24}
+            quality={100}
             itemProp="showMenu"
             src="/assets/hamburger-menu.webp"
             alt={strings.general["hamburger-icon"]}

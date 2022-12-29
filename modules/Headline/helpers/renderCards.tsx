@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { v4 as uuid } from "uuid";
 
 export const renderCards = (cards: Headline.Card[]): React.ReactNode => {
@@ -7,9 +8,10 @@ export const renderCards = (cards: Headline.Card[]): React.ReactNode => {
     return (
       <article itemScope itemProp="strength" key={uniqueKey} className={card.className}>
         <div className="card--container">
-          <img
-            width="2.4rem"
-            height="2.4rem"
+          <Image
+            width={24}
+            height={24}
+            quality={100}
             itemProp="icon"
             alt={card.iconKey}
             src={`/assets/cards/${card.iconKey}.webp`}

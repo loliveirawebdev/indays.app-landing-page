@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { v4 as uuid } from "uuid";
 import { useLocale } from "../../../hooks/locale";
 
@@ -19,7 +20,10 @@ export const SquadBlock: React.FC = () => {
       return (
         <li key={uniqueKey} itemProp="itemListElement">
           <span>
-            <img
+            <Image
+              width={50}
+              height={57}
+              quality={100}
               loading="lazy"
               itemProp="icon"
               src="/assets/human-silhouette.webp"

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { v4 as uuid } from "uuid";
 
 export const renderToolList = (tools: Record<any, any>[]): React.ReactNode => {
@@ -7,10 +8,11 @@ export const renderToolList = (tools: Record<any, any>[]): React.ReactNode => {
     return (
       <li key={uniqueKey} itemProp="itemListElement">
         <section itemProp="iconContainer">
-          <img
+          <Image
+            width={35}
+            height={35}
+            quality={100}
             loading="lazy"
-            width="3.5rem"
-            height="3.5rem"
             itemProp="icon"
             alt={tool.imageKey}
             src={`/assets/tools/${tool.imageKey}.webp`}
