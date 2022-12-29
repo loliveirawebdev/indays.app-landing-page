@@ -54,6 +54,7 @@
       margin-top: $spacing-md;
 
       .solutions--tools--title {
+        @include regular-text;
         font-weight: bold;
         margin-bottom: $spacing-xs;
       }

@@ -35,9 +35,9 @@ const Solutions: React.FC = () => {
         </ul>
 
         <section itemScope className="solutions--tools">
-          <p itemProp="title" className="solutions--tools--title">
+          <h5 itemProp="title" className="solutions--tools--title">
             {strings.blocks.solutions.tools.title}
-          </p>
+          </h5>
 
           <section itemScope className="solutions--tools--highlight">
             <p itemProp="title" className="solutions--tools--highlight--title">

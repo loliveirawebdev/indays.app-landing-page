@@ -12,10 +12,7 @@ const Appeal: React.FC = () => {
     <section itemScope className={styles.appeal}>
       <div className="appeal--content-container">
         <hgroup itemProp="appeal">
-          <h5 itemProp="headline" className="regular-text">
-            {strings.blocks.appeal.title}
-          </h5>
-
+          <p itemProp="headline">{strings.blocks.appeal.title}</p>
           <p itemProp="message">{strings.blocks.appeal.subtitle}</p>
         </hgroup>
 
