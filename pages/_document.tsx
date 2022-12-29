@@ -25,13 +25,13 @@ export default function CustomDocument(props: DocumentProps) {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content={props.locale} />
         <meta property="og:site_name" content="indays.app" />
-        <meta property="og:image" content="/smartphone.jpg" />
+        <meta property="og:image" content="/media-logo.jpg" />
         <meta property="og:url" content="https://indays.app" />
         <meta property="og:title" content={strings.page.title} />
         <meta property="og:description" content={strings.page.description} />
 
         <meta property="twitter:card" content="summary" />
-        <meta property="twitter:image" content="/smartphone.jpg" />
+        <meta property="twitter:image" content="/media-logo.jpg" />
         <meta property="twitter:title" content={strings.page.title} />
         <meta property="twitter:description" content={strings.page.description} />
 
