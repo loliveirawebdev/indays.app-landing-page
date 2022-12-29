@@ -22,12 +22,18 @@ export default function CustomDocument(props: DocumentProps) {
         <meta name="author" content="Simbiose, ola@simbioseventures.com" />
         <meta name="revised" content="Sunday, January 1st, 2023, 01:00 pm" />
 
-        <meta property="og:image" content="..." />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content={props.locale} />
         <meta property="og:site_name" content="indays.app" />
-        <meta property="og:title" content={strings.page.title} />
+        <meta property="og:image" content="/smartphone.jpg" />
         <meta property="og:url" content="https://indays.app" />
+        <meta property="og:title" content={strings.page.title} />
         <meta property="og:description" content={strings.page.description} />
+
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:image" content="/smartphone.jpg" />
+        <meta property="twitter:title" content={strings.page.title} />
+        <meta property="twitter:description" content={strings.page.description} />
 
         <link rel="canonical" href="https://indays.app" />
         <link rel="alternate" href="https://indays.app/" hrefLang="pt-BR" />
