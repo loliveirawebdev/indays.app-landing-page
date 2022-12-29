@@ -40,7 +40,9 @@ export const ContactForm: React.FC = () => {
 
       return (
         <fieldset key={uuid()} itemScope itemProp="question">
-          <legend itemProp="legend">{question.legend}</legend>
+          <label className="contact-form--question-title" htmlFor={question.key} itemProp="legend">
+            {question.legend}
+          </label>
           {input}
         </fieldset>
       );

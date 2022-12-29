@@ -20,8 +20,8 @@ export const FooterLinks: React.FC<Props> = ({ items }) => {
     });
 
   return (
-    <nav itemScope itemProp="externalLinks" className="footer--external-links">
+    <ul itemScope itemProp="externalLinks" className="footer--external-links">
       {renderMenuItems()}
-    </nav>
+    </ul>
   );
 };
