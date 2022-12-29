@@ -74,8 +74,16 @@ export function useFormSubmit() {
     alertInvalidForm({ formErrors, strings });
   };
 
-  const sendFormData = (formData: Contact.FormData) => {
-    console.log("sent", formData);
+  const sendFormData = async (formData: Contact.FormData) => {
+    const CONTACT_FORM_API = process.env.NEXT_PUBLIC_CONTACT_FORM_API!;
+    const CONTACT_FORM_API_TOKEN = process.env.NEXT_PUBLIC_CONTACT_FORM_API_TOKEN!;
+
+    fetch(CONTACT_FORM_API, {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${CONTACT_FORM_API_TOKEN}` },
+    });
+
     setIsFormSent(true);
     scrollToContact();
   };
