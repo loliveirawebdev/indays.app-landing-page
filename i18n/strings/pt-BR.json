@@ -203,7 +203,8 @@
           "send": "Enviar informações",
           "back": "← Voltar",
           "open": "Abrir formulário →"
-        }
+        },
+        "policy": "Ao clicar em \"Enviar informações\", eu permito que a Simbiose Ventures armazene e processe as informações pessoais por mim enviadas através do formulário acima para fornecer o conteúdo solicitado."
       }
     },
     "footer": {

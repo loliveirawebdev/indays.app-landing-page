@@ -83,6 +83,7 @@ export const ContactForm: React.FC = () => {
 
       <form ref={ref} onSubmit={onSubmit} itemScope itemProp="contactForm" className="contact-form">
         {renderForm()}
+        <p className="contact-form--policy">{strings.blocks.contact.form.policy}</p>
 
         <Button itemProp="submit" type="submit">
           {strings.blocks.contact.form.actions.send}

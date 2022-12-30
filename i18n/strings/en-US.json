@@ -203,7 +203,8 @@
           "send": "Send data",
           "back": "← Go back",
           "open": "Open form →"
-        }
+        },
+        "policy": "I allow Simbiose Ventures to store and process all personal information sent by me through the form above to provide the requested content by clicking the \"Send data\" button."
       }
     },
     "footer": {
