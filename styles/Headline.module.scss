@@ -3,7 +3,6 @@
 
 .headline {
   @include flex-centered-content;
-  padding-bottom: 0 !important;
 
   :global {
     .headline--content-container {
@@ -23,7 +22,7 @@
 
       p {
         font-size: $font-sm;
-        margin-top: $spacing-sm;
+        margin-top: $spacing-md;
 
         @include tablet {
           font-size: $font-md;
@@ -255,9 +254,22 @@
     h2 {
       font-size: $font-sm;
       font-weight: normal;
+      margin-bottom: $spacing-sm;
 
       @include tablet {
         font-size: $font-md;
+      }
+    }
+
+    button {
+      height: auto;
+      display: flow-root;
+      font-weight: bold;
+      font-size: $font-xs;
+      padding: 1.3rem 2rem;
+
+      @include desktop {
+        font-size: $font-sm;
       }
     }
   }
