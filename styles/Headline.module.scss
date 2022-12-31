@@ -18,7 +18,7 @@
 
     .headline--content {
       @include not-desktop {
-        order: 3;
+        order: 2;
       }
 
       p {
@@ -38,7 +38,8 @@
     flex-direction: column;
 
     @include not-desktop {
-      order: 2;
+      order: 3;
+      margin-top: $spacing-sm;
     }
 
     @media (min-width: 500px) {
@@ -254,7 +255,6 @@
     h2 {
       font-size: $font-sm;
       font-weight: normal;
-      margin-bottom: $spacing-sm;
 
       @include tablet {
         font-size: $font-md;
