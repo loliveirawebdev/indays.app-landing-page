@@ -19,8 +19,13 @@
       margin-top: $spacing-md;
 
       button {
-        margin-top: $spacing-sm;
+        font-size: $font-xs;
         @include regular-text;
+        margin-top: $spacing-sm;
+
+        @include desktop {
+          font-size: $font-sm;
+        }
       }
     }
   }
