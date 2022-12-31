@@ -81,23 +81,23 @@
       "title": "Soluções",
       "items": [
         {
-          "title": "Aplicações customizadas para mobile",
+          "title": "Desenvolvimento mobile customizado",
           "description": "Nós desenvolvemos aplicações mobiles lindas para Android e iOS utilizando sua stack nativa ou através de uma tecnologia cross-platform como React Native ou Flutter."
         },
         {
-          "title": "Super aplicativos",
+          "title": "Desenvolvimento de Super Aplicativos",
           "description": "Nós temos o conhecimento e a experiência para desenvolver este tipo único de aplicação mobile que está em alta após a campanha de sucesso feita pela WeChat."
         },
         {
-          "title": "Aplicações para Smart TV",
+          "title": "Desenvolvimento customizado para Smart TV",
           "description": "Nós desenvolvemos aplicações profissionais para qualquer sistema operacional de Smart TV como LG WebOS ou Tizen TV."
         },
         {
-          "title": "Aplicações customizadas de e-commerce",
+          "title": "Desenvolvimento customizado para e-commerce",
           "description": "Nossa verdadeira paixão e especialidade é desenvolver plataformas de e-commerce customizadas do zero ou utilizando Magento Commerce."
         },
         {
-          "title": "Aplicações back-end para mobile",
+          "title": "Desenvolvimento customizado de back-end para mobile",
           "description": "Nós desenvolvemos soluções back-end que são rápidas, confiantes e seguras utilizando stack tecnológicas modernas como Deno.js, GoLang ou Bun.js, ou utilizando stacks mais consolidadas como Java, Python ou PHP."
         },
         {
@@ -166,8 +166,9 @@
               "Aplicação mobile",
               "Super app",
               "Aplicação para Smart TV",
-              "Plataforma e-commerce customizaa",
-              "Aplicação back-end para mobile"
+              "Plataforma e-commerce customizada",
+              "Aplicação back-end para mobile",
+              "Design de produto"
             ]
           },
           "start": {

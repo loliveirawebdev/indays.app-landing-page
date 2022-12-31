@@ -81,23 +81,23 @@
       "title": "Solutions",
       "items": [
         {
-          "title": "Custom mobile application",
+          "title": "Custom mobile development",
           "description": "We develop beautiful mobile applications for Android and iOS using their native stack or through a cross-platform technology like React Native or Flutter."
         },
         {
-          "title": "Super apps",
+          "title": "Custom Super Apps development",
           "description": "We have the knowledge and experience to develop this singular kind of mobile application that is a new trending after the successful campaign made by WeChat."
         },
         {
-          "title": "Smart TV applications",
+          "title": "Custom Smart TV applications development",
           "description": "We develop professional applications for any TV operational system like LG WebOS or Tizen TV."
         },
         {
-          "title": "Custom e-commerce application",
+          "title": "Custom e-commerce development",
           "description": "Our truly passion and specialty is to develop custom e-commerce platforms from the scratch or using Magento Commerce."
         },
         {
-          "title": "Mobile back-end applications",
+          "title": "Custom mobile back-end development",
           "description": "We develop fast, reliable and secure back-end solutions using modern tech stacks like Bun.js, Deno.js or Go, or using more consolidated tech stacks like Java, Python or PHP."
         },
         {
@@ -167,7 +167,8 @@
               "Super app",
               "Smart TV application",
               "Custom e-commerce platform",
-              "Mobile back-end application"
+              "Mobile back-end application",
+              "Product design"
             ]
           },
           "start": {
