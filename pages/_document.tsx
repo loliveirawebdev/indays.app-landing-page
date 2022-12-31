@@ -35,9 +35,9 @@ export default function CustomDocument(props: DocumentProps) {
         <meta property="twitter:title" content={strings.page.title} />
         <meta property="twitter:description" content={strings.page.description} />
 
-        <link rel="canonical" href="https://indays.app" />
-        <link rel="alternate" href="https://indays.app/" hrefLang="pt-BR" />
+        <link rel="canonical" href="https://indays.app/" />
         <link rel="alternate" href="https://indays.app/en" hrefLang="en" />
+        <link rel="alternate" href="https://indays.app/" hrefLang="pt-BR" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
 
