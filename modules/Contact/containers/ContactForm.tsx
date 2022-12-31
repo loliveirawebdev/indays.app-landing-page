@@ -2,15 +2,15 @@ import React from "react";
 import { v4 as uuid } from "uuid";
 import { useRecoilState } from "recoil";
 import { useLocale } from "../../../hooks/locale";
-import { useSectionsRefs } from "../../../hooks/refs";
-import { IS_FORM_CONTACT_SENT } from "../../../atoms/contact";
-import { useFormSubmit, useQuestions } from "../hooks/questions";
-import { usePageScroll } from "../../../hooks/pageScroll";
 import { Button } from "../../../components/Button";
+import { useSectionsRefs } from "../../../hooks/refs";
+import { usePageScroll } from "../../../hooks/pageScroll";
+import { useFormSubmit, useQuestions } from "../hooks/questions";
+import { IS_FORM_CONTACT_OPEN, IS_FORM_CONTACT_SENT } from "../../../atoms/contact";
 
 export const ContactForm: React.FC = () => {
   const [isFormSent] = useRecoilState(IS_FORM_CONTACT_SENT);
-  const [isFormOpen, setIsFormOpen] = React.useState(false);
+  const [isFormOpen, setIsFormOpen] = useRecoilState(IS_FORM_CONTACT_OPEN);
 
   const { strings } = useLocale();
   const { registerRef } = useSectionsRefs();
