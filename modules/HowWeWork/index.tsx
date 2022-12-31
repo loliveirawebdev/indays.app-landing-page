@@ -32,13 +32,13 @@ const HowWeWork: React.FC = () => {
 
         <SquadBlock />
 
-        <footer itemScope itemProp="callToAction">
+        {/* <footer itemScope itemProp="callToAction">
           <p>{strings.blocks.howWeWork.footer.text}</p>
 
           <a href="#" itemProp="link">
             {strings.blocks.howWeWork.footer.action}
           </a>
-        </footer>
+        </footer> */}
       </div>
     </article>
   );
