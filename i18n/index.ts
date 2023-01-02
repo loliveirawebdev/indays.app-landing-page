@@ -1,8 +1,12 @@
-import ptBR from "./strings/pt-BR.json";
-import enUS from "./strings/en-US.json";
-import { parseStringsAsHtml } from "./helpers/parseStringsAsHtml";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
-export const LocalesMap: Record<string, typeof ptBR> = {
-  "pt-BR": parseStringsAsHtml(ptBR),
-  en: parseStringsAsHtml(enUS),
+import Footer from "./blocks/Footer";
+import Contact from "./blocks/Contact";
+
+export const LocalesMap = {
+  home: Home as any,
+  notFound: NotFound as any,
+  footer: Footer as any,
+  contact: Contact as any,
 };

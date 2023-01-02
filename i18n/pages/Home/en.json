@@ -3,6 +3,7 @@
     "title": "Custom Mobile Development in Days | indays.app",
     "description": "We make the difference to your business, transforming your ideas into success through custom mobile development",
     "keywords": "custom mobile development, accelerated custom mobile development, obile development in days",
+    "route-name": "/",
     "not-found": {
       "message": "We looked everywhere for this page. Are you sure the website URL is correct?",
       "action": "Go back to indays.app"
@@ -10,7 +11,6 @@
   },
   "general": {
     "needHelp": "Need help? Contact us",
-    "other": "Other",
     "hamburger-icon": "Expand main menu"
   },
   "blocks": {
@@ -151,77 +151,6 @@
               "label": "Swift"
             }
           ]
-        }
-      }
-    },
-    "contact": {
-      "title": "Contact us",
-      "description": "Email our tech lead directly at <b>lucas.oliveira@simbioseventures.com</b> or tell us a brief about your project in the form below.",
-      "form": {
-        "questions": {
-          "applicationType": {
-            "legend": "Type of application that you need",
-            "options": [
-              "Mobile application",
-              "Super app",
-              "Smart TV application",
-              "Custom e-commerce platform",
-              "Mobile back-end application",
-              "Product design"
-            ]
-          },
-          "start": {
-            "legend": "When would you like to start?",
-            "options": ["As soon as possible", "In a few weeks", "Not sure"]
-          },
-          "budget": {
-            "legend": "Do you have a budget for this project?"
-          },
-          "youAre": {
-            "legend": "You are:",
-            "options": ["Founder of a startup", "Part of the leadership of a company"]
-          },
-          "name": {
-            "legend": "What is your full name?"
-          },
-          "email": {
-            "legend": "What is your e-mail address?"
-          },
-          "more": {
-            "legend": "Something else to tell?"
-          }
-        },
-        "error": {
-          "title": "An error occurred...",
-          "description": "Please, answer the following questions correctly:"
-        },
-        "success": {
-          "title": "Your form has been submitted.",
-          "description": "A representative from indays.app will contact you within 24 hours."
-        },
-        "actions": {
-          "send": "Send data",
-          "back": "← Go back",
-          "open": "Open form →"
-        },
-        "policy": "I allow Simbiose Ventures to store and process all personal information sent by me through the form above to provide the requested content by clicking the \"Send data\" button."
-      }
-    },
-    "footer": {
-      "title": "About Simbiose Ventures and in<span>days</span>.app",
-      "paragraphs": [
-        "Simbiose is a unique outsourcing company that trains developers with high technical and ethical standards. They have been in the technology market since 2012 and have already served more than 80 national and international companies.",
-        "<b>indays.app</b> is formed by a group of developers from Simbiose Ventures with a special focus to develop mobile solutions."
-      ],
-      "menus": {
-        "about": "Know more about who we are",
-        "mission": "Our mission, assumptions and values",
-        "dream": "Our dream"
-      },
-      "socialMediaLinks": {
-        "alts": {
-          "github": "Github's icon",
-          "linkedin": "Linkedin's icon"
         }
       }
     }

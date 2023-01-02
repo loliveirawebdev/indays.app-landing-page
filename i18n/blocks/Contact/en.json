@@ -1,0 +1,54 @@
+{
+  "other": "Other",
+  "title": "Contact us",
+  "description": "Email our tech lead directly at <b>lucas.oliveira@simbioseventures.com</b> or tell us a brief about your project in the form below.",
+  "form": {
+    "questions": {
+      "applicationType": {
+        "legend": "Type of application that you need",
+        "options": [
+          "Mobile application",
+          "Super app",
+          "Smart TV application",
+          "Custom e-commerce platform",
+          "Mobile back-end application",
+          "Product design"
+        ]
+      },
+      "start": {
+        "legend": "When would you like to start?",
+        "options": ["As soon as possible", "In a few weeks", "Not sure"]
+      },
+      "budget": {
+        "legend": "Do you have a budget for this project?"
+      },
+      "youAre": {
+        "legend": "You are:",
+        "options": ["Founder of a startup", "Part of the leadership of a company"]
+      },
+      "name": {
+        "legend": "What is your full name?"
+      },
+      "email": {
+        "legend": "What is your e-mail address?"
+      },
+      "more": {
+        "legend": "Something else to tell?"
+      }
+    },
+    "error": {
+      "title": "An error occurred...",
+      "description": "Please, answer the following questions correctly:"
+    },
+    "success": {
+      "title": "Your form has been submitted.",
+      "description": "A representative from indays.app will contact you within 24 hours."
+    },
+    "actions": {
+      "send": "Send data",
+      "back": "← Go back",
+      "open": "Open form →"
+    },
+    "policy": "I allow Simbiose Ventures to store and process all personal information sent by me through the form above to provide the requested content by clicking the \"Send data\" button."
+  }
+}

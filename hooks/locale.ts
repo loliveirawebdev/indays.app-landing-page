@@ -1,21 +1,7 @@
-import { useRouter } from "next/router";
 import { LocalesMap } from "../i18n";
+import { useRouter } from "next/router";
 
-export function useUncontextualizedLocale(locale: string) {
-  function getStrings() {
-    try {
-      return LocalesMap[locale];
-    } catch {
-      return LocalesMap["pt-BR"];
-    }
-  }
-
-  return {
-    strings: getStrings(),
-  };
-}
-
-export function useLocale() {
+export function useLocale(page: keyof typeof LocalesMap) {
   const { locale, defaultLocale } = useRouter();
 
   function getLocale() {
@@ -23,7 +9,7 @@ export function useLocale() {
   }
 
   function getStrings() {
-    return LocalesMap[getLocale()];
+    return LocalesMap[page][getLocale()];
   }
 
   return {
