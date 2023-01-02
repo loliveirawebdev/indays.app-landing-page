@@ -1,6 +1,5 @@
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
+const { generateRoutesRewrites } = require("./helpers/generateRoutesRewrites");
+const withBundleAnalyzer = require("@next/bundle-analyzer")({ enabled: process.env.ANALYZE === "true" });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = withBundleAnalyzer({
@@ -8,6 +7,7 @@ const nextConfig = withBundleAnalyzer({
     locales: ["en", "pt-BR"],
     defaultLocale: "pt-BR",
   },
+  rewrites: () => generateRoutesRewrites(),
   reactStrictMode: false,
 });
 

@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import Header from "../modules/Header";
 import Appeal from "../modules/Appeal";
 import Headline from "../modules/Headline";
-import { useLocale } from "../hooks/locale";
+import { useLocale, useRouteConfig } from "../hooks/locale";
 
 const Footer = dynamic(() => import("../modules/Footer"));
 const Contact = dynamic(() => import("../modules/Contact"));
@@ -14,6 +14,7 @@ const NeedHelp = dynamic(() => import("../components/NeedHelp").then((mod) => mo
 
 export default function Home() {
   const { strings } = useLocale("home");
+  const { currentRoute, alternates } = useRouteConfig("home");
 
   return (
     <React.Fragment>
@@ -36,9 +37,9 @@ export default function Home() {
         <meta property="twitter:title" content={strings.page.title} />
         <meta property="twitter:description" content={strings.page.description} />
 
-        <link rel="canonical" href="https://indays.app/" />
-        <link rel="alternate" href="https://indays.app/en" hrefLang="en" />
-        <link rel="alternate" href="https://indays.app/" hrefLang="pt-BR" />
+        <link rel="canonical" href={`https://indays.app/${currentRoute}`} />
+        <link rel="alternate" href={`https://indays.app/en/${alternates.en}`} hrefLang="en" />
+        <link rel="alternate" href={`https://indays.app/${alternates["pt-BR"]}`} hrefLang="pt-BR" />
       </Head>
 
       <NeedHelp />
