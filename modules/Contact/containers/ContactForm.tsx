@@ -12,7 +12,7 @@ export const ContactForm: React.FC = () => {
   const [isFormSent] = useRecoilState(IS_FORM_CONTACT_SENT);
   const [isFormOpen, setIsFormOpen] = useRecoilState(IS_FORM_CONTACT_OPEN);
 
-  const { strings } = useLocale();
+  const { strings } = useLocale("contact");
   const { registerRef } = useSectionsRefs();
   const { config, inputRenderer } = useQuestions();
   const { blockScroll, unblockScroll } = usePageScroll();
@@ -64,29 +64,29 @@ export const ContactForm: React.FC = () => {
     <div className={generateContainerClasses()}>
       <div className="contact-form--header" itemScope itemProp="actions">
         <Button variant="tertiary" type="button" onClick={onCloseForm} itemProp="backButton">
-          {strings.blocks.contact.form.actions.back}
+          {strings.form.actions.back}
         </Button>
       </div>
 
       <div className="contact-form--open-helper" itemScope>
         <div className="open-helper--backdrop" itemProp="backdrop">
           <Button variant="secondary" type="button" onClick={onOpenForm} itemProp="button">
-            {strings.blocks.contact.form.actions.open}
+            {strings.form.actions.open}
           </Button>
         </div>
       </div>
 
       <div className="contact-form--sent" itemScope>
-        <p itemProp="information">{strings.blocks.contact.form.success.title}</p>
-        <p itemProp="information">{strings.blocks.contact.form.success.description}</p>
+        <p itemProp="information">{strings.form.success.title}</p>
+        <p itemProp="information">{strings.form.success.description}</p>
       </div>
 
       <form ref={ref} onSubmit={onSubmit} itemScope itemProp="contactForm" className="contact-form">
         {renderForm()}
-        <p className="contact-form--policy">{strings.blocks.contact.form.policy}</p>
+        <p className="contact-form--policy">{strings.form.policy}</p>
 
         <Button itemProp="submit" type="submit">
-          {strings.blocks.contact.form.actions.send}
+          {strings.form.actions.send}
         </Button>
       </form>
     </div>

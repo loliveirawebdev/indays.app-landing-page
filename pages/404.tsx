@@ -3,7 +3,7 @@ import { useLocale } from "../hooks/locale";
 import style from "../styles/ErrorMessage.module.scss";
 
 export default function Custom404() {
-  const { strings } = useLocale();
+  const { strings } = useLocale("notFound");
 
   return (
     <div className={style.errorMessage}>

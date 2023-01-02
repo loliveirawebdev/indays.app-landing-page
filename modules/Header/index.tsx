@@ -8,7 +8,7 @@ import { buildHeaderMenuItems } from "./helpers/buildHeaderMenuItems";
 import { Logo } from "../../components/Logo";
 
 const Header: React.FC = () => {
-  const { strings } = useLocale();
+  const { strings } = useLocale("home");
   const menuLinks = buildHeaderMenuItems(strings.blocks.header.menu);
 
   const { blockScroll, unblockScroll } = usePageScroll();

@@ -5,7 +5,7 @@ import styles from "../../styles/Appeal.module.scss";
 import { useSectionsScroll } from "../../hooks/pageScroll";
 
 const Appeal: React.FC = () => {
-  const { strings } = useLocale();
+  const { strings } = useLocale("home");
   const { scrollToContact } = useSectionsScroll();
 
   return (

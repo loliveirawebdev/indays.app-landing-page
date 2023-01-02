@@ -8,15 +8,15 @@ import { buildFooterMenuItems } from "./helpers/buildFooterMenuItems";
 import { LanguagesLinks } from "./components/LanguagesLinks";
 
 const Footer: React.FC = () => {
-  const { strings } = useLocale();
-  const menuItems = buildFooterMenuItems(strings.blocks.footer.menus);
+  const { strings } = useLocale("footer");
+  const menuItems = buildFooterMenuItems(strings.menus);
 
   return (
     <footer itemScope itemProp="footer" className={styles.footer}>
       <div className="footer--content-container">
         <article itemScope itemProp="about" className="footer--about-container">
-          <h6 itemProp="title">{strings.blocks.footer.title}</h6>
-          {renderParagraphs(strings.blocks.footer.paragraphs)}
+          <h6 itemProp="title">{strings.title}</h6>
+          {renderParagraphs(strings.paragraphs)}
         </article>
 
         <FooterLinks items={menuItems} />

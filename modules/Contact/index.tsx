@@ -8,7 +8,7 @@ import { useNeedHelp } from "../../hooks/needHelp";
 const ContactForm = dynamic(() => import("./containers/ContactForm").then((mod) => mod.ContactForm), { ssr: false });
 
 const Contact: React.FC = () => {
-  const { strings } = useLocale();
+  const { strings } = useLocale("contact");
   const { registerRef } = useSectionsRefs();
 
   const ref = React.useRef<HTMLElement>(null);
@@ -27,11 +27,11 @@ const Contact: React.FC = () => {
     <section ref={ref} itemScope itemProp="contact" className={styles.contact}>
       <div className="contact--content-container">
         <p itemProp="title" className="section-title">
-          {strings.blocks.contact.title}
+          {strings.title}
         </p>
 
         <p itemProp="info" className="contact--description">
-          {strings.blocks.contact.description}
+          {strings.description}
         </p>
 
         <ContactForm />

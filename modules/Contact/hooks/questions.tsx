@@ -7,9 +7,9 @@ import { renderInputForQuestion } from "../helpers/renderInput";
 import { runFormValidation } from "../helpers/runFormValidation";
 
 export function useQuestions() {
-  const { strings } = useLocale();
-  const { questions } = strings.blocks.contact.form;
-  const renderer = (question: Contact.FormQuestion) => renderInputForQuestion(question, strings.general.other);
+  const { strings } = useLocale("contact");
+  const { questions } = strings.form;
+  const renderer = (question: Contact.FormQuestion) => renderInputForQuestion(question, strings.other);
 
   const baseConfig: Contact.FormQuestion[] = [
     {
@@ -65,7 +65,7 @@ export function useQuestions() {
 }
 
 export function useFormSubmit() {
-  const { strings } = useLocale();
+  const { strings } = useLocale("contact");
   const { scrollToContactForm, scrollToContact } = useSectionsScroll();
   const setIsFormSent = useSetRecoilState(IS_FORM_CONTACT_SENT);
 

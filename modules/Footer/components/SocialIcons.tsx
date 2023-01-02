@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useLocale } from "../../../hooks/locale";
 
 export const SocialIcons: React.FC = () => {
-  const { strings } = useLocale();
+  const { strings } = useLocale("footer");
 
   return (
     <menu itemScope itemProp="socialMediaLinks" className="footer--social-media-links">
@@ -16,7 +16,7 @@ export const SocialIcons: React.FC = () => {
             loading="lazy"
             itemProp="icon"
             src="/assets/github.webp"
-            alt={strings.blocks.footer.socialMediaLinks.alts.github}
+            alt={strings.socialMediaLinks.alts.github}
           />
         </a>
       </li>
@@ -30,7 +30,7 @@ export const SocialIcons: React.FC = () => {
             loading="lazy"
             itemProp="icon"
             src="/assets/linkedin.webp"
-            alt={strings.blocks.footer.socialMediaLinks.alts.linkedin}
+            alt={strings.socialMediaLinks.alts.linkedin}
           />
         </a>
       </li>

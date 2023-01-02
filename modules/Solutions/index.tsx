@@ -8,7 +8,7 @@ import { useNeedHelp } from "../../hooks/needHelp";
 import { renderServiceItems } from "./helpers/renderServiceItems";
 
 const Solutions: React.FC = () => {
-  const { strings } = useLocale();
+  const { strings } = useLocale("home");
   const { registerRef } = useSectionsRefs();
 
   const ref = React.useRef<HTMLElement>(null);

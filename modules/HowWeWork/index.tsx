@@ -7,7 +7,7 @@ import { renderTimelineSteps } from "./helpers/renderTimelineSteps";
 import { useSectionsRefs } from "../../hooks/refs";
 
 const HowWeWork: React.FC = () => {
-  const { strings } = useLocale();
+  const { strings } = useLocale("home");
   const { registerRef } = useSectionsRefs();
   const ref = React.useRef<HTMLElement>(null);
 

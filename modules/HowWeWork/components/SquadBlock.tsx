@@ -11,7 +11,7 @@ const SQUAD_CONFIG = [
 ];
 
 export const SquadBlock: React.FC = () => {
-  const { strings } = useLocale();
+  const { strings } = useLocale("home");
 
   const renderSquadConfig = () => {
     return SQUAD_CONFIG.map((squadMember) => {

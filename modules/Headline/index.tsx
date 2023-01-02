@@ -9,7 +9,7 @@ import { renderParagraphs } from "../../helpers/renderParagraphs";
 import { buildHeadlineCards } from "./helpers/buildHeadlineCards";
 
 const Headline: React.FC = () => {
-  const { strings } = useLocale();
+  const { strings } = useLocale("home");
   const setIsFormOpen = useSetRecoilState(IS_FORM_CONTACT_OPEN);
   const cards = buildHeadlineCards(strings.blocks.headline.cards);
   const openForm = () => setIsFormOpen(true);
