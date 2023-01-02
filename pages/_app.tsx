@@ -7,11 +7,14 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
 import "../styles/_globals.scss";
+import { Analytics } from "../components/Analytics";
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
+      <Analytics />
+
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
