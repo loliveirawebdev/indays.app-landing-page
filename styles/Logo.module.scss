@@ -3,6 +3,8 @@
 
 .logo {
   display: flex;
+  cursor: pointer;
+  color: transparent;
 
   :global {
     figure {
