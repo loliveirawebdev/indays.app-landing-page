@@ -3,11 +3,7 @@
     "title": "Custom Mobile Development in Days | indays.app",
     "description": "We make the difference to your business, transforming your ideas into success through custom mobile development",
     "keywords": "custom mobile development, accelerated custom mobile development, obile development in days",
-    "route-name": "/",
-    "not-found": {
-      "message": "We looked everywhere for this page. Are you sure the website URL is correct?",
-      "action": "Go back to indays.app"
-    }
+    "route-name": "/"
   },
   "general": {
     "needHelp": "Need help? Contact us",
