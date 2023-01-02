@@ -1,5 +1,4 @@
 const fs = require("fs");
-const HowWeWorkRoute = require("../i18n/pages/HowWeWork/route.json");
 
 const getRouteFile = (page) => {
   try {
