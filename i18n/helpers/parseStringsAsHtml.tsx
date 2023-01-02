@@ -1,5 +1,4 @@
 import _ from "lodash";
-import ptBR from "../strings/pt-BR.json";
 import htmlParser from "html-react-parser";
 type LocalizationValue = Record<string, any> | string | Array<string | Record<string, any>>;
 
@@ -9,6 +8,6 @@ const recursiveParser = (entry: LocalizationValue): any => {
   return parseStringsAsHtml(entry);
 };
 
-export const parseStringsAsHtml = (strings: Record<string, any>): typeof ptBR => {
+export const parseStringsAsHtml = (strings: Record<string, any>) => {
   return _.mapValues(strings, recursiveParser) as any;
 };
