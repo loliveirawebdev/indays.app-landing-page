@@ -4,9 +4,13 @@ import React from "react";
 export const Analytics: React.FC = () => {
   return (
     <React.Fragment>
-      <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-FZ9FMMSVMF" />
+      <Script
+        strategy="lazyOnload"
+        id="GoogleTagManagerImport"
+        src="https://www.googletagmanager.com/gtag/js?id=G-FZ9FMMSVMF"
+      />
 
-      <Script strategy="lazyOnload">
+      <Script id="GoogleTagManagerConfig" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
