@@ -5,9 +5,10 @@ import { useLocale } from "../../hooks/locale";
 import styles from "../../styles/Header.module.scss";
 import { usePageScroll } from "../../hooks/pageScroll";
 import { HeaderLinks } from "./components/HeaderLinks";
+import { Breadcrumb } from "../../components/Breadcrumb";
 import { buildHeaderMenuItems } from "./helpers/buildHeaderMenuItems";
 
-const Header: React.FC = () => {
+const Header: React.FC<Header.Props> = ({ breadcrumbs }) => {
   const { strings } = useLocale("header");
   const menuLinks = buildHeaderMenuItems(strings.menu);
 
@@ -27,21 +28,25 @@ const Header: React.FC = () => {
   return (
     <header itemScope itemProp="header" className={styles.header}>
       <div className="header--content-container">
-        <Logo />
-        <span className="header--menu-separator" />
+        <div>
+          <Logo />
+          <span className="header--menu-separator" />
 
-        <button type="button" onClick={openMobileMenu} className="header--hamburger-menu">
-          <Image
-            width={24}
-            height={24}
-            quality={100}
-            itemProp="showMenu"
-            src="/assets/hamburger-menu.webp"
-            alt={strings.general["hamburger-icon"]}
-          />
-        </button>
+          <button type="button" onClick={openMobileMenu} className="header--hamburger-menu">
+            <Image
+              width={24}
+              height={24}
+              quality={100}
+              itemProp="showMenu"
+              src="/assets/hamburger-menu.webp"
+              alt={strings.general["hamburger-icon"]}
+            />
+          </button>
 
-        <HeaderLinks collapseMobile={collapseMobile} isMobileCollapsed={isMobileCollapsed} items={menuLinks} />
+          <HeaderLinks collapseMobile={collapseMobile} isMobileCollapsed={isMobileCollapsed} items={menuLinks} />
+        </div>
+
+        {breadcrumbs && <Breadcrumb pages={breadcrumbs} />}
       </div>
     </header>
   );

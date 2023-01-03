@@ -14,14 +14,25 @@
     .header--content-container {
       width: 100%;
       display: flex;
-      align-items: center;
-      flex-direction: row;
       max-width: $max-width;
+      flex-direction: column;
 
       img {
         width: 114px;
         height: 31px;
         margin-top: 2px;
+      }
+
+      > div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        max-width: $max-width;
+      }
+
+      ol {
+        margin-top: $spacing-sm;
       }
     }
 
