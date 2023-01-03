@@ -5,11 +5,11 @@ export const buildHeaderMenuItems = (menu: any): Header.MenuItem[] => {
       action: "howWeWork",
       type: "link",
     },
-    {
-      label: menu.blog,
-      action: "blog",
-      type: "link",
-    },
+    // {
+    //   label: menu.blog,
+    //   action: "blog",
+    //   type: "link",
+    // },
     {
       label: menu.contact,
       action: "contact",
