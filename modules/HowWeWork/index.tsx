@@ -15,6 +15,12 @@ const HowWeWork: React.FC = () => {
           {strings.title}
         </h1>
 
+        <h2 itemProp="subtitle" className="section-subtitle">
+          {strings.subtitle}
+        </h2>
+
+        <hr className="section-divider" />
+
         {renderParagraphs(strings.paragraphs)}
 
         <section itemScope itemProp="timeline" className="howWeWork--timeline">

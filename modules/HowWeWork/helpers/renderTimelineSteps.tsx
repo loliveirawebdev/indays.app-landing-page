@@ -12,7 +12,7 @@ export const renderTimelineSteps = (steps: Record<any, any>[]): React.ReactNode 
         </div>
 
         <div className="timeline--item--content">
-          <h2 itemProp="title">{step.title}</h2>
+          <h3 itemProp="title">{step.title}</h3>
           <p itemProp="description">{step.description}</p>
         </div>
       </li>

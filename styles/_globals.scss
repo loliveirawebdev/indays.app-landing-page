@@ -30,6 +30,16 @@ body.scroll-blocked {
   }
 }
 
+.section-subtitle {
+  color: $gray;
+  font-size: $font-sm;
+  font-weight: normal;
+
+  @include desktop {
+    font-size: $font-md;
+  }
+}
+
 .section-divider {
   border: 0;
   height: 2px;

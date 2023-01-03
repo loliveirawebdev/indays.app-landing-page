@@ -8,6 +8,8 @@
     .howWeWork--content-container {
       width: 100%;
       max-width: $max-width;
+      display: flex;
+      flex-direction: column;
 
       p {
         margin-top: $spacing-sm;
@@ -31,7 +33,7 @@
             margin-bottom: 0;
           }
 
-          h2 {
+          h3 {
             font-size: $font-xs;
           }
 
@@ -41,7 +43,7 @@
           }
 
           @include tablet {
-            h2 {
+            h3 {
               font-size: $font-sm;
             }
 
