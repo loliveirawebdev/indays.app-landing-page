@@ -8,7 +8,7 @@ export const SocialIcons: React.FC = () => {
   return (
     <menu itemScope itemProp="socialMediaLinks" className="footer--social-media-links">
       <li itemProp="socialMediaLink">
-        <a href="https://github.com/s1mbi0se" target="_blank" rel="noreferrer" itemProp="link">
+        <a href="https://github.com/s1mbi0se" target="_blank" rel="nofollow" itemProp="link">
           <Image
             width={24}
             height={24}
@@ -22,7 +22,7 @@ export const SocialIcons: React.FC = () => {
       </li>
 
       <li itemProp="socialMediaLink">
-        <a href="https://www.linkedin.com/company/simbioseventures" target="_blank" rel="noreferrer" itemProp="link">
+        <a href="https://www.linkedin.com/company/simbioseventures" target="_blank" rel="nofollow" itemProp="link">
           <Image
             width={24}
             height={24}

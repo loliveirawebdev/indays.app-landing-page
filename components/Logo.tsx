@@ -2,7 +2,7 @@ import style from "../styles/Logo.module.scss";
 
 export const Logo: React.FC = () => {
   return (
-    <a rel="noreferrer" href="https://indays.app/" className={style.logo} itemProp="link">
+    <a href="https://indays.app/" className={style.logo} itemProp="link">
       <figure itemScope itemProp="logo">
         <div className="logo--text" itemProp="text">
           in<span>days</span>.app
