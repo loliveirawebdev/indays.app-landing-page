@@ -3,6 +3,7 @@
 
 .appeal {
   @include flex-centered-content;
+  padding-top: 0 !important;
   color: $gray;
 
   :global {
@@ -11,21 +12,13 @@
       max-width: $max-width;
     }
 
-    h5 {
-      font-weight: normal;
-    }
+    button {
+      font-size: $font-xs;
+      @include regular-text;
+      margin-top: $spacing-sm;
 
-    .appeal--footer {
-      margin-top: $spacing-md;
-
-      button {
-        font-size: $font-xs;
-        @include regular-text;
-        margin-top: $spacing-sm;
-
-        @include desktop {
-          font-size: $font-sm;
-        }
+      @include desktop {
+        font-size: $font-sm;
       }
     }
   }

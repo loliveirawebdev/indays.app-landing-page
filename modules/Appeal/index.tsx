@@ -11,18 +11,11 @@ const Appeal: React.FC = () => {
   return (
     <section itemScope className={styles.appeal}>
       <div className="appeal--content-container">
-        <hgroup itemProp="appeal">
-          <p itemProp="headline">{strings.blocks.appeal.title}</p>
-          <p itemProp="message">{strings.blocks.appeal.subtitle}</p>
-        </hgroup>
+        <p itemProp="description">{strings.blocks.appeal.description}</p>
 
-        <footer className="appeal--footer">
-          <p itemProp="description">{strings.blocks.appeal.description}</p>
-
-          <Button onClick={scrollToContact} variant="secondary" itemProp="contactButton">
-            {strings.blocks.appeal.action}
-          </Button>
-        </footer>
+        <Button onClick={scrollToContact} variant="secondary" itemProp="contactButton">
+          {strings.blocks.appeal.action}
+        </Button>
       </div>
     </section>
   );
