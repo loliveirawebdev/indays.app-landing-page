@@ -6,9 +6,8 @@ import styles from "../../styles/Header.module.scss";
 import { usePageScroll } from "../../hooks/pageScroll";
 import { HeaderLinks } from "./components/HeaderLinks";
 import { buildHeaderMenuItems } from "./helpers/buildHeaderMenuItems";
-type Props = { logoOnly?: boolean };
 
-const Header: React.FC<Props> = ({ logoOnly }) => {
+const Header: React.FC = () => {
   const { strings } = useLocale("home");
   const menuLinks = buildHeaderMenuItems(strings.blocks.header.menu);
 
@@ -24,16 +23,6 @@ const Header: React.FC<Props> = ({ logoOnly }) => {
     blockScroll();
     setIsMobileCollapsed(false);
   };
-
-  if (logoOnly) {
-    return (
-      <header itemScope itemProp="header" className={styles.header}>
-        <div className="header--content-container">
-          <Logo />
-        </div>
-      </header>
-    );
-  }
 
   return (
     <header itemScope itemProp="header" className={styles.header}>
