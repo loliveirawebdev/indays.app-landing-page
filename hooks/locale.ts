@@ -27,8 +27,20 @@ export function useRouteConfig(page: keyof typeof RoutesMap) {
 
   function getLocalizedRoute() {
     const locale = getLocale();
-    const route = RoutesMap[page][getLocale()];
+    const route = RoutesMap[page][locale];
 
+    return locale === "pt-BR" ? route : `${locale}/${route}`;
+  }
+
+  return {
+    localizedRoute: getLocalizedRoute(),
+    alternates: RoutesMap[page],
+  };
+}
+
+export function getRouteConfig(page: keyof typeof RoutesMap, locale: string) {
+  function getLocalizedRoute() {
+    const route = RoutesMap[page][locale];
     return locale === "pt-BR" ? route : `${locale}/${route}`;
   }
 

@@ -72,7 +72,7 @@
           background: $black;
         }
 
-        menu {
+        nav {
           top: 0;
           left: 0;
           z-index: 91;
@@ -95,7 +95,7 @@
       }
 
       @include desktop {
-        menu {
+        nav {
           display: flex;
           margin-left: 3rem;
           flex-direction: row;
@@ -123,7 +123,6 @@
 
       &:hover {
         border-bottom: 3px solid black;
-        padding-bottom: 3px;
       }
 
       @include desktop {

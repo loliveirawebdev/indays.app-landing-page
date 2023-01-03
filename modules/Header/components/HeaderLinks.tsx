@@ -1,4 +1,6 @@
+import { useRouter } from "next/router";
 import { v4 as uuid } from "uuid";
+import { getRouteConfig } from "../../../hooks/locale";
 import { useSectionsScroll } from "../../../hooks/pageScroll";
 
 interface Props {
@@ -9,7 +11,9 @@ interface Props {
 
 export const HeaderLinks: React.FC<Props> = (props) => {
   const { scrollTo } = useSectionsScroll();
+  const { locale, defaultLocale } = useRouter();
   const { items, isMobileCollapsed, collapseMobile } = props;
+  const pageLocale = locale || defaultLocale;
 
   const generateClassList = () => {
     const collapsedClass = isMobileCollapsed ? "header--menu__collapsed" : "";
@@ -26,13 +30,25 @@ export const HeaderLinks: React.FC<Props> = (props) => {
   const renderMenuItems = (): React.ReactNode =>
     items.map((item) => {
       const uniqueKey = uuid();
-      const { label, action } = item;
+      const { label, action, type } = item;
+
+      if (type === "link") {
+        const { localizedRoute } = getRouteConfig(action as any, pageLocale!);
+
+        return (
+          <li key={uniqueKey} itemProp="item">
+            <a href={`/${localizedRoute}`} itemProp="name" className="header--menu-item">
+              {label}
+            </a>
+          </li>
+        );
+      }
 
       return (
         <li key={uniqueKey} itemProp="item">
-          <button type="button" itemProp="name" className="header--menu-item" onClick={goTo(action)}>
+          <a href={`#${action}`} itemProp="name" className="header--menu-item" onClick={goTo(action)}>
             {label}
-          </button>
+          </a>
         </li>
       );
     });
@@ -41,9 +57,9 @@ export const HeaderLinks: React.FC<Props> = (props) => {
     <div className={generateClassList()}>
       <div className="header--menu--backdrop" onClick={collapseMobile} />
 
-      <menu itemScope itemType="https://schema.org/SiteNavigationElement">
+      <nav itemScope itemType="https://schema.org/SiteNavigationElement">
         {renderMenuItems()}
-      </menu>
+      </nav>
     </div>
   );
 };
