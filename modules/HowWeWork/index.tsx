@@ -11,9 +11,9 @@ const HowWeWork: React.FC = () => {
   return (
     <article itemScope itemProp="howWeWork" className={styles.howWeWork}>
       <div className="howWeWork--content-container">
-        <h3 itemProp="title" className="section-title">
+        <h1 itemProp="title" className="section-title">
           {strings.title}
-        </h3>
+        </h1>
 
         {renderParagraphs(strings.paragraphs)}
 
