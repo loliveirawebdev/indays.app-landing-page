@@ -37,20 +37,20 @@ export const HeaderLinks: React.FC<Props> = (props) => {
         const { localizedRoute } = getRouteConfig(action as any, pageLocale!);
 
         return (
-          <li key={uniqueKey} itemProp="item">
+          <div key={uniqueKey} itemProp="item">
             <Link href={`/${localizedRoute}`} itemProp="name" className="header--menu-item">
               {label}
             </Link>
-          </li>
+          </div>
         );
       }
 
       return (
-        <li key={uniqueKey} itemProp="item">
+        <div key={uniqueKey} itemProp="item">
           <a href={`#${action}`} itemProp="name" className="header--menu-item" onClick={goTo(action)}>
             {label}
           </a>
-        </li>
+        </div>
       );
     });
 
