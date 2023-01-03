@@ -25,7 +25,7 @@ export function useRouteConfig(page: keyof typeof RoutesMap) {
     return locale || defaultLocale || "pt-BR";
   }
 
-  function getCurrentRoute() {
+  function getLocalizedRoute() {
     const locale = getLocale();
     const route = RoutesMap[page][getLocale()];
 
@@ -33,7 +33,7 @@ export function useRouteConfig(page: keyof typeof RoutesMap) {
   }
 
   return {
-    currentRoute: getCurrentRoute(),
+    localizedRoute: getLocalizedRoute(),
     alternates: RoutesMap[page],
   };
 }

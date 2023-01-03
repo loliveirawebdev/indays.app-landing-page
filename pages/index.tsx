@@ -14,7 +14,7 @@ const NeedHelp = dynamic(() => import("../components/NeedHelp").then((mod) => mo
 
 export default function Home() {
   const { strings } = useLocale("home");
-  const { currentRoute, alternates } = useRouteConfig("home");
+  const { localizedRoute, alternates } = useRouteConfig("home");
 
   return (
     <React.Fragment>
@@ -37,7 +37,7 @@ export default function Home() {
         <meta property="twitter:title" content={strings.page.title} />
         <meta property="twitter:description" content={strings.page.description} />
 
-        <link rel="canonical" href={`https://indays.app/${currentRoute}`} />
+        <link rel="canonical" href={`https://indays.app/${localizedRoute}`} />
         <link rel="alternate" href={`https://indays.app/en/${alternates.en}`} hrefLang="en" />
         <link rel="alternate" href={`https://indays.app/${alternates["pt-BR"]}`} hrefLang="pt-BR" />
       </Head>
