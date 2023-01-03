@@ -36,7 +36,7 @@ export default function Custom404() {
         <link rel="alternate" href={`https://indays.app/${alternates["pt-BR"]}`} hrefLang="pt-BR" />
       </Head>
 
-      <Header />
+      <Header breadcrumbs={["home", "howWeWork"]} />
 
       <main className="main-container">
         <HowWeWork />
