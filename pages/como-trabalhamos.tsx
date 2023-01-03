@@ -6,7 +6,7 @@ import Contact from "../modules/Contact";
 import HowWeWork from "../modules/HowWeWork";
 import { useLocale, useRouteConfig } from "../hooks/locale";
 
-export default function Custom404() {
+export default function HowWeWorkPage() {
   const { strings } = useLocale("howWeWork");
   const { localizedRoute, alternates } = useRouteConfig("howWeWork");
 
