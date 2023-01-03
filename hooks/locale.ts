@@ -18,6 +18,10 @@ export function useLocale(page: keyof typeof LocalesMap) {
   };
 }
 
+export function getLocaleStrings(page: keyof typeof LocalesMap, locale = "pt-BR") {
+  return LocalesMap[page][locale];
+}
+
 export function useRouteConfig(page: keyof typeof RoutesMap) {
   const { locale, defaultLocale } = useRouter();
 
@@ -38,7 +42,7 @@ export function useRouteConfig(page: keyof typeof RoutesMap) {
   };
 }
 
-export function getRouteConfig(page: keyof typeof RoutesMap, locale: string) {
+export function getRouteConfig(page: keyof typeof RoutesMap, locale = "pt-BR") {
   function getLocalizedRoute() {
     const route = RoutesMap[page][locale];
     return locale === "pt-BR" ? route : `${locale}/${route}`;
