@@ -1,20 +1,14 @@
 import React from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
+import Footer from "../modules/Footer";
 import Header from "../modules/Header";
-import Appeal from "../modules/Appeal";
-import Headline from "../modules/Headline";
+import Contact from "../modules/Contact";
+import HowWeWork from "../modules/HowWeWork";
 import { useLocale, useRouteConfig } from "../hooks/locale";
 
-const Footer = dynamic(() => import("../modules/Footer"));
-const Contact = dynamic(() => import("../modules/Contact"));
-const HowWeWork = dynamic(() => import("../modules/HowWeWork"));
-const Solutions = dynamic(() => import("../modules/Solutions"));
-const NeedHelp = dynamic(() => import("../components/NeedHelp").then((mod) => mod.NeedHelp));
-
-export default function Home() {
-  const { strings } = useLocale("home");
-  const { localizedRoute, alternates } = useRouteConfig("home");
+export default function Custom404() {
+  const { strings } = useLocale("howWeWork");
+  const { localizedRoute, alternates } = useRouteConfig("howWeWork");
 
   return (
     <React.Fragment>
@@ -42,16 +36,10 @@ export default function Home() {
         <link rel="alternate" href={`https://indays.app/${alternates["pt-BR"]}`} hrefLang="pt-BR" />
       </Head>
 
-      <NeedHelp />
       <Header />
 
       <main className="main-container">
-        <Headline />
-        <Appeal />
-        {/* <hr className="section-divider" />
-        <HowWeWork /> */}
-        <hr className="section-divider" />
-        <Solutions />
+        <HowWeWork />
         <hr className="section-divider" />
       </main>
 

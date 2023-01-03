@@ -11,7 +11,7 @@ const SQUAD_CONFIG = [
 ];
 
 export const SquadBlock: React.FC = () => {
-  const { strings } = useLocale("home");
+  const { strings } = useLocale("howWeWork");
 
   const renderSquadConfig = () => {
     return SQUAD_CONFIG.map((squadMember) => {
@@ -27,7 +27,7 @@ export const SquadBlock: React.FC = () => {
               loading="lazy"
               itemProp="icon"
               src="/assets/human-silhouette.webp"
-              alt={strings.blocks.howWeWork.squad.iconAlt}
+              alt={strings.squad.iconAlt}
             />
             <span itemProp="count">{squadMember.count}</span>
           </span>
@@ -39,14 +39,14 @@ export const SquadBlock: React.FC = () => {
 
   return (
     <React.Fragment>
-      <p itemProp="description">{strings.blocks.howWeWork.squad.description}</p>
+      <p itemProp="description">{strings.squad.description}</p>
 
       <figure itemScope itemProp="figure" className="howWeWork--squad-figure">
         <ol itemProp="squadFormation" itemType="https://schema.org/ItemList">
           {renderSquadConfig()}
         </ol>
 
-        <figcaption itemProp="caption">{strings.blocks.howWeWork.squad.caption}</figcaption>
+        <figcaption itemProp="caption">{strings.squad.caption}</figcaption>
       </figure>
     </React.Fragment>
   );
