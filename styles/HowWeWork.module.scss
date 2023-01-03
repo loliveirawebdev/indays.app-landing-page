@@ -205,6 +205,18 @@
     }
   }
 
+  figure {
+    margin-top: $spacing-xs;
+
+    @include tablet {
+      margin-top: $spacing-sm;
+    }
+
+    @include desktop {
+      margin-top: $spacing-md;
+    }
+  }
+
   footer {
     a {
       @include regular-text;

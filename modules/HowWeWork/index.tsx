@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { useLocale } from "../../hooks/locale";
 import { SquadBlock } from "./components/SquadBlock";
 import styles from "../../styles/HowWeWork.module.scss";
@@ -18,6 +19,16 @@ const HowWeWork: React.FC = () => {
         <h2 itemProp="subtitle" className="section-subtitle">
           {strings.subtitle}
         </h2>
+
+        <figure itemScope itemProp="cover" className="section-cover">
+          <Image
+            layout="fill"
+            itemProp="image"
+            objectFit="contain"
+            alt={strings.title}
+            src="/assets/working-table.webp"
+          />
+        </figure>
 
         <hr className="section-divider" />
 
