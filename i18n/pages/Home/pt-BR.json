@@ -5,17 +5,9 @@
     "keywords": "desenvolvimento mobile customizado, desenvolvimento mobile rápido, desenvolvimento mobile em dias"
   },
   "general": {
-    "needHelp": "Precisa de ajuda?",
-    "hamburger-icon": "Expandir menu principal"
+    "needHelp": "Precisa de ajuda?"
   },
   "blocks": {
-    "header": {
-      "menu": {
-        "howWeWork": "Como trabalhamos",
-        "solutions": "Soluções",
-        "contact": "Contato"
-      }
-    },
     "headline": {
       "title": "Conduzimos negócios a seus objetivos muito mais <strong><u>rápido</u></strong>.",
       "subtitle": "Nossa metodologia de desenvolvimento mobile rápido possibilita a entrega de <strong>aplicativos customizados excelentes <u>em dias</u></strong>.",

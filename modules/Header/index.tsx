@@ -8,8 +8,8 @@ import { HeaderLinks } from "./components/HeaderLinks";
 import { buildHeaderMenuItems } from "./helpers/buildHeaderMenuItems";
 
 const Header: React.FC = () => {
-  const { strings } = useLocale("home");
-  const menuLinks = buildHeaderMenuItems(strings.blocks.header.menu);
+  const { strings } = useLocale("header");
+  const menuLinks = buildHeaderMenuItems(strings.menu);
 
   const { blockScroll, unblockScroll } = usePageScroll();
   const [isMobileCollapsed, setIsMobileCollapsed] = React.useState(true);

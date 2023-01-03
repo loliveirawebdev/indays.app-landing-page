@@ -5,17 +5,9 @@
     "keywords": "custom mobile development, accelerated custom mobile development, obile development in days"
   },
   "general": {
-    "needHelp": "Need help? Contact us",
-    "hamburger-icon": "Expand main menu"
+    "needHelp": "Need help? Contact us"
   },
   "blocks": {
-    "header": {
-      "menu": {
-        "howWeWork": "How We Work",
-        "solutions": "Solutions",
-        "contact": "Contact us"
-      }
-    },
     "headline": {
       "title": "We help Startups and Enterprises achieve their goals <strong><u>faster</u></strong>.",
       "subtitle": "Our accelerated mobile development methodology enables us to delivery <strong>custom excellent apps <u>in days</u></strong>.",

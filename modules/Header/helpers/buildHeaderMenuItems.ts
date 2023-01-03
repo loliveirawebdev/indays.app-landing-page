@@ -5,7 +5,7 @@ export const buildHeaderMenuItems = (menu: any): Header.MenuItem[] => {
       action: "how-we-work",
     },
     {
-      label: menu.solutions,
+      label: menu.blog,
       action: "solutions",
     },
     {
