@@ -1,5 +1,6 @@
-import { useRouter } from "next/router";
+import Link from "next/link";
 import { v4 as uuid } from "uuid";
+import { useRouter } from "next/router";
 import { getRouteConfig } from "../../../hooks/locale";
 import { useSectionsScroll } from "../../../hooks/pageScroll";
 
@@ -37,9 +38,9 @@ export const HeaderLinks: React.FC<Props> = (props) => {
 
         return (
           <li key={uniqueKey} itemProp="item">
-            <a href={`/${localizedRoute}`} itemProp="name" className="header--menu-item">
+            <Link href={`/${localizedRoute}`} itemProp="name" className="header--menu-item">
               {label}
-            </a>
+            </Link>
           </li>
         );
       }
