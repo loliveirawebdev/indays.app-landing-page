@@ -1,3 +1,5 @@
+import i18n from "../i18n";
+import { useRouter } from "next/router";
 import { useSetRecoilState } from "recoil";
 import { useLocale } from "../../../hooks/locale";
 import { IS_FORM_CONTACT_SENT } from "../../../atoms/contact";
@@ -7,7 +9,9 @@ import { renderInputForQuestion } from "../helpers/renderInput";
 import { runFormValidation } from "../helpers/runFormValidation";
 
 export function useQuestions() {
-  const { strings } = useLocale("contact");
+  const { locale } = useRouter();
+  const strings = i18n(locale);
+
   const { questions } = strings.form;
   const renderer = (question: Contact.FormQuestion) => renderInputForQuestion(question, strings.other);
 
@@ -65,7 +69,9 @@ export function useQuestions() {
 }
 
 export function useFormSubmit() {
-  const { strings } = useLocale("contact");
+  const { locale } = useRouter();
+  const strings = i18n(locale);
+
   const { scrollToContactForm, scrollToContact } = useSectionsScroll();
   const setIsFormSent = useSetRecoilState(IS_FORM_CONTACT_SENT);
 

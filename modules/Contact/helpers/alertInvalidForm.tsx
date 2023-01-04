@@ -1,7 +1,6 @@
 import { v4 as uuid } from "uuid";
 import { toast } from "react-toastify";
-import ptBR from "../../../i18n/blocks/Contact/pt-BR.json";
-type Props = { formErrors: Contact.FormError[]; strings: typeof ptBR };
+type Props = { formErrors: Contact.FormError[]; strings: any };
 
 const AlertErrorContent: React.FC<Props> = (props) => {
   const { formErrors, strings } = props;

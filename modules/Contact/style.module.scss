@@ -1,5 +1,5 @@
-@import "tokens";
-@import "mixins";
+@import "../../styles/tokens";
+@import "../../styles/mixins";
 
 .contact {
   @include flex-centered-content;
@@ -34,12 +34,12 @@
       }
 
       button[type="submit"] {
-        font-size: $font-sm;
+        font-size: $font-xs;
         align-self: flex-end;
         justify-self: flex-end;
 
         @include tablet {
-          font-size: $font-md;
+          font-size: $font-sm;
         }
       }
 
@@ -125,10 +125,10 @@
       display: none;
 
       button {
-        font-size: $font-xs;
+        font-size: $font-xxs;
 
         @include tablet {
-          font-size: $font-sm;
+          font-size: $font-xs;
         }
       }
     }

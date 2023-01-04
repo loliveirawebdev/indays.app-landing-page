@@ -1,7 +1,8 @@
 import React from "react";
+import i18n from "../i18n";
 import { v4 as uuid } from "uuid";
+import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
-import { useLocale } from "../../../hooks/locale";
 import { Button } from "../../../components/Button";
 import { useSectionsRefs } from "../../../hooks/refs";
 import { usePageScroll } from "../../../hooks/pageScroll";
@@ -12,11 +13,12 @@ export const ContactForm: React.FC = () => {
   const [isFormSent] = useRecoilState(IS_FORM_CONTACT_SENT);
   const [isFormOpen, setIsFormOpen] = useRecoilState(IS_FORM_CONTACT_OPEN);
 
-  const { strings } = useLocale("contact");
+  const { locale } = useRouter();
   const { registerRef } = useSectionsRefs();
   const { config, inputRenderer } = useQuestions();
   const { blockScroll, unblockScroll } = usePageScroll();
 
+  const strings = i18n(locale);
   const onSubmit = useFormSubmit();
   const ref = React.useRef<HTMLFormElement>(null);
 
