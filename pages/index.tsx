@@ -8,7 +8,7 @@ import { useLocale, useRouteConfig } from "../hooks/locale";
 
 const Footer = dynamic(() => import("../modules/Footer"));
 const Contact = dynamic(() => import("../modules/Contact"));
-const HowWeWork = dynamic(() => import("../modules/HowWeWork"));
+const Partners = dynamic(() => import("../modules/Partners"));
 const Solutions = dynamic(() => import("../modules/Solutions"));
 const NeedHelp = dynamic(() => import("../components/NeedHelp").then((mod) => mod.NeedHelp));
 
@@ -48,14 +48,14 @@ export default function Home() {
       <main className="main-container">
         <Headline />
         <Appeal />
-        {/* <hr className="section-divider" />
-        <HowWeWork /> */}
         <hr className="section-divider" />
         <Solutions />
         <hr className="section-divider" />
+        <Partners />
+        <hr className="section-divider" />
+        <Contact />
       </main>
 
-      <Contact />
       <Footer />
     </React.Fragment>
   );
