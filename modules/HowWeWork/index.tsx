@@ -23,6 +23,7 @@ const HowWeWork: React.FC = () => {
         <figure itemScope itemProp="cover" className="section-cover">
           <Image
             layout="fill"
+            quality={100}
             itemProp="image"
             objectFit="contain"
             alt={strings.title}
