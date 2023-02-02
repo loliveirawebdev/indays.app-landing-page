@@ -25,7 +25,7 @@ const HowWeWork: React.FC = () => {
             layout="fill"
             quality={100}
             itemProp="image"
-            objectFit="contain"
+            objectFit="cover"
             alt={strings.title}
             src="/assets/working-table.webp"
           />
