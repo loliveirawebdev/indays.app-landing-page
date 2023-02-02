@@ -6,6 +6,7 @@ import HowWeWork from "./pages/HowWeWork";
 // blocks
 import Footer from "./blocks/Footer";
 import Header from "./blocks/Header";
+import Contact from "./blocks/Contact";
 
 // routes cfg
 import HomeRoute from "./pages/Home/route.json";
@@ -19,6 +20,7 @@ export const LocalesMap = {
 
   // blocks
   footer: Footer as any,
+  contact: Contact as any,
   header: Header as any,
 };
 

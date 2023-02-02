@@ -1,18 +1,16 @@
 import React from "react";
-import i18n from "./i18n";
 import dynamic from "next/dynamic";
-import { useRouter } from "next/router";
-import styles from "./style.module.scss";
-import { useNeedHelp } from "../../hooks/needHelp";
+import { useLocale } from "../../hooks/locale";
 import { useSectionsRefs } from "../../hooks/refs";
+import styles from "../../styles/Contact.module.scss";
 import { useIsInViewport } from "../../hooks/viewport";
+import { useNeedHelp } from "../../hooks/needHelp";
 const ContactForm = dynamic(() => import("./containers/ContactForm").then((mod) => mod.ContactForm), { ssr: false });
 
 const Contact: React.FC = () => {
-  const { locale } = useRouter();
+  const { strings } = useLocale("contact");
   const { registerRef } = useSectionsRefs();
 
-  const strings = i18n(locale);
   const ref = React.useRef<HTMLElement>(null);
   const { isIntersecting } = useIsInViewport(ref);
   const { setContactVisibility } = useNeedHelp();
