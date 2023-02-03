@@ -13,7 +13,15 @@ const Nitro10x: React.FC = () => {
     return (
       <div key={title} className="card">
         <div className="card-container">
-          <Image width={48} height={48} quality={100} itemProp="icon" alt={icon} src={`/assets/cards/${icon}.webp`} />
+          <Image
+            loading="eager"
+            width={48}
+            height={48}
+            quality={100}
+            itemProp="icon"
+            alt={icon}
+            src={`/assets/cards/${icon}.webp`}
+          />
           <h3>{title}</h3>
         </div>
       </div>
@@ -40,6 +48,7 @@ const Nitro10x: React.FC = () => {
                   width={24}
                   height={24}
                   quality={100}
+                  loading="eager"
                   itemProp="icon"
                   alt={"Whatsapp"}
                   src={`/assets/whatsapp.webp`}
