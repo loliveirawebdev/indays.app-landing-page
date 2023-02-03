@@ -18,6 +18,11 @@
         font-size: inherit;
         @include simple-link;
       }
+
+      a {
+        @include simple-link;
+        color: $black;
+      }
     }
 
     .contact-form {

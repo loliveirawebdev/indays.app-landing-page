@@ -1,7 +1,7 @@
 {
   "other": "Other",
   "title": "Contact us",
-  "description": "Email our tech lead directly at <b>lucas.oliveira@simbioseventures.com</b> or tell us a brief about your project in the form below.",
+  "description": "Email our tech lead directly at <a href='mailto:lucas.oliveira@simbioseventures.com' target='_blank' rel='noreferrer'>lucas.oliveira@simbioseventures.com</a>, tell us a brief about your project in the form below, or <a href='https://wa.me/5519997494445?text=Ol%C3%A1!' target='_blank' rel='noreferrer'>send a WhatsApp message to +55 19 99749-4445</a>.",
   "form": {
     "questions": {
       "applicationType": {
