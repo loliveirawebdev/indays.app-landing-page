@@ -34,18 +34,20 @@ const Nitro10x: React.FC = () => {
           <h1>{strings.presentation.title}</h1>
 
           <div className="fadeout--contact">
-            <a href="https://wa.me/5519997494445?text=Ol%C3%A1!" target="_blank" rel="noreferrer">
-              <Image
-                width={24}
-                height={24}
-                quality={100}
-                itemProp="icon"
-                alt={"Whatsapp"}
-                src={`/assets/whatsapp.webp`}
-              />
+            <div className="wpp-link">
+              <a href="https://wa.me/5519997494445?text=Ol%C3%A1!" target="_blank" rel="noreferrer">
+                <Image
+                  width={24}
+                  height={24}
+                  quality={100}
+                  itemProp="icon"
+                  alt={"Whatsapp"}
+                  src={`/assets/whatsapp.webp`}
+                />
 
-              {strings.presentation.contact}
-            </a>
+                {strings.presentation.contact}
+              </a>
+            </div>
           </div>
 
           <h2>{strings.presentation.subtitle}</h2>
