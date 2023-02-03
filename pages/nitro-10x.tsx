@@ -36,6 +36,7 @@ export default function HowWeWorkPage() {
         <link rel="canonical" href={`https://indays.app/${localizedRoute}`} />
         <link rel="alternate" href={`https://indays.app/en/${alternates.en}`} hrefLang="en" />
         <link rel="alternate" href={`https://indays.app/${alternates["pt-BR"]}`} hrefLang="pt-BR" />
+        <meta name="robots" content="noindex" />
       </Head>
 
       <Nitro10x />
