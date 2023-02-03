@@ -1,0 +1,40 @@
+{
+  "page": {
+    "key": "Crescimento acelerado",
+    "title": "Crescimento acelerado | indays.app",
+    "description": "Entenda como nosso desenvolvimento mobile customizado funciona, e como nossa cultura de desenvolvimento ágil gera resultados incríveis.",
+    "keywords": "desenvolvimento ágil, cultura ágil, processo de desenvolvimento ágil"
+  },
+  "title": "Agora que você ouviu <span>os segredos</span> de quem já chegou onde você quer chegar, use a <b>tecnologia</b> a seu favor e cresça <span className='s10x'>MUITO</span> em <span>2023</span>",
+  "presentation": {
+    "title": "Somos a in<span>days</span>.app e conduzimos negócios a seus objetivos muito mais rápido com tecnologia de ponta.",
+    "subtitle": "Nossa metodologia de desenvolvimento acelerada possibilita a entrega de software customizado excelentes em dias.",
+    "contact": "Entre em contato via whatsapp"
+  },
+  "cards": [
+    {
+      "title": "Web3 & Blockchain",
+      "icon": "blockchain"
+    },
+
+    {
+      "title": "Mobile",
+      "icon": "mobile"
+    },
+
+    {
+      "title": "Plataformas & Ecommerces",
+      "icon": "platform"
+    },
+
+    {
+      "title": "Decentralized Apps",
+      "icon": "dapp"
+    },
+
+    {
+      "title": "Super Apps & Smart TV",
+      "icon": "super-app"
+    }
+  ]
+}
