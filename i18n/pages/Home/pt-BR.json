@@ -31,6 +31,10 @@
       "title": "Soluções",
       "items": [
         {
+          "title": "Soluções Web3",
+          "description": "Nós desenvolvemos soluções modernas utilizando blockchain para aplicações descentralizadas baseados em uma blockchain network própria (pública ou privada) ou existente como Ethereum ou Solana."
+        },
+        {
           "title": "Desenvolvimento mobile customizado",
           "description": "Nós desenvolvemos aplicações mobiles lindas para Android e iOS utilizando sua stack nativa ou através de uma tecnologia cross-platform como React Native ou Flutter."
         },

@@ -31,6 +31,10 @@
       "title": "Solutions",
       "items": [
         {
+          "title": "Web3 solutions",
+          "description": "Web3 & Blockchain Software Development that give your project speed and technological perfection."
+        },
+        {
           "title": "Custom mobile development",
           "description": "We develop beautiful mobile applications for Android and iOS using their native stack or through a cross-platform technology like React Native or Flutter."
         },
