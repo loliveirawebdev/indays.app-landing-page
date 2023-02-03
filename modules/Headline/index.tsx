@@ -4,15 +4,21 @@ import { useLocale } from "../../hooks/locale";
 import { Button } from "../../components/Button";
 import { renderCards } from "./helpers/renderCards";
 import styles from "../../styles/Headline.module.scss";
+import { usePageScroll } from "../../hooks/pageScroll";
 import { IS_FORM_CONTACT_OPEN } from "../../atoms/contact";
 import { renderParagraphs } from "../../helpers/renderParagraphs";
 import { buildHeadlineCards } from "./helpers/buildHeadlineCards";
 
 const Headline: React.FC = () => {
   const { strings } = useLocale("home");
+  const { blockScroll } = usePageScroll();
   const setIsFormOpen = useSetRecoilState(IS_FORM_CONTACT_OPEN);
   const cards = buildHeadlineCards(strings.blocks.headline.cards);
-  const openForm = () => setIsFormOpen(true);
+
+  const openForm = () => {
+    blockScroll();
+    setIsFormOpen(true);
+  };
 
   return (
     <article itemScope itemProp="copywrite" className={styles.headline}>
