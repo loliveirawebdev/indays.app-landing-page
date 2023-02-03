@@ -109,10 +109,6 @@
         background: $nitro-green;
         box-shadow: 0px 0px 30px 0px rgba(22, 255, 108, 0.5);
 
-        @include tablet {
-          max-width: 35.46rem;
-        }
-
         color: $black;
         font-weight: bold;
         font-size: $font-sm;
