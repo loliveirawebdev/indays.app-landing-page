@@ -204,5 +204,53 @@
         display: none !important;
       }
     }
+
+    .contact--team-list {
+      display: grid;
+      list-style-type: none;
+      grid-template-rows: 1fr;
+      margin-top: $spacing-md;
+      grid-row-gap: $spacing-md;
+      grid-column-gap: $spacing-sm;
+      grid-template-columns: repeat(1, 1fr);
+
+      @media (min-width: 650px) and (max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+
+      @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      li {
+        display: flex;
+        flex-direction: column;
+
+        div:nth-child(1) {
+          width: 100%;
+          display: flex;
+          aspect-ratio: 1;
+          position: relative;
+          margin-bottom: $spacing-xs;
+        }
+
+        div:nth-child(2) {
+          display: flex;
+          font-size: $font-xs;
+          flex-direction: column;
+
+          span:nth-child(1) {
+            font-weight: bold;
+            font-size: $font-md;
+          }
+
+          a {
+            @include simple-link;
+            font-weight: normal;
+            color: $black;
+          }
+        }
+      }
+    }
   }
 }

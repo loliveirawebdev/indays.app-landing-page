@@ -42,6 +42,7 @@ const Solutions: React.FC = () => {
           <Image
             fill
             quality={50}
+            loading="lazy"
             itemProp="icon"
             objectFit="cover"
             src="/assets/solutions.jpg"
