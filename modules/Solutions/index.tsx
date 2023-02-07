@@ -40,8 +40,8 @@ const Solutions: React.FC = () => {
 
         <div className="solutions--content-image">
           <Image
-            layout="fill"
-            quality={100}
+            fill
+            quality={50}
             itemProp="icon"
             objectFit="cover"
             src="/assets/solutions.jpg"

@@ -34,56 +34,7 @@
         "Diagnóstico de tecnologia e entendimento dos desafios do negócio",
         "Definição de ferramentas, plataformas e tecnologias",
         "Definição de canais e oportunidades de omnicanalidade"
-      ],
-      "tools": {
-        "title": "Nossas ferramentas",
-        "highlight": {
-          "title": "Stack de desenvolvimento ultra-rápido:",
-          "items": [
-            {
-              "imageKey": "react",
-              "label": "React"
-            },
-            {
-              "imageKey": "node",
-              "label": "Node"
-            }
-          ]
-        },
-        "others": {
-          "title": "Outras ferramentas:",
-          "items": [
-            {
-              "imageKey": "java",
-              "label": "Java"
-            },
-            {
-              "imageKey": "python",
-              "label": "Python"
-            },
-            {
-              "imageKey": "deno",
-              "label": "Deno"
-            },
-            {
-              "imageKey": "php",
-              "label": "PHP"
-            },
-            {
-              "imageKey": "flutter",
-              "label": "Flutter"
-            },
-            {
-              "imageKey": "kotlin",
-              "label": "Kotlin"
-            },
-            {
-              "imageKey": "swift",
-              "label": "Swift"
-            }
-          ]
-        }
-      }
+      ]
     }
   }
 }

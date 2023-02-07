@@ -1,54 +1,5 @@
 {
   "other": "Outro",
   "title": "Contato",
-  "description": "Envie um e-mail diretamente para nosso tech lead em <a href='mailto:lucas.oliveira@simbioseventures.com' target='_blank' rel='noreferrer'>lucas.oliveira@simbioseventures.com</a>, nos conte um pouco de seu projeto no formulário abaixo, ou <a href='https://wa.me/5519997494445?text=Ol%C3%A1!' target='_blank' rel='noreferrer'>envie uma mensagem no WhatsApp +55 19 99749-4445</a>.",
-  "form": {
-    "questions": {
-      "applicationType": {
-        "legend": "Tipo de aplicação que você precisa",
-        "options": [
-          "Aplicação mobile",
-          "Super app",
-          "Aplicação para Smart TV",
-          "Plataforma e-commerce customizada",
-          "Aplicação back-end para mobile",
-          "Design de produto"
-        ]
-      },
-      "start": {
-        "legend": "Quando você gostaria de começar?",
-        "options": ["O mais rápido possível", "Em algumas semanas", "Não tenho certeza"]
-      },
-      "budget": {
-        "legend": "Você tem um budget para este projeto?"
-      },
-      "youAre": {
-        "legend": "Você é:",
-        "options": ["Fundador de uma Startup", "Parte da liderança de uma empresa"]
-      },
-      "name": {
-        "legend": "Qual o seu nome completo?"
-      },
-      "email": {
-        "legend": "Qual o seu endereço de e-mail?"
-      },
-      "more": {
-        "legend": "Mais alguma informação para acrescentar?"
-      }
-    },
-    "error": {
-      "title": "Um erro aconteceu...",
-      "description": "Por favor, responda as seguintes perguntas corretamente:"
-    },
-    "success": {
-      "title": "Seu formulário foi enviado.",
-      "description": "Um representante da indays.app entrará em contato com você em até 24 horas."
-    },
-    "actions": {
-      "send": "Enviar informações",
-      "back": "← Voltar",
-      "open": "Abrir formulário →"
-    },
-    "policy": "Ao clicar em \"Enviar informações\", eu permito que a Simbiose Ventures armazene e processe as informações pessoais por mim enviadas através do formulário acima para fornecer o conteúdo solicitado."
-  }
+  "description": "Fale com nossa equipe"
 }

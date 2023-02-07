@@ -15,7 +15,10 @@ const Footer: React.FC = () => {
     <footer itemScope itemProp="footer" className={styles.footer}>
       <div className="footer--content-container">
         <article itemScope itemProp="about" className="footer--about-container">
-          <h6 itemProp="title">{strings.title}</h6>
+          <p className="title" itemProp="title">
+            {strings.title}
+          </p>
+
           {renderParagraphs(strings.paragraphs)}
         </article>
 

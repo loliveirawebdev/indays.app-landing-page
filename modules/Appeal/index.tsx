@@ -14,8 +14,8 @@ const Appeal: React.FC = () => {
       <div className="appeal--content-container">
         <div className="appeal--content-image">
           <Image
-            layout="fill"
-            quality={100}
+            fill
+            quality={50}
             itemProp="icon"
             objectFit="cover"
             src="/assets/consulting.jpg"
