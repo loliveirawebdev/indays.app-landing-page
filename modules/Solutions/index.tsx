@@ -1,8 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import { useLocale } from "../../hooks/locale";
 import { useSectionsRefs } from "../../hooks/refs";
 import { useNeedHelp } from "../../hooks/needHelp";
-import VideoPlayer from "../../components/VideoPlayer";
 import { useIsInViewport } from "../../hooks/viewport";
 import styles from "../../styles/Solutions.module.scss";
 import { renderServiceItems } from "./helpers/renderServiceItems";
@@ -39,7 +39,14 @@ const Solutions: React.FC = () => {
         </div>
 
         <div className="solutions--content-image">
-          <VideoPlayer url="/videos/solutions.mp4" />
+          <Image
+            layout="fill"
+            quality={100}
+            itemProp="icon"
+            objectFit="cover"
+            src="/assets/solutions.jpg"
+            alt={strings.blocks.solutions.title}
+          />
         </div>
       </div>
     </article>

@@ -2,8 +2,8 @@ import React from "react";
 import { useLocale } from "../../hooks/locale";
 import { Button } from "../../components/Button";
 import styles from "../../styles/Appeal.module.scss";
-import VideoPlayer from "../../components/VideoPlayer";
 import { useSectionsScroll } from "../../hooks/pageScroll";
+import Image from "next/image";
 
 const Appeal: React.FC = () => {
   const { strings } = useLocale("home");
@@ -13,7 +13,14 @@ const Appeal: React.FC = () => {
     <section itemScope className={styles.appeal}>
       <div className="appeal--content-container">
         <div className="appeal--content-image">
-          <VideoPlayer url="/videos/consulting.mp4" />
+          <Image
+            layout="fill"
+            quality={100}
+            itemProp="icon"
+            objectFit="cover"
+            src="/assets/consulting.jpg"
+            alt={strings.blocks.solutions.title}
+          />
         </div>
 
         <div className="appeal--content-texts">
