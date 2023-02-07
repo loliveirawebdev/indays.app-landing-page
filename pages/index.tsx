@@ -8,7 +8,6 @@ import { useLocale, useRouteConfig } from "../hooks/locale";
 
 const Footer = dynamic(() => import("../modules/Footer"));
 const Contact = dynamic(() => import("../modules/Contact"));
-const Partners = dynamic(() => import("../modules/Partners"));
 const Solutions = dynamic(() => import("../modules/Solutions"));
 const NeedHelp = dynamic(() => import("../components/NeedHelp").then((mod) => mod.NeedHelp));
 
@@ -47,11 +46,10 @@ export default function Home() {
 
       <main className="main-container">
         <Headline />
+        <hr className="section-divider" />
         <Appeal />
         <hr className="section-divider" />
         <Solutions />
-        <hr className="section-divider" />
-        <Partners />
         <hr className="section-divider" />
         <Contact />
       </main>

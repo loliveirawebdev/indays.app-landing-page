@@ -7,11 +7,12 @@
   :global {
     .headline--content-container {
       width: 100%;
+      display: flex;
       flex-direction: column;
       max-width: $max-width;
 
-      @include not-desktop {
-        display: flex;
+      @include desktop {
+        flex-direction: row;
       }
     }
 
@@ -34,28 +35,31 @@
   aside {
     width: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-end;
 
     @include not-desktop {
       order: 3;
+      padding-top: 0;
+      overflow-x: scroll;
+      padding: $spacing-sm;
+      margin: 0 -$spacing-sm;
       margin-top: $spacing-sm;
-    }
 
-    @media (min-width: 500px) {
-      flex-direction: row;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     @include desktop {
-      float: right;
       margin-left: $spacing-md;
-      margin-bottom: $spacing-md;
     }
 
     article {
+      width: 18rem;
       padding-left: 1rem;
       position: relative;
       padding-bottom: 1rem;
-      width: calc(100% - 1rem);
 
       img {
         width: 2.4rem;
@@ -71,10 +75,6 @@
 
       strong {
         display: contents;
-      }
-
-      @include desktop {
-        width: 18rem;
       }
 
       &::before {
@@ -105,49 +105,50 @@
 
     :global {
       .strengths--left-col {
-        @media (max-width: 499px) {
-          margin-bottom: $spacing-sm;
-        }
-
-        @media (min-width: 500px) {
-          margin-right: $spacing-sm;
-        }
+        margin-right: $spacing-md;
 
         @include desktop {
-          margin-right: $spacing-md;
+          margin-bottom: -1rem;
         }
       }
 
       .strengths--right-col {
         @include desktop {
-          top: -8rem;
           position: relative;
+          align-self: flex-start;
         }
       }
 
       .strengths--left-col,
       .strengths--right-col {
         @include not-desktop {
-          flex: 1;
+          display: flex;
+          flex-direction: row;
+
+          article {
+            margin-right: $spacing-sm;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &:first-child {
+              margin-right: $spacing-md;
+            }
+          }
         }
 
-        @media (max-width: 499px) {
+        @include desktop {
           article {
             margin-bottom: $spacing-sm;
 
             &:last-child {
               margin-bottom: 0;
             }
-          }
-        }
 
-        article:first-child {
-          @media (min-width: 500px) {
-            margin-bottom: $spacing-sm;
-          }
-
-          @include desktop {
-            margin-bottom: $spacing-md;
+            &:first-child {
+              margin-bottom: $spacing-md;
+            }
           }
         }
       }
@@ -231,11 +232,15 @@
       order: 1;
     }
 
+    @include desktop {
+      flex-direction: column;
+    }
+
     h1 {
       font-size: $font-lg;
       margin-bottom: $spacing-sm;
 
-      @media (min-width: 430px) and (max-width: 880px) {
+      @media (min-width: 430px) and (max-width: 1020px) {
         font-size: $font-xl !important;
       }
 

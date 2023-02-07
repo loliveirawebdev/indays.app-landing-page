@@ -10,54 +10,30 @@
   },
   "blocks": {
     "headline": {
-      "title": "Conduzimos negócios a seus objetivos muito mais <strong><u>rápido</u></strong>.",
-      "subtitle": "Nossa metodologia de desenvolvimento mobile rápido possibilita a entrega de <strong>aplicativos customizados excelentes <u>em dias</u></strong>.",
-      "paragraphs": [
-        "Nosso time, liderado por pessoas com anos de experiência em desenvolvimento mobile, garante a <em><u>melhor experiência de desenvolvimento de software</u></em> através de uma cultura forte e sólida de <b>excelência</b> e <strong>agilidade verdadeira</strong> que somados à nossa filosofia e metodologia pode ajudar seu negócio entregando aplicações mobile de porte pequeno, médio ou grande com um time-to-market mínimo."
-      ],
-      "action": "Receber estimativa",
+      "title": "Você acredita que a <strong><u>tecnologia</u></strong> pode alavancar a sua empresa?",
+      "subtitle": "Somos uma consultoria com foco na inovação e transformação digital que te ajuda a desenvolver <strong><u>estratégias de negócio e digitalização</u></strong>.",
+      "action": "Eu quero {word}",
+      "words": ["crescer", "inovar", "transforar", "lucrar", "digitalizar"],
       "cards": {
-        "first": "<span><strong>suas ideias viram sucesso</strong></span> quando desenvolvemos soluções que fazem a diferença para seu negócio, em dias",
-        "second": "<span>somos mais que uma software house... <strong>nosso negócio é co-criar</strong></span> seu negócio próprio de forma colaborativa",
-        "third": "<span>seus clientes são nossos clientes também</span>, por isso trabalhamos duro para entregar a melhor experiência para eles",
-        "fourth": "<span>nossa <strong>verdadeira cultura ágil</strong></span> ajuda a atingir objetivos em até 70% do tempo convencional"
+        "first": "<span><strong>otimize</strong></span> os seus processos mais importantes",
+        "second": "<span>melhore a experiência</span> de seus clientes",
+        "third": "<span>aumente seus lucros</span> em até 10 vezes",
+        "fourth": "<span>acelere</span> o crescimento do seu negócio"
       }
     },
     "appeal": {
-      "description": "Nós estamos prontos para validar suas ideias e desenvolver sua aplicação mobile desde o início ou acelerar seu projeto em andamento utilizando todo nosso conhecimento sobre <strong>desenvolvimento de aplicativos para smartphones (híbrido ou nativo) e smart TVs</strong>.",
-      "action": "Entre em contato"
+      "title": "Consultoria",
+      "description": "Todos acreditam que a inovação digital é importante para o sucesso futuro, porém apenas <u>4% das empresas estão preparadas</u> para implementar as ações necessárias e <b>obter um lucro de 3 a 10 vezes maior</b> pois nem sequer enxergam os gaps e problemas relacionados à tecnologia, ou a falta dela, dentro de seu próprio negócio. <br /><br /> Somos uma empresa com expertise em consultoria tecnológica, onde desenvolvemos estratégias de negócio e inovação digital com ênfase em soluções personalizadas.<br /><br /> Estamos prontos para realizar o mapeamento do operacional da sua empresa para que ela seja digitalmente inovada pelo melhor caminho possível sendo direcionada para ganho de uma lucratividade exponencial.",
+      "action": "Quero minha consultoria"
     },
     "solutions": {
       "title": "Soluções",
+      "subtitle": "Somos um ecossistema de tecnologia e inovação que integra conhecimento humano, visão estratégica e flexibilidade para potencializar o futuro das empresas.",
       "items": [
-        {
-          "title": "Soluções Web3",
-          "description": "Nós desenvolvemos soluções modernas utilizando blockchain para aplicações descentralizadas baseados em uma blockchain network própria (pública ou privada) ou existente como Ethereum ou Solana."
-        },
-        {
-          "title": "Desenvolvimento mobile customizado",
-          "description": "Nós desenvolvemos aplicações mobiles lindas para Android e iOS utilizando sua stack nativa ou através de uma tecnologia cross-platform como React Native ou Flutter."
-        },
-        {
-          "title": "Desenvolvimento de Super Aplicativos",
-          "description": "Nós temos o conhecimento e a experiência para desenvolver este tipo único de aplicação mobile que está em alta após a campanha de sucesso feita pela WeChat."
-        },
-        {
-          "title": "Desenvolvimento customizado para Smart TV",
-          "description": "Nós desenvolvemos aplicações profissionais para qualquer sistema operacional de Smart TV como LG WebOS ou Tizen TV."
-        },
-        {
-          "title": "Desenvolvimento customizado para e-commerce",
-          "description": "Nossa verdadeira paixão e especialidade é desenvolver plataformas de e-commerce customizadas do zero ou utilizando Magento Commerce."
-        },
-        {
-          "title": "Desenvolvimento customizado de back-end para mobile",
-          "description": "Nós desenvolvemos soluções back-end que são rápidas, confiantes e seguras utilizando stack tecnológicas modernas como Deno.js, GoLang ou Bun.js, ou utilizando stacks mais consolidadas como Java, Python ou PHP."
-        },
-        {
-          "title": "Design de produto",
-          "description": "Nós sabemos como criar aplicações mobile lindas, úteis e de alto engajamento."
-        }
+        "Consultoria de estratégia digital",
+        "Diagnóstico de tecnologia e entendimento dos desafios do negócio",
+        "Definição de ferramentas, plataformas e tecnologias",
+        "Definição de canais e oportunidades de omnicanalidade"
       ],
       "tools": {
         "title": "Nossas ferramentas",
