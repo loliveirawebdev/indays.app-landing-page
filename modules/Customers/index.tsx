@@ -23,7 +23,7 @@ const Customers: React.FC = () => {
 
     return (
       <li>
-        <Image width={w} height={50} alt="Logo" src={img} quality={100} itemProp="icon" />
+        <Image width={w} height={50} alt="Logo" src={img} loading="eager" quality={100} itemProp="icon" />
       </li>
     );
   };
