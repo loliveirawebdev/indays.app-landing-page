@@ -20,6 +20,7 @@ const Appeal: React.FC = () => {
             objectFit="cover"
             src="/assets/consulting.jpg"
             alt={strings.blocks.solutions.title}
+            sizes="(max-width: 850px) 90vw, 20vw"
           />
         </div>
 
