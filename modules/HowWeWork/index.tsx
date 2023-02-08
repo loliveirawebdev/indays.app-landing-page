@@ -24,6 +24,7 @@ const HowWeWork: React.FC = () => {
           <Image
             layout="fill"
             quality={100}
+            loading="eager"
             itemProp="image"
             objectFit="cover"
             alt={strings.title}
@@ -33,23 +34,27 @@ const HowWeWork: React.FC = () => {
 
         <hr className="section-divider" />
 
-        {renderParagraphs(strings.paragraphs)}
+        {/* Consulting */}
+        {renderParagraphs(strings.consulting.paragraphs)}
 
-        <section itemScope itemProp="timeline" className="howWeWork--timeline">
+        <section itemScope itemProp="timeline" className="howWeWork--timeline orange">
           <ol itemProp="stepList" itemType="https://schema.org/ItemList">
-            {renderTimelineSteps(strings.processTimeline)}
+            {renderTimelineSteps(strings.consulting.processTimeline)}
+          </ol>
+        </section>
+        {/* ******************* */}
+
+        {/* Development */}
+        {renderParagraphs(strings.development.paragraphs)}
+
+        <section itemScope itemProp="timeline" className="howWeWork--timeline green">
+          <ol itemProp="stepList" itemType="https://schema.org/ItemList">
+            {renderTimelineSteps(strings.development.processTimeline)}
           </ol>
         </section>
 
         <SquadBlock />
-
-        <footer itemScope itemProp="callToAction">
-          <p>{strings.footer.text}</p>
-
-          <a href="/pdf/Apresentação [indays.app].pdf" target="_blank" rel="nofollow" itemProp="link">
-            {strings.footer.action}
-          </a>
-        </footer>
+        {/* ******************* */}
       </div>
     </article>
   );

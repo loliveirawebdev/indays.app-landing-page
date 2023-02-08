@@ -27,7 +27,7 @@ export const SquadBlock: React.FC = () => {
               loading="lazy"
               itemProp="icon"
               src="/assets/human-silhouette.webp"
-              alt={strings.squad.iconAlt}
+              alt={strings.development.squad.iconAlt}
             />
             <span itemProp="count">{squadMember.count}</span>
           </span>
@@ -39,14 +39,14 @@ export const SquadBlock: React.FC = () => {
 
   return (
     <React.Fragment>
-      <p itemProp="description">{strings.squad.description}</p>
+      <p itemProp="description">{strings.development.squad.description}</p>
 
       <figure itemScope itemProp="figure" className="howWeWork--squad-figure">
         <ol itemProp="squadFormation" itemType="https://schema.org/ItemList">
           {renderSquadConfig()}
         </ol>
 
-        <figcaption itemProp="caption">{strings.squad.caption}</figcaption>
+        <figcaption itemProp="caption">{strings.development.squad.caption}</figcaption>
       </figure>
     </React.Fragment>
   );
