@@ -10,8 +10,7 @@
   },
   "blocks": {
     "headline": {
-      "title": "Você acredita que a <strong><u>tecnologia</u></strong> pode alavancar a sua empresa?",
-      "subtitle": "Somos uma consultoria com foco na inovação e transformação digital que te ajuda a desenvolver <strong><u>estratégias de negócio e digitalização</u></strong>.",
+      "title": "Somos uma consultoria com foco na inovação e transformação digital que te ajuda a desenvolver <strong><u>estratégias de negócio e digitalização</u></strong>.",
       "action": "Eu quero",
       "words": ["crescer", "inovar", "transformar", "lucrar", "digitalizar"],
       "cards": {
@@ -20,6 +19,10 @@
         "third": "<span>aumente seus lucros</span> em até 10 vezes",
         "fourth": "<span>acelere</span> o crescimento do seu negócio"
       }
+    },
+    "customers": {
+      "title": "Você acredita que a <strong><u>tecnologia</u></strong> pode alavancar a sua empresa?",
+      "subtitle": "A indays.app é formado por desenvolvedores da Simbiose Ventures com foco em resolução de problemas com tecnologia. A Simbiose Ventures já transformou essas empresas:"
     },
     "appeal": {
       "title": "Consultoria",

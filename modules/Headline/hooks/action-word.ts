@@ -23,7 +23,7 @@ export const useActionWord = (words: string[]) => {
     const finalWord = words[wordIndex];
 
     if (word === finalWord) {
-      WORD_TIMEOUT = setTimeout(() => changeWord(), 5000);
+      WORD_TIMEOUT = setTimeout(() => changeWord(), 2000);
       return;
     }
 

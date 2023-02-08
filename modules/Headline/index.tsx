@@ -18,16 +18,17 @@ const Headline: React.FC = () => {
       <div className="headline--content-container">
         <header itemScope itemProp="headline">
           <h1 itemProp="merit">{strings.blocks.headline.title}</h1>
-          <h2 itemProp="merit">{strings.blocks.headline.subtitle}</h2>
 
-          <Button onClick={scrollToContact} variant="primary" type="button" itemProp="form">
-            {strings.blocks.headline.action}
+          <span>
+            <Button onClick={scrollToContact} variant="primary" type="button" itemProp="form">
+              {strings.blocks.headline.action}
 
-            <span className="button--animation">
-              <span className="word">{word}</span>
-              <span className="carret">_</span>
-            </span>
-          </Button>
+              <span className="button--animation">
+                <span className="word">{word}</span>
+                <span className="carret">_</span>
+              </span>
+            </Button>
+          </span>
         </header>
 
         <aside itemScope itemProp="strengths">

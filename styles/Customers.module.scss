@@ -1,0 +1,30 @@
+@import "tokens";
+@import "mixins";
+
+.customers {
+  @include flex-centered-content;
+
+  :global {
+    .customers--content-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      max-width: $max-width;
+
+      h2 {
+        max-width: 450px;
+        font-size: $font-sm;
+        margin-bottom: $spacing-xs;
+
+        @include tablet {
+          font-size: $font-md;
+        }
+      }
+
+      p {
+        max-width: 920px;
+        font-size: $font-xs;
+      }
+    }
+  }
+}

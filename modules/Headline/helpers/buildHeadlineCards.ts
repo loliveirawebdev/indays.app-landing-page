@@ -3,7 +3,7 @@ export const buildHeadlineCards = (cards: any): Headline.Card[] => {
     {
       label: cards.first,
       iconKey: "rocket",
-      className: "black",
+      className: "black-green",
     },
     {
       label: cards.second,
@@ -18,7 +18,7 @@ export const buildHeadlineCards = (cards: any): Headline.Card[] => {
     {
       label: cards.fourth,
       iconKey: "runner",
-      className: "gray",
+      className: "black-yellow",
     },
   ];
 };

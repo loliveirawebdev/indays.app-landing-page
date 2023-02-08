@@ -3,7 +3,6 @@
 
 .appeal {
   @include flex-centered-content;
-  padding-top: 0 !important;
   color: $gray;
 
   :global {

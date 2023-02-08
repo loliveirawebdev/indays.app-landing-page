@@ -124,6 +124,7 @@
 
       .strengths--right-col {
         @include desktop {
+          margin-top: -8rem;
           position: relative;
           align-self: flex-start;
         }
@@ -163,9 +164,9 @@
         }
       }
 
-      article.black {
+      article.black-green {
         &::before {
-          background: $white;
+          background: transparent;
           border: 1px solid $black;
         }
 
@@ -217,19 +218,19 @@
         }
       }
 
-      article.gray {
+      article.black-yellow {
         &::before {
-          background: $white;
+          background: transparent;
           border: 1px solid $black;
         }
 
         :global {
           .card--container {
-            background: $light-gray;
-            color: $gray;
+            background: $black;
+            color: $white;
 
             span {
-              color: $black;
+              color: $yellow;
             }
           }
         }
@@ -238,6 +239,10 @@
   }
 
   header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
     @include not-desktop {
       order: 1;
     }
@@ -247,26 +252,6 @@
     }
 
     h1 {
-      font-size: $font-lg;
-      margin-bottom: $spacing-sm;
-
-      @media (min-width: 430px) and (max-width: 1020px) {
-        font-size: $font-xl !important;
-      }
-
-      @include desktop {
-        font-size: $font-xxl;
-      }
-
-      strong {
-        background: url("/assets/word-highlight.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    }
-
-    h2 {
       font-size: $font-sm;
       font-weight: normal;
       margin-bottom: $spacing-sm;

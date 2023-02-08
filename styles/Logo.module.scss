@@ -32,17 +32,6 @@
           color: $green;
         }
       }
-
-      span.logo--backdrop {
-        width: 100%;
-        top: 0.5rem;
-        z-index: 10;
-        height: 100%;
-        left: -0.5rem;
-        display: block;
-        position: absolute;
-        background: $light-gray;
-      }
     }
   }
 }
