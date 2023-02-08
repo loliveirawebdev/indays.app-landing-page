@@ -1,113 +1,41 @@
 {
   "page": {
-    "key": "Home",
-    "title": "Custom Mobile Development in Days | indays.app",
-    "description": "We make the difference to your business, transforming your ideas into success through custom mobile development",
-    "keywords": "custom mobile development, accelerated custom mobile development, obile development in days"
+    "key": "Página inicial",
+    "title": "Consultoria em Transformação Digital | indays.app",
+    "description": "Somos uma consultoria com foco na transformação e inovação digital que te ajuda a desenvolver estratégias de negócio e digitalização.",
+    "keywords": "inovação digital, transformação digital, consultoria"
   },
   "general": {
-    "needHelp": "Need help? Contact us"
+    "needHelp": "Precisa de ajuda?"
   },
   "blocks": {
     "headline": {
-      "title": "We help Startups and Enterprises achieve their goals <strong><u>faster</u></strong>.",
-      "subtitle": "Our accelerated mobile development methodology enables us to delivery <strong>custom excellent apps <u>in days</u></strong>.",
-      "paragraphs": [
-        "Our team, leaded by people with years of mobile application development experience, provides <em><u>the best software development experience</u></em> through a strong and solid culture of <b>excellence</b> and <strong>true agility</strong> which added to our philosophy and methodology can help your business delivering small, medium and big custom mobile applications with a minimal time-to-market."
-      ],
-      "action": "Receive estimation",
+      "title": "Você acredita que a <strong><u>tecnologia</u></strong> pode alavancar a sua empresa?",
+      "subtitle": "Somos uma consultoria com foco na inovação e transformação digital que te ajuda a desenvolver <strong><u>estratégias de negócio e digitalização</u></strong>.",
+      "action": "Eu quero",
+      "words": ["crescer", "inovar", "transformar", "lucrar", "digitalizar"],
       "cards": {
-        "first": "<span><strong>we transform your ideas into success</strong></span> by developing custom solutions that makes all difference to your business, faster",
-        "second": "<span>we more than a mobile software house... <strong>our business is to co-create</strong></span> your own business in a collaborative way",
-        "third": "<span>your customers are ours as well</span>, so we hard work to provide the best experience to them",
-        "fourth": "<span>our <strong>true agile culture</strong></span> helps reach goals in much less time in a healthy way"
+        "first": "<span><strong>otimize</strong></span> os seus processos mais importantes",
+        "second": "<span>melhore a experiência</span> de seus clientes",
+        "third": "<span>aumente seus lucros</span> em até 10 vezes",
+        "fourth": "<span>acelere</span> o crescimento do seu negócio"
       }
     },
     "appeal": {
-      "description": "We are ready to validate your ideas and develop your mobile application from scratch or speed up your running project using all our knowledge about <strong>app development for smartphones (hybrid or native) and smart TVs</strong>.",
-      "action": "Contact us"
+      "title": "Consultoria",
+      "description": "Todos acreditam que a transformação digital é importante para o sucesso futuro, porém apenas <u>4% das empresas estão preparadas</u> para implementar as ações necessárias e <b>obter um lucro de 3 a 10 vezes maior</b> pois nem sequer enxergam os gaps e problemas relacionados à tecnologia, ou a falta dela, dentro de seu próprio negócio. <br /><br /> Somos uma empresa com expertise em consultoria tecnológica, onde desenvolvemos estratégias de negócio e inovação digital com ênfase em soluções personalizadas.<br /><br /> Estamos prontos para realizar o mapeamento do operacional da sua empresa para que ela seja digitalmente inovada pelo melhor caminho possível sendo direcionada para ganho de uma lucratividade exponencial.",
+      "action": "Quero minha consultoria"
     },
     "solutions": {
-      "title": "Solutions",
+      "title": "Soluções",
+      "subtitle": "Somos um ecossistema de tecnologia e inovação que integra conhecimento humano, visão estratégica e flexibilidade para potencializar o futuro das empresas.",
       "items": [
-        {
-          "title": "Web3 solutions",
-          "description": "Web3 & Blockchain Software Development that give your project speed and technological perfection."
-        },
-        {
-          "title": "Custom mobile development",
-          "description": "We develop beautiful mobile applications for Android and iOS using their native stack or through a cross-platform technology like React Native or Flutter."
-        },
-        {
-          "title": "Custom Super Apps development",
-          "description": "We have the knowledge and experience to develop this singular kind of mobile application that is a new trending after the successful campaign made by WeChat."
-        },
-        {
-          "title": "Custom Smart TV applications development",
-          "description": "We develop professional applications for any TV operational system like LG WebOS or Tizen TV."
-        },
-        {
-          "title": "Custom e-commerce development",
-          "description": "Our truly passion and specialty is to develop custom e-commerce platforms from the scratch or using Magento Commerce."
-        },
-        {
-          "title": "Custom mobile back-end development",
-          "description": "We develop fast, reliable and secure back-end solutions using modern tech stacks like Bun.js, Deno.js or Go, or using more consolidated tech stacks like Java, Python or PHP."
-        },
-        {
-          "title": "Product design",
-          "description": "We know how to create beautiful, useful and engaging mobile applications."
-        }
-      ],
-      "tools": {
-        "title": "Our tools",
-        "highlight": {
-          "title": "Fastest development stack:",
-          "items": [
-            {
-              "imageKey": "react",
-              "label": "React"
-            },
-            {
-              "imageKey": "node",
-              "label": "Node"
-            }
-          ]
-        },
-        "others": {
-          "title": "Other tools:",
-          "items": [
-            {
-              "imageKey": "java",
-              "label": "Java"
-            },
-            {
-              "imageKey": "python",
-              "label": "Python"
-            },
-            {
-              "imageKey": "deno",
-              "label": "Deno"
-            },
-            {
-              "imageKey": "php",
-              "label": "PHP"
-            },
-            {
-              "imageKey": "flutter",
-              "label": "Flutter"
-            },
-            {
-              "imageKey": "kotlin",
-              "label": "Kotlin"
-            },
-            {
-              "imageKey": "swift",
-              "label": "Swift"
-            }
-          ]
-        }
-      }
+        { "label": "Consultoria de estratégia digital", "icon": "computer" },
+        { "label": "Diagnóstico de tecnologia e seus desafios", "icon": "file" },
+        { "label": "Definição de ferramentas e plataformas", "icon": "wrench" },
+        { "label": "Definição de oportunidades omnichannel", "icon": "arrows" },
+        { "label": "Otimização de processos importantes", "icon": "fast-forward" }
+      ]
     }
   }
 }

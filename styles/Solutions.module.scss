@@ -71,40 +71,34 @@
     }
 
     .solutions--services {
-      list-style-position: inside;
-      font-size: $font-sm;
+      font-size: $font-xs;
+      list-style-type: none;
+      margin-top: $spacing-md;
+
+      display: grid;
+      grid-row-gap: 2rem;
+      grid-column-gap: 2rem;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(1, 1fr) !important;
 
       @include tablet {
-        font-size: $font-md;
+        font-size: $font-sm;
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+
+      @media (min-width: 400px) and (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr) !important;
       }
 
       li {
-        margin-top: $spacing-sm;
-        display: list-item;
+        flex: 1;
+        display: flex;
+        padding: $spacing-sm;
+        flex-direction: column;
+        border: 5px solid $black;
 
-        @include tablet {
-          margin-top: $spacing-md;
-        }
-
-        &::marker {
-          background: red;
-        }
-
-        hgroup {
-          display: inline;
-
-          h4 {
-            display: inline;
-            margin-left: -1rem;
-          }
-
-          p {
-            font-size: $font-xs;
-
-            @include tablet {
-              font-size: $font-sm;
-            }
-          }
+        img {
+          margin-bottom: $spacing-sm;
         }
       }
     }

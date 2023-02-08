@@ -30,10 +30,11 @@
       "title": "Soluções",
       "subtitle": "Somos um ecossistema de tecnologia e inovação que integra conhecimento humano, visão estratégica e flexibilidade para potencializar o futuro das empresas.",
       "items": [
-        "Consultoria de estratégia digital",
-        "Diagnóstico de tecnologia e entendimento dos desafios do negócio",
-        "Definição de ferramentas, plataformas e tecnologias",
-        "Definição de canais e oportunidades de omnicanalidade"
+        { "label": "Consultoria de estratégia digital", "icon": "computer" },
+        { "label": "Diagnóstico de tecnologia e seus desafios", "icon": "file" },
+        { "label": "Definição de ferramentas e plataformas", "icon": "wrench" },
+        { "label": "Definição de oportunidades omnichannel", "icon": "arrows" },
+        { "label": "Otimização de processos importantes", "icon": "fast-forward" }
       ]
     }
   }
