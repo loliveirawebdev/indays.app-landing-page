@@ -1,9 +1,9 @@
 {
   "page": {
-    "title": "Desenvolvimento Mobile Customizado em Dias | indays.app",
-    "description": "Nós fazemos a diferença para seu negócio, transformando suas ideias em sucesso através do desenvolvimento mobile customizado em dias.",
-    "keywords": "desenvolvimento mobile customizado, desenvolvimento mobile rápido, desenvolvimento mobile em dias",
-    "route-name": "/404"
+    "key": "404",
+    "title": "Consultoria em Transformação Digital | indays.app",
+    "description": "Somos uma consultoria com foco na transformação e inovação digital que te ajuda a desenvolver estratégias de negócio e digitalização.",
+    "keywords": "inovação digital, transformação digital, consultoria"
   },
   "message": "Página não encontrada. Tem certeza de que a URL desejada está correta?",
   "action": "Voltar para indays.app"

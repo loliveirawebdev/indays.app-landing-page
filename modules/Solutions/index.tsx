@@ -41,7 +41,7 @@ const Solutions: React.FC = () => {
         <div className="solutions--content-image">
           <Image
             fill
-            quality={50}
+            quality={100}
             loading="lazy"
             itemProp="icon"
             objectFit="cover"
