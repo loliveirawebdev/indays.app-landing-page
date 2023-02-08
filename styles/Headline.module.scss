@@ -14,6 +14,16 @@
       @include desktop {
         flex-direction: row;
       }
+
+      .button--animation {
+        margin-left: 0.5rem;
+
+        .carret {
+          & :local {
+            animation: blink 0.75s step-end infinite;
+          }
+        }
+      }
     }
 
     .headline--content {
@@ -277,5 +287,15 @@
         font-size: $font-sm;
       }
     }
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }

@@ -5,10 +5,12 @@ import { renderCards } from "./helpers/renderCards";
 import styles from "../../styles/Headline.module.scss";
 import { useSectionsScroll } from "../../hooks/pageScroll";
 import { buildHeadlineCards } from "./helpers/buildHeadlineCards";
+import { useActionWord } from "./hooks/action-word";
 
 const Headline: React.FC = () => {
   const { strings } = useLocale("home");
   const { scrollToContact } = useSectionsScroll();
+  const word = useActionWord(strings.blocks.headline.words);
   const cards = buildHeadlineCards(strings.blocks.headline.cards);
 
   return (
@@ -20,6 +22,11 @@ const Headline: React.FC = () => {
 
           <Button onClick={scrollToContact} variant="primary" type="button" itemProp="form">
             {strings.blocks.headline.action}
+
+            <span className="button--animation">
+              <span className="word">{word}</span>
+              <span className="carret">_</span>
+            </span>
           </Button>
         </header>
 

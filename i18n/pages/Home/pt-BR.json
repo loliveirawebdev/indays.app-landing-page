@@ -12,8 +12,8 @@
     "headline": {
       "title": "Você acredita que a <strong><u>tecnologia</u></strong> pode alavancar a sua empresa?",
       "subtitle": "Somos uma consultoria com foco na inovação e transformação digital que te ajuda a desenvolver <strong><u>estratégias de negócio e digitalização</u></strong>.",
-      "action": "Eu quero {word}",
-      "words": ["crescer", "inovar", "transforar", "lucrar", "digitalizar"],
+      "action": "Eu quero",
+      "words": ["crescer", "inovar", "transformar", "lucrar", "digitalizar"],
       "cards": {
         "first": "<span><strong>otimize</strong></span> os seus processos mais importantes",
         "second": "<span>melhore a experiência</span> de seus clientes",
