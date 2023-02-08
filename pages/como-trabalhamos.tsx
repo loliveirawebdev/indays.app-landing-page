@@ -22,13 +22,13 @@ export default function HowWeWorkPage() {
         <meta name="subtitle" content={strings.page.description} />
         <meta name="description" content={strings.page.description} />
 
-        <meta property="og:image" content="/indays-logo.png" />
         <meta property="og:url" content="https://indays.app" />
         <meta property="og:title" content={strings.page.title} />
+        <meta property="og:image" content="/assets/header-background.jpg" />
         <meta property="og:description" content={strings.page.description} />
 
-        <meta property="twitter:image" content="/indays-logo.png" />
         <meta property="twitter:title" content={strings.page.title} />
+        <meta property="twitter:image" content="/assets/header-background.jpg" />
         <meta property="twitter:description" content={strings.page.description} />
 
         <link rel="canonical" href={`https://indays.app/${localizedRoute}`} />
