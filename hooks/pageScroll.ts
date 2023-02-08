@@ -17,7 +17,7 @@ export function useSectionsScroll() {
 
   const scrollTo = (area: string) => {
     const matchedRef = refs.find((ref) => ref.key === area);
-    matchedRef?.ref.current?.scrollIntoView({ behavior: "smooth" });
+    matchedRef?.ref.current?.scrollIntoView();
   };
 
   return {

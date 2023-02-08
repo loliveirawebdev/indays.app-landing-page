@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { useLocale } from "../../hooks/locale";
+import { useAutoScroll } from "./hooks/auto-scroll";
 import styles from "../../styles/Customers.module.scss";
-import { useScrollContainer } from "react-indiana-drag-scroll";
+import ScrollContainer from "react-indiana-drag-scroll";
+
 type CustomerLogo = { img: string; w: number };
 
 const CUSTOMERS_IMAGES: CustomerLogo[] = [
@@ -16,17 +18,30 @@ const CUSTOMERS_IMAGES: CustomerLogo[] = [
 
 const Customers: React.FC = () => {
   const { strings } = useLocale("home");
-  const scrollContainer = useScrollContainer();
+  const listRef: any = React.useRef(null);
+  const scrollRef: any = React.useRef(null);
+  const listProps = { ref: listRef, onMouseDown, onMouseUp };
+  const { enable, interrupt } = useAutoScroll(scrollRef);
 
-  const renderImage = (image: CustomerLogo) => {
+  function renderImage(image: CustomerLogo) {
     const { img, w } = image;
 
     return (
-      <li>
+      <li key={img}>
         <Image width={w} height={50} alt="Logo" src={img} loading="eager" quality={100} itemProp="icon" />
       </li>
     );
-  };
+  }
+
+  function onMouseDown(e: React.MouseEvent) {
+    if (e.target !== listRef.current) {
+      interrupt();
+    }
+  }
+
+  function onMouseUp() {
+    enable();
+  }
 
   return (
     <section itemScope className={styles.customers}>
@@ -34,10 +49,10 @@ const Customers: React.FC = () => {
         <h2 itemProp="title">{strings.blocks.customers.title}</h2>
         <p itemProp="description">{strings.blocks.customers.subtitle}</p>
 
-        <div className="customers--list">
-          <div className="customer-list--container" ref={scrollContainer.ref}>
+        <div className="customers--list" {...listProps}>
+          <ScrollContainer ref={scrollRef} className="customer-list--container">
             <ul>{CUSTOMERS_IMAGES.map(renderImage)}</ul>
-          </div>
+          </ScrollContainer>
         </div>
       </div>
     </section>
