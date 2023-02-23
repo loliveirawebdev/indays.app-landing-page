@@ -8,6 +8,7 @@ import Image from "next/image";
 const Appeal: React.FC = () => {
   const { strings } = useLocale("home");
   const { scrollToContact } = useSectionsScroll();
+  console.log("odiasodsiaodisaidsa");
 
   return (
     <section itemScope className={styles.appeal}>

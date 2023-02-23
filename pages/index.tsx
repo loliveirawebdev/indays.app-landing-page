@@ -19,33 +19,19 @@ export default function Home() {
 
   return (
     <React.Fragment>
-      <Head>
-        <title>{strings.page.title}</title>
-        <meta name="title" content={strings.page.title} />
-
-        <meta name="pagename" content={strings.page.title} />
-        <meta name="keywords" content={strings.page.keywords} />
-        <meta name="subject" content={strings.page.description} />
-        <meta name="subtitle" content={strings.page.description} />
-        <meta name="description" content={strings.page.description} />
-
-        <meta property="og:image" content="/assets/header-background.jpg" />
-        <meta property="og:url" content="https://indays.app" />
-        <meta property="og:title" content={strings.page.title} />
-        <meta property="og:description" content={strings.page.description} />
-
-        <meta property="twitter:image" content="/assets/header-background.jpg" />
-        <meta property="twitter:title" content={strings.page.title} />
-        <meta property="twitter:description" content={strings.page.description} />
-
-        <link rel="canonical" href={`https://indays.app/${localizedRoute}`} />
-        <link rel="alternate" href={`https://indays.app/en/${alternates.en}`} hrefLang="en" />
-        <link rel="alternate" href={`https://indays.app/${alternates["pt-BR"]}`} hrefLang="pt-BR" />
-      </Head>
-
       <NeedHelp />
 
       <main className="main-container">
+        <div className={styles.top}>
+          <Header />
+          <Headline />
+        </div>
+
+        <div className={styles.top}>
+          <Header />
+          <Headline />
+        </div>
+
         <div className={styles.top}>
           <Header />
           <Headline />
